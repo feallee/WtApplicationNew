@@ -38,26 +38,93 @@ void wt_application_invoke(void (*action)(void))
 }
 
 /*APPLICATION COMMAND*/
-static int command0(void *parameter)
+static void command0e(void *parameter)
 {
-    return 0;
 }
-WT_APPLICATION_COMMAND("", command0, "0");
-static int command9(void *parameter)
+WT_APPLICATION_COMMAND("", command0e, "0.e");
+static void command1e(void *parameter)
 {
-    return 0;
 }
-WT_APPLICATION_COMMAND("", command9, "9");
+WT_APPLICATION_COMMAND("", command1e, "1.e");
+static void command2e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command2e, "2.e");
+static void command3e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command3e, "3.e");
+static void command4e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command4e, "4.e");
+static void command5e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command5e, "5.e");
+static void command6e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command6e, "6.e");
+static void command7e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command7e, "7.e");
+static void command8e(void *parameter)
+{
+}
+WT_APPLICATION_COMMAND("", command8e, "8.e");
 
-static void commanda(char *line)
-{
-    return 0;
-}
-
-bool wt_application_execute(const char *name, char *line)
+bool wt_application_execute(uint8_t level, const char *name, char *line)
 {
     bool r = false;
-    for (const wt_application_command_type *cmd = &__wt_app_command_command0; cmd < &__wt_app_command_command9; cmd++)
+    wt_application_command_type *b, *e;
+    if (level == 1)
+    {
+        b = &__wt_app_command_command0e;
+        e = &__wt_app_command_command1e;
+    }
+    else if (level == 2)
+    {
+        b = &__wt_app_command_command1e;
+        e = &__wt_app_command_command2e;
+    }
+    else if (level == 3)
+    {
+        b = &__wt_app_command_command2e;
+        e = &__wt_app_command_command3e;
+    }
+    else if (level == 4)
+    {
+        b = &__wt_app_command_command3e;
+        e = &__wt_app_command_command4e;
+    }
+    else if (level == 5)
+    {
+        b = &__wt_app_command_command4e;
+        e = &__wt_app_command_command5e;
+    }
+    else if (level == 6)
+    {
+        b = &__wt_app_command_command5e;
+        e = &__wt_app_command_command6e;
+    }
+    else if (level == 7)
+    {
+        b = &__wt_app_command_command6e;
+        e = &__wt_app_command_command7e;
+    }
+    else if (level == 8)
+    {
+        b = &__wt_app_command_command7e;
+        e = &__wt_app_command_command8e;
+    }
+    else
+    {
+        b = &__wt_app_command_command0e;
+        e = &__wt_app_command_command8e;
+    }
+    for (const wt_application_command_type *cmd = b; cmd < e; cmd++)
     {
         if (strcmp(cmd->name, name) == 0)
         {

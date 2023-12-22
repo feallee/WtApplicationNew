@@ -83,10 +83,37 @@ void wt_application_invoke(void (*action)(void));
 /// @param name 命令名称。
 /// @param action 命令函数。
 #define WT_APPLICATION_COMMAND1(name, action) WT_APPLICATION_COMMAND(name, action, "1")
-/// @brief 根据命令名称执行命令函数。
+/// @brief 向应用程序注册级别为 2 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND2(name, action) WT_APPLICATION_COMMAND(name, action, "2")
+/// @brief 向应用程序注册级别为 3 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND3(name, action) WT_APPLICATION_COMMAND(name, action, "3")
+/// @brief 向应用程序注册级别为 4 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND4(name, action) WT_APPLICATION_COMMAND(name, action, "4")
+/// @brief 向应用程序注册级别为 5 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND5(name, action) WT_APPLICATION_COMMAND(name, action, "5")
+/// @brief 向应用程序注册级别为 6 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND6(name, action) WT_APPLICATION_COMMAND(name, action, "6")
+/// @brief 向应用程序注册级别为 7 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND7(name, action) WT_APPLICATION_COMMAND(name, action, "7")
+/// @brief 向应用程序注册级别为 8 的命令函数。
+/// @param name 命令名称。
+/// @param action 命令函数。
+#define WT_APPLICATION_COMMAND8(name, action) WT_APPLICATION_COMMAND(name, action, "8")
+/// @brief 根据命令名称执行命令函数(指定命令级)。
 /// @param name 命令名称。
 /// @param line 命令行。
 /// @return 返回命令是否成功执行。
-bool wt_application_execute(const char *name, char * line);
-
+bool wt_application_execute(uint8_t level, const char *name, char *line);
 #endif
