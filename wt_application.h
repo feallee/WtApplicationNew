@@ -77,7 +77,7 @@ void wt_application_invoke(void (*action)(void));
 /// @brief 向应用程序注册命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-/// @param level 命令级别。
+/// @param level 命令级别。共 8 个级别[1,8]。
 #define WT_APPLICATION_COMMAND(name, action, level) const wt_application_command_type __wt_app_command_##action __attribute__((used, __section__(".wt_app_command." level))) = {name, action}
 /// @brief 向应用程序注册级别为 1 的命令函数。
 /// @param name 命令名称。
@@ -111,7 +111,8 @@ void wt_application_invoke(void (*action)(void));
 /// @param name 命令名称。
 /// @param action 命令函数。
 #define WT_APPLICATION_COMMAND8(name, action) WT_APPLICATION_COMMAND(name, action, "8")
-/// @brief 根据命令名称执行命令函数(指定命令级)。
+/// @brief 根据命令名称执行命令函数(指定命令级别)。
+/// @param level 命令级别。共 8 个级别[1,8]。
 /// @param name 命令名称。
 /// @param line 命令行。
 /// @return 返回命令是否成功执行。

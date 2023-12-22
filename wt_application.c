@@ -1,5 +1,8 @@
 #include "wt_application.h"
 
+/*APPLICATION ENTRY*/
+static struct rt_mailbox mb;
+static char mb_pool[32];
 static void entry0(void)
 {
 }
@@ -8,10 +11,6 @@ static void entry9(void)
 {
 }
 WT_APPLICATION_ENTRY(entry9, "9");
-
-/*APPLICATION ENTRY*/
-static struct rt_mailbox mb;
-static char mb_pool[32];
 int main(void)
 {
     for (const wt_application_entry_type *et = &__wt_app_entry_entry0; et < &__wt_app_entry_entry9; et++)
