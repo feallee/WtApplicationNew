@@ -1,16 +1,17 @@
 #include "wt_application.h"
 
-/*APPLICATION ENTRY*/
-static struct rt_mailbox mb;
-static char mb_pool[32];
 static void entry0(void)
 {
 }
-WT_APPLICATION_ENTRY(entry0, "0");
+__WT_APPLICATION_ENTRY(entry0, "0");
 static void entry9(void)
 {
 }
-WT_APPLICATION_ENTRY(entry9, "9");
+__WT_APPLICATION_ENTRY(entry9, "9");
+
+/*APPLICATION ENTRY*/
+static struct rt_mailbox mb;
+static char mb_pool[32];
 int main(void)
 {
     for (const wt_application_entry_type *et = &__wt_app_entry_entry0; et < &__wt_app_entry_entry9; et++)
@@ -37,47 +38,47 @@ void wt_application_invoke(void (*action)(void))
 }
 
 /*APPLICATION COMMAND*/
-static void command0e(void *parameter)
+static void command0e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command0e, "0.e");
-static void command1e(void *parameter)
+__WT_APPLICATION_COMMAND("", command0e, "0.e");
+static void command1e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command1e, "1.e");
-static void command2e(void *parameter)
+__WT_APPLICATION_COMMAND("", command1e, "1.e");
+static void command2e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command2e, "2.e");
-static void command3e(void *parameter)
+__WT_APPLICATION_COMMAND("", command2e, "2.e");
+static void command3e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command3e, "3.e");
-static void command4e(void *parameter)
+__WT_APPLICATION_COMMAND("", command3e, "3.e");
+static void command4e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command4e, "4.e");
-static void command5e(void *parameter)
+__WT_APPLICATION_COMMAND("", command4e, "4.e");
+static void command5e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command5e, "5.e");
-static void command6e(void *parameter)
+__WT_APPLICATION_COMMAND("", command5e, "5.e");
+static void command6e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command6e, "6.e");
-static void command7e(void *parameter)
+__WT_APPLICATION_COMMAND("", command6e, "6.e");
+static void command7e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command7e, "7.e");
-static void command8e(void *parameter)
+__WT_APPLICATION_COMMAND("", command7e, "7.e");
+static void command8e(char *line)
 {
 }
-WT_APPLICATION_COMMAND("", command8e, "8.e");
+__WT_APPLICATION_COMMAND("", command8e, "8.e");
 
 bool wt_application_execute(uint8_t level, const char *name, char *line)
 {
     bool r = false;
-    wt_application_command_type *b, *e;
+    const wt_application_command_type *b, *e;
     if (level == 1)
     {
         b = &__wt_app_command_command0e;

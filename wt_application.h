@@ -10,16 +10,8 @@
 #ifndef __WT_APPLICATION_H_
 #define __WT_APPLICATION_H_
 
-/*STANDARD HEADER*/
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdarg.h>
-#include <rtthread.h>
-// TODO Add header files here.
-
+/*APP HEADER*/
+#include "wt_application_config.h"
 /*APP TYPE*/
 /// @brief 应用程序入口类型。
 typedef struct
@@ -42,77 +34,76 @@ typedef struct
 /// @brief 向应用程序注册自动执行入口函数。
 /// @param action 入口函数。
 /// @param level 执行优先级别。共 8 个级别，执行顺序：1->2->3->4->5->6->7->8。
-#define WT_APPLICATION_ENTRY(action, level) const wt_application_entry_type __wt_app_entry_##action __attribute__((used, __section__(".wt_app_entry." level))) = {action}
+#define __WT_APPLICATION_ENTRY(action, level) const static wt_application_entry_type __wt_app_entry_##action __attribute__((used, __section__(".wt_app_entry." level))) = {action}
 /// @brief 向应用程序注册优先级别为 1 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY1(action) WT_APPLICATION_ENTRY(action, "1")
+#define WT_APPLICATION_ENTRY1(action) __WT_APPLICATION_ENTRY(action, "1")
 /// @brief 向应用程序注册优先级别为 2 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY2(action) WT_APPLICATION_ENTRY(action, "2")
+#define WT_APPLICATION_ENTRY2(action) __WT_APPLICATION_ENTRY(action, "2")
 /// @brief 向应用程序注册优先级别为 3 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY3(action) WT_APPLICATION_ENTRY(action, "3")
+#define WT_APPLICATION_ENTRY3(action) __WT_APPLICATION_ENTRY(action, "3")
 /// @brief 向应用程序注册优先级别为 4 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY4(action) WT_APPLICATION_ENTRY(action, "4")
+#define WT_APPLICATION_ENTRY4(action) __WT_APPLICATION_ENTRY(action, "4")
 /// @brief 向应用程序注册优先级别为 5 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY5(action) WT_APPLICATION_ENTRY(action, "5")
+#define WT_APPLICATION_ENTRY5(action) __WT_APPLICATION_ENTRY(action, "5")
 /// @brief 向应用程序注册优先级别为 6 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY6(action) WT_APPLICATION_ENTRY(action, "6")
+#define WT_APPLICATION_ENTRY6(action) __WT_APPLICATION_ENTRY(action, "6")
 /// @brief 向应用程序注册优先级别为 7 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY7(action) WT_APPLICATION_ENTRY(action, "7")
+#define WT_APPLICATION_ENTRY7(action) __WT_APPLICATION_ENTRY(action, "7")
 /// @brief 向应用程序注册优先级别为 8 的自动执行入口函数。
 /// @param action 入口函数。
-#define WT_APPLICATION_ENTRY8(action) WT_APPLICATION_ENTRY(action, "8")
+#define WT_APPLICATION_ENTRY8(action) __WT_APPLICATION_ENTRY(action, "8")
 
 /*APP INVOKER*/
 /// @brief 委托应用程序所在的线程调用动作。在任务繁重且当前线程(含中断)不适合处理时使用。
-/// @param entry 动作函数。
+/// @param action 动作函数。
 void wt_application_invoke(void (*action)(void));
 
 /*APP COMMAND*/
 /// @brief 向应用程序注册命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-/// @param level 命令级别。共 8 个级别[1,8]。
-#define WT_APPLICATION_COMMAND(name, action, level) const wt_application_command_type __wt_app_command_##action __attribute__((used, __section__(".wt_app_command." level))) = {name, action}
+/// @param level 命令级别。
+#define __WT_APPLICATION_COMMAND(name, action, level) const static wt_application_command_type __wt_app_command_##action __attribute__((used, __section__(".wt_app_command." level))) = {name, action}
 /// @brief 向应用程序注册级别为 1 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND1(name, action) WT_APPLICATION_COMMAND(name, action, "1")
+#define WT_APPLICATION_COMMAND1(name, action) __WT_APPLICATION_COMMAND(name, action, "1")
 /// @brief 向应用程序注册级别为 2 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND2(name, action) WT_APPLICATION_COMMAND(name, action, "2")
+#define WT_APPLICATION_COMMAND2(name, action) __WT_APPLICATION_COMMAND(name, action, "2")
 /// @brief 向应用程序注册级别为 3 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND3(name, action) WT_APPLICATION_COMMAND(name, action, "3")
+#define WT_APPLICATION_COMMAND3(name, action) __WT_APPLICATION_COMMAND(name, action, "3")
 /// @brief 向应用程序注册级别为 4 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND4(name, action) WT_APPLICATION_COMMAND(name, action, "4")
+#define WT_APPLICATION_COMMAND4(name, action) __WT_APPLICATION_COMMAND(name, action, "4")
 /// @brief 向应用程序注册级别为 5 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND5(name, action) WT_APPLICATION_COMMAND(name, action, "5")
+#define WT_APPLICATION_COMMAND5(name, action) __WT_APPLICATION_COMMAND(name, action, "5")
 /// @brief 向应用程序注册级别为 6 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND6(name, action) WT_APPLICATION_COMMAND(name, action, "6")
+#define WT_APPLICATION_COMMAND6(name, action) __WT_APPLICATION_COMMAND(name, action, "6")
 /// @brief 向应用程序注册级别为 7 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND7(name, action) WT_APPLICATION_COMMAND(name, action, "7")
+#define WT_APPLICATION_COMMAND7(name, action) __WT_APPLICATION_COMMAND(name, action, "7")
 /// @brief 向应用程序注册级别为 8 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define WT_APPLICATION_COMMAND8(name, action) WT_APPLICATION_COMMAND(name, action, "8")
-/// @brief 根据命令名称执行命令函数(指定命令级别)。
-/// @param level 命令级别。共 8 个级别[1,8]。
+#define WT_APPLICATION_COMMAND8(name, action) __WT_APPLICATION_COMMAND(name, action, "8")
+/// @brief 根据命令名称执行命令函数(指定命令级)。
 /// @param name 命令名称。
 /// @param line 命令行。
 /// @return 返回命令是否成功执行。
