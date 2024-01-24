@@ -20,31 +20,31 @@ typedef struct
 /// @brief 向应用程序注册自动执行入口函数。
 /// @param action 入口函数。
 /// @param level 执行优先级别。共 8 个级别，执行顺序：1->2->3->4->5->6->7->8。
-#define APPLICATION_REGISTER_ENTRY(action, level) const static Application_EntryType mApplication_Entry_##action __attribute__((used, __section__(".application_entry." level))) = {action}
+#define APPLICATION_REGISTER_ENTRY(action, level) const static Application_EntryType mApplication_Entry_##action##_##level __attribute__((used, __section__(".application_entry." #level))) = {action}
 /// @brief 向应用程序注册优先级别为 1 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY1(action) APPLICATION_REGISTER_ENTRY(action, "1")
+#define APPLICATION_REGISTER_ENTRY1(action) APPLICATION_REGISTER_ENTRY(action, 1)
 /// @brief 向应用程序注册优先级别为 2 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY2(action) APPLICATION_REGISTER_ENTRY(action, "2")
+#define APPLICATION_REGISTER_ENTRY2(action) APPLICATION_REGISTER_ENTRY(action, 2)
 /// @brief 向应用程序注册优先级别为 3 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY3(action) APPLICATION_REGISTER_ENTRY(action, "3")
+#define APPLICATION_REGISTER_ENTRY3(action) APPLICATION_REGISTER_ENTRY(action, 3)
 /// @brief 向应用程序注册优先级别为 4 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY4(action) APPLICATION_REGISTER_ENTRY(action, "4")
+#define APPLICATION_REGISTER_ENTRY4(action) APPLICATION_REGISTER_ENTRY(action, 4)
 /// @brief 向应用程序注册优先级别为 5 的自动执行入口函数。
 /// @param action 入口函数。
-#define WAPPLICATION_REGISTER_ENTRY5(action) APPLICATION_REGISTER_ENTRY(action, "5")
+#define APPLICATION_REGISTER_ENTRY5(action) APPLICATION_REGISTER_ENTRY(action, 5)
 /// @brief 向应用程序注册优先级别为 6 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY6(action) APPLICATION_REGISTER_ENTRY(action, "6")
+#define APPLICATION_REGISTER_ENTRY6(action) APPLICATION_REGISTER_ENTRY(action, 6)
 /// @brief 向应用程序注册优先级别为 7 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY7(action) APPLICATION_REGISTER_ENTRY(action, "7")
+#define APPLICATION_REGISTER_ENTRY7(action) APPLICATION_REGISTER_ENTRY(action, 7)
 /// @brief 向应用程序注册优先级别为 8 的自动执行入口函数。
 /// @param action 入口函数。
-#define APPLICATION_REGISTER_ENTRY8(action) APPLICATION_REGISTER_ENTRY(action, "8")
+#define APPLICATION_REGISTER_ENTRY8(action) APPLICATION_REGISTER_ENTRY(action, 8)
 
 /*APP COMMAND*/
 /// @brief 应用命令类型。
@@ -58,45 +58,47 @@ typedef struct
 /// @brief 向应用程序注册命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-/// @param level 命令级别。共 8 个级别：1,2,3,4,5,6,7,8。
-#define APPLICATION_REGISTER_COMMAND(name, action, level) const static Application_CommandType mApplication_Command_##action __attribute__((used, __section__(".application_command." level))) = {name, action}
-/// @brief 向应用程序注册级别为 1 的命令函数。
+/// @param level 命令分组。共 8 个分组：1,2,3,4,5,6,7,8。
+#define APPLICATION_REGISTER_COMMAND(name, action, group) const static Application_CommandType mApplication_Command_##action##_##group __attribute__((used, __section__(".application_command." #group))) = {name, action}
+/// @brief 向应用程序注册分组为 1 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND1(name, action) APPLICATION_REGISTER_COMMAND(name, action, "1")
-/// @brief 向应用程序注册级别为 2 的命令函数。
+#define APPLICATION_REGISTER_COMMAND1(name, action) APPLICATION_REGISTER_COMMAND(name, action, 11)
+/// @brief 向应用程序注册分组为 2 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND2(name, action) APPLICATION_REGISTER_COMMAND(name, action, "2")
-/// @brief 向应用程序注册级别为 3 的命令函数。
+#define APPLICATION_REGISTER_COMMAND2(name, action) APPLICATION_REGISTER_COMMAND(name, action, 21)
+/// @brief 向应用程序注册分组为 3 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND3(name, action) APPLICATION_REGISTER_COMMAND(name, action, "3")
-/// @brief 向应用程序注册级别为 4 的命令函数。
+#define APPLICATION_REGISTER_COMMAND3(name, action) APPLICATION_REGISTER_COMMAND(name, action, 31)
+/// @brief 向应用程序注册分组为 4 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND4(name, action) APPLICATION_REGISTER_COMMAND(name, action, "4")
-/// @brief 向应用程序注册级别为 5 的命令函数。
+#define APPLICATION_REGISTER_COMMAND4(name, action) APPLICATION_REGISTER_COMMAND(name, action, 41)
+/// @brief 向应用程序注册分组为 5 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND5(name, action) APPLICATION_REGISTER_COMMAND(name, action, "5")
-/// @brief 向应用程序注册级别为 6 的命令函数。
+#define APPLICATION_REGISTER_COMMAND5(name, action) APPLICATION_REGISTER_COMMAND(name, action, 51)
+/// @brief 向应用程序注册分组为 6 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND6(name, action) APPLICATION_REGISTER_COMMAND(name, action, "6")
-/// @brief 向应用程序注册级别为 7 的命令函数。
+#define APPLICATION_REGISTER_COMMAND6(name, action) APPLICATION_REGISTER_COMMAND(name, action, 61)
+/// @brief 向应用程序注册分组为 7 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND7(name, action) APPLICATION_REGISTER_COMMAND(name, action, "7")
-/// @brief 向应用程序注册级别为 8 的命令函数。
+#define APPLICATION_REGISTER_COMMAND7(name, action) APPLICATION_REGISTER_COMMAND(name, action, 71)
+/// @brief 向应用程序注册分组为 8 的命令函数。
 /// @param name 命令名称。
 /// @param action 命令函数。
-#define APPLICATION_REGISTER_COMMAND8(name, action) APPLICATION_REGISTER_COMMAND(name, action, "8")
-/// @brief 根据命令名称执行命令函数(指定命令级)。
+#define APPLICATION_REGISTER_COMMAND8(name, action) APPLICATION_REGISTER_COMMAND(name, action, 81)
+
+/// @brief 根据命令名称执行命令函数。
+/// @prarm group 分组。
 /// @param name 命令名称。
-/// @param parameter 命令行。
+/// @param parameter 命令关联参数。
 /// @return 返回命令是否成功执行。
-bool Application_Execute(uint8_t level, const char *name, void *parameter);
+bool Application_Execute(uint8_t group, const char *name, void *parameter);
 
 /*APP INVOKER*/
 /// @brief 委托应用程序所在的线程调用动作。在任务繁重且当前线程(含中断)不适合处理时使用。
