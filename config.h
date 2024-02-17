@@ -1,31 +1,69 @@
 #ifndef __CONFIG_H_
 #define __CONFIG_H_
-#include "define.h"
+/*STANDARD HEADER FILES BEGIN*/
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdarg.h>
+#include <rtthread.h>
+// TODO Register standard header files here...
+/*STANDARD HEADER FILES END*/
 
 /*VERSION BEGIN*/
-/// @brief ²úÆ·Ãû³Æ¡£
-#define VERSION_PRODUCT "LGL"
-/// @brief ÍøÂçÖÆÊ½¡£2G/3G/4G/5G/6G/NB/CATM/CAT1/CAT4
-#define VERSION_NETWORK "4G"
-/// @brief ¿Í»§±êÊ¶¡£Ö¸Ã÷±íÊ¾¿Í»§¶¨ÖÆ°æ±¾¡£QTK/ELC
-#define VERSION_CUSTOMER ""
-/// @brief ¹¦ÄÜÌØĞÔ¡£General ±íÊ¾Í¨ÓÃ¡£
-#define VERSION_FUNCTION "General"
-/// @brief Í¨ĞÅĞ­Òé¡£PTC = Ã÷ÎÄ¶ººÅĞ­Òé; JT808 = ²¿±êĞ­Òé;
-#define VERSION_PROTOCOL "PTC"
-/// @brief Ö÷Òª°æ±¾ºÅ¡£0 to 4293
-#define VERSION_MAJOR 1
-/// @brief ´ÎÒª°æ±¾ºÅ¡£0 to 999
-#define VERSION_MINOR 0
-/// @brief ĞŞ¶©°æ±¾ºÅ¡£0 to 999
-#define VERSION_REVISION 1
+/// @brief äº§å“åç§°ã€‚
+#define VERSION_PRODUCT "LGL" // TODO ...
+/// @brief ç½‘ç»œåˆ¶å¼ã€‚
+#define VERSION_NETWORK "4G" // TODO 2G/3G/4G/5G/6G/NB/CAT1/CAT4/...
+/// @brief å®¢æˆ·æ ‡è¯†ã€‚
+#define VERSION_CUSTOMER "MOBI" // TODO QTK/ELC/MOBI/...
+/// @brief åŠŸèƒ½ç‰¹æ€§ã€‚
+#define VERSION_FUNCTION "General" // TODO ...
+/// @brief é€šä¿¡åè®®ã€‚
+#define VERSION_PROTOCOL "PTC" // TODO PTC/JT808/...
+/// @brief ä¸»è¦ç‰ˆæœ¬å·ã€‚
+#define VERSION_MAJOR 1 // TODO 0 to 4293...
+/// @brief æ¬¡è¦ç‰ˆæœ¬å·ã€‚
+#define VERSION_MINOR 0 // TODO 0 to 999...
+/// @brief ä¿®è®¢ç‰ˆæœ¬å·ã€‚
+#define VERSION_REVISION 1 // TODO 0 to 999...
 #define VERSION_TO_TEXT(v) #v
 #define VERSION_TO_TEXT3(a, b, c) VERSION_TO_TEXT(a.b.c)
-/// @brief »ñÈ¡°æ±¾ºÅÊıÖµ¡£Èç£º1000001¡£
+/// @brief ç‰ˆæœ¬å·æ ‡é‡æ•°å€¼ã€‚å¦‚ï¼š1000001ã€‚
 #define VERSION_NUMBER VERSION_MAJOR * 1000000 + VERSION_MINOR * 1000 + VERSION_REVISION
-/// @brief »ñÈ¡²¿·Ö°æ±¾ºÅ×Ö·û´®¡£Èç£ºV1.0.1¡£
+/// @brief ç‰ˆæœ¬å·ç´§å‡‘å­—ç¬¦ä¸²ã€‚å¦‚ï¼šV1.0.1ã€‚
 #define VERSION_TINY "V" VERSION_TO_TEXT3(VERSION_MAJOR, VERSION_MINOR, VERSION_REVISION)
-/// @brief »ñÈ¡ÍêÕûµÄ°æ±¾ºÅ×Ö·û´®¡£Èç£ºLGL_Dec 14 2023_4G__General_PTC_V1.0.1¡£
+/// @brief ç‰ˆæœ¬å·å®Œæ•´å­—ç¬¦ä¸²ã€‚å¦‚ï¼šLGL_Dec 14 2023_4G_MOBI_General_PTC_V1.0.1ã€‚
 #define VERSION_FULL VERSION_PRODUCT "_" __DATE__ "_" VERSION_NETWORK "_" VERSION_CUSTOMER "_" VERSION_FUNCTION "_" VERSION_PROTOCOL "_" VERSION_TINY
 /*VERSION END*/
+
+/*USER TYPES BEGIN*/
+/// @brief æ— å‚æ•°ä¸”æ— è¿”å›å€¼å‡½æ•°æŒ‡é’ˆç±»å‹ã€‚
+typedef void (*ActionType)(void);
+/// @brief æœ‰ä¸€ä¸ªé€šç”¨æŒ‡é’ˆå‚æ•°ä¸”æ— è¿”å›å€¼å‡½æ•°æŒ‡é’ˆç±»å‹ã€‚
+typedef void (*ActionVoidType)(void *parameter);
+/// @brief é€šç”¨æ¶ˆæ¯ç±»å‹(256B)ã€‚
+typedef struct
+{
+    /// @brief é€šç”¨æ¶ˆæ¯å…³é”®å­—ã€‚
+    uint16_t Key : 7;
+    /// @brief é€šç”¨æ¶ˆæ¯é•¿åº¦ã€‚
+    uint16_t Length : 9;
+    /// @brief é€šç”¨æ¶ˆæ¯æ­£æ–‡ã€‚
+    uint8_t Value[256];
+} Message256Type;
+// Define user types here...
+/*USER TYPES BEGIN*/
+
+/*USER HEADER FILES BEGIN*/
+/// @brief åº”ç”¨ç¨‹åºå§”æ‰˜åŠ¨ä½œå‡½æ•°æ•°é‡ã€‚
+#define APPLICATION_INVOKE_COUNT 8 // TODO å¯é…ç½®ï¼Œæœ€å°‘ä¸º 1ã€‚
+// TODO Define configuration here...
+/*USER HEADER FILES END*/
+
+/*USER HEADER FILES BEGIN*/
+// TODO Register user header files here...
+/*USER HEADER FILES END*/
+
 #endif

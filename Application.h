@@ -1,107 +1,108 @@
 /**
- * @brief Ìá¹©½Ó¿ÚÒÔ¹ÜÀíÓ¦ÓÃ³ÌÐò£¬ÀýÈçÆô¶¯Ó¦ÓÃ³ÌÐò¡¢´¦ÀíÎ¯ÍÐ¶¯×÷ºÍ¹ÜÀíÃüÁîµÈ¹¦ÄÜ¡£
+ * @brief æä¾›æŽ¥å£ä»¥ç®¡ç†åº”ç”¨ç¨‹åºï¼Œä¾‹å¦‚å¯åŠ¨åº”ç”¨ç¨‹åºã€å¤„ç†å§”æ‰˜åŠ¨ä½œå’Œç®¡ç†å‘½ä»¤ç­‰åŠŸèƒ½ã€‚
  * @copyright Copyright(C) 2023 We as Top team. All rights reserved.
- * @section ÐÞ¶©ÈÕÖ¾
- * ÈÕÆÚ         ×÷Õß                ÄÚÈÝ
+ * @section ä¿®è®¢æ—¥å¿—
+ * æ—¥æœŸ         ä½œè€…                å†…å®¹
  * -------------------------------------------------------------------------
- * 2023/11/30   feallee@hotmail.com ³õ°æ¡£
+ * 2023/11/30   feallee@hotmail.com åˆç‰ˆã€‚
  */
 
 #ifndef __APPLICATION_H_
 #define __APPLICATION_H_
 #include "config.h"
+
 /*APP ENTRY*/
-/// @brief Ó¦ÓÃ³ÌÐòÈë¿ÚÀàÐÍ¡£
+/// @brief åº”ç”¨ç¨‹åºå…¥å£ç±»åž‹ã€‚
 typedef struct
 {
-    /// @brief Èë¿Úº¯Êý¡£
+    /// @brief å…¥å£å‡½æ•°ã€‚
     ActionType Action;
 } Application_EntryType;
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
-/// @param level Ö´ÐÐÓÅÏÈ¼¶±ð¡£¹² 8 ¸ö¼¶±ð£¬Ö´ÐÐË³Ðò£º1->2->3->4->5->6->7->8¡£
-#define APPLICATION_REGISTER_ENTRY(action, level) const static Application_EntryType mApplication_Entry_##action##_##level __attribute__((used, __section__(".application_entry." #level))) = {action}
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 1 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œè‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
+/// @param level æ‰§è¡Œä¼˜å…ˆçº§åˆ«ã€‚å…± 8 ä¸ªçº§åˆ«ï¼Œæ‰§è¡Œé¡ºåºï¼š1->2->3->4->5->6->7->8ã€‚
+#define APPLICATION_REGISTER_ENTRY(action, level) const static Application_EntryType mAPP_Entry_##action##_##level __attribute__((used, __section__(".app_entry." #level))) = {action}
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 1 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY1(action) APPLICATION_REGISTER_ENTRY(action, 1)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 2 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 2 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY2(action) APPLICATION_REGISTER_ENTRY(action, 2)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 3 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 3 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY3(action) APPLICATION_REGISTER_ENTRY(action, 3)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 4 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 4 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY4(action) APPLICATION_REGISTER_ENTRY(action, 4)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 5 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 5 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY5(action) APPLICATION_REGISTER_ENTRY(action, 5)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 6 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 6 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY6(action) APPLICATION_REGISTER_ENTRY(action, 6)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 7 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 7 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY7(action) APPLICATION_REGISTER_ENTRY(action, 7)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÓÅÏÈ¼¶±ðÎª 8 µÄ×Ô¶¯Ö´ÐÐÈë¿Úº¯Êý¡£
-/// @param action Èë¿Úº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œä¼˜å…ˆçº§åˆ«ä¸º 8 çš„è‡ªåŠ¨æ‰§è¡Œå…¥å£å‡½æ•°ã€‚
+/// @param action å…¥å£å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_ENTRY8(action) APPLICATION_REGISTER_ENTRY(action, 8)
 
 /*APP COMMAND*/
-/// @brief Ó¦ÓÃÃüÁîÀàÐÍ¡£
+/// @brief åº”ç”¨å‘½ä»¤ç±»åž‹ã€‚
 typedef struct
 {
-    /// @brief ÃüÁîÃû³Æ¡£
+    /// @brief å‘½ä»¤åç§°ã€‚
     char *Name;
-    /// @brief ÃüÁîº¯Êý¡£
-    Action1Type Action;
+    /// @brief å‘½ä»¤å‡½æ•°ã€‚
+    ActionVoidType Action;
 } Application_CommandType;
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²áÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
-/// @param level ÃüÁî·Ö×é¡£¹² 8 ¸ö·Ö×é£º1,2,3,4,5,6,7,8¡£
-#define APPLICATION_REGISTER_COMMAND(name, action, group) const static Application_CommandType mApplication_Command_##action##_##group __attribute__((used, __section__(".application_command." #group))) = {name, action}
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 1 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œå‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
+/// @param level å‘½ä»¤åˆ†ç»„ã€‚å…± 8 ä¸ªåˆ†ç»„ï¼š1,2,3,4,5,6,7,8ã€‚
+#define APPLICATION_REGISTER_COMMAND(name, action, group) const static Application_CommandType mAPP_Command_##action##_##group __attribute__((used, __section__(".app_command." #group))) = {name, action}
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 1 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND1(name, action) APPLICATION_REGISTER_COMMAND(name, action, 11)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 2 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 2 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND2(name, action) APPLICATION_REGISTER_COMMAND(name, action, 21)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 3 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 3 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND3(name, action) APPLICATION_REGISTER_COMMAND(name, action, 31)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 4 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 4 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND4(name, action) APPLICATION_REGISTER_COMMAND(name, action, 41)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 5 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 5 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND5(name, action) APPLICATION_REGISTER_COMMAND(name, action, 51)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 6 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 6 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND6(name, action) APPLICATION_REGISTER_COMMAND(name, action, 61)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 7 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 7 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND7(name, action) APPLICATION_REGISTER_COMMAND(name, action, 71)
-/// @brief ÏòÓ¦ÓÃ³ÌÐò×¢²á·Ö×éÎª 8 µÄÃüÁîº¯Êý¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param action ÃüÁîº¯Êý¡£
+/// @brief å‘åº”ç”¨ç¨‹åºæ³¨å†Œåˆ†ç»„ä¸º 8 çš„å‘½ä»¤å‡½æ•°ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param action å‘½ä»¤å‡½æ•°ã€‚
 #define APPLICATION_REGISTER_COMMAND8(name, action) APPLICATION_REGISTER_COMMAND(name, action, 81)
 
-/// @brief ¸ù¾ÝÃüÁîÃû³ÆÖ´ÐÐÃüÁîº¯Êý¡£
-/// @prarm group ·Ö×é¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param parameter ÃüÁî¹ØÁª²ÎÊý¡£
-/// @return ·µ»ØÃüÁîÊÇ·ñ³É¹¦Ö´ÐÐ¡£
+/// @brief æ ¹æ®å‘½ä»¤åç§°æ‰§è¡Œå‘½ä»¤å‡½æ•°ã€‚
+/// @prarm group åˆ†ç»„ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param parameter å‘½ä»¤å…³è”å‚æ•°ã€‚
+/// @return è¿”å›žå‘½ä»¤æ˜¯å¦æˆåŠŸæ‰§è¡Œã€‚
 bool Application_Execute(uint8_t group, const char *name, void *parameter);
 
 /*APP INVOKER*/
-/// @brief Î¯ÍÐÓ¦ÓÃ³ÌÐòËùÔÚµÄÏß³Ìµ÷ÓÃ¶¯×÷¡£ÔÚÈÎÎñ·±ÖØÇÒµ±Ç°Ïß³Ì(º¬ÖÐ¶Ï)²»ÊÊºÏ´¦ÀíÊ±Ê¹ÓÃ¡£
-/// @param action ¶¯×÷º¯Êý¡£
+/// @brief å§”æ‰˜åº”ç”¨ç¨‹åºæ‰€åœ¨çš„çº¿ç¨‹è°ƒç”¨åŠ¨ä½œã€‚åœ¨ä»»åŠ¡ç¹é‡ä¸”å½“å‰çº¿ç¨‹(å«ä¸­æ–­)ä¸é€‚åˆå¤„ç†æ—¶ä½¿ç”¨ã€‚
+/// @param action åŠ¨ä½œå‡½æ•°ã€‚
 void Application_Invoke(ActionType action);
 #endif
