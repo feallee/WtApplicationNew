@@ -9,8 +9,7 @@
 
 #ifndef __APPLICATION_H_
 #define __APPLICATION_H_
-#include "config.h"
-
+#include "Application_Config.h"
 /*APP ENTRY*/
 /// @brief 应用程序入口类型。
 typedef struct
@@ -19,7 +18,7 @@ typedef struct
     ActionType Action;
 } Application_EntryType;
 /// @brief 向应用程序注册自动执行入口函数。
-/// @param action 入口函数。
+/// @param Action 入口函数。
 /// @param level 执行优先级别。共 8 个级别，执行顺序：1->2->3->4->5->6->7->8。
 #define APPLICATION_REGISTER_ENTRY(action, level) const static Application_EntryType mAPP_Entry_##action##_##level __attribute__((used, __section__(".app_entry." #level))) = {action}
 /// @brief 向应用程序注册优先级别为 1 的自动执行入口函数。
@@ -52,9 +51,9 @@ typedef struct
 typedef struct
 {
     /// @brief 命令名称。
-    char *Name;
+    const char *Name;
     /// @brief 命令函数。
-    ActionVoidType Action;
+    FunctionCommandType Action;
 } Application_CommandType;
 /// @brief 向应用程序注册命令函数。
 /// @param name 命令名称。
@@ -93,15 +92,15 @@ typedef struct
 /// @param name 命令名称。
 /// @param action 命令函数。
 #define APPLICATION_REGISTER_COMMAND8(name, action) APPLICATION_REGISTER_COMMAND(name, action, 81)
-
-/// @brief 根据命令名称执行命令函数。
+/// @brief 获取应用命令。
 /// @prarm group 分组。
 /// @param name 命令名称。
-/// @param parameter 命令关联参数。
-/// @return 返回命令是否成功执行。
-bool Application_Execute(uint8_t group, const char *name, void *parameter);
+/// @return 返回应用命令。
+const Application_CommandType *Application_GetCommand(uint8_t group, const char *name);
 
 /*APP INVOKER*/
+/// @brief 应用程序委托动作函数数量。
+#define APPLICATION_INVOKE_COUNT 8 // TODO 可配置，最小为 1。
 /// @brief 委托应用程序所在的线程调用动作。在任务繁重且当前线程(含中断)不适合处理时使用。
 /// @param action 动作函数。
 void Application_Invoke(ActionType action);

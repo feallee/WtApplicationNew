@@ -3,14 +3,31 @@
 static void ready(void)
 {
     printf("ready!");
-    Application_Execute(1, "CMD1", NULL);
-    Application_Execute(1, "CMD2", NULL);
-    Application_Execute(1, "CMD3", NULL);
-    Application_Execute(1, "CMD4", NULL);
-    Application_Execute(1, "CMD5", NULL);
-    Application_Execute(1, "CMD6", NULL);
-    Application_Execute(1, "CMD7", NULL);
-    Application_Execute(1, "CMD8", NULL);
+    const Application_CommandType *cmd;
+    cmd = Application_GetCommand(1, "CMD1");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD2");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD3");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD4");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD5");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD6");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD7");
+    if (cmd)
+        cmd->Action(0, 0);
+    cmd = Application_GetCommand(1, "CMD8");
+    if (cmd)
+        cmd->Action(0, 0);
 }
 static void entry1(void)
 {

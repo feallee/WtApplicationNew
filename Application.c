@@ -34,9 +34,8 @@ APPLICATION_REGISTER_COMMAND("", NULL, 70);
 APPLICATION_REGISTER_COMMAND("", NULL, 80);
 APPLICATION_REGISTER_COMMAND("", NULL, 90);
 
-bool Application_Execute(uint8_t group, const char *name, void *parameter)
+const Application_CommandType *Application_GetCommand(uint8_t group, const char *name)
 {
-    bool r = false;
     const Application_CommandType *b = NULL, *e = NULL;
     if (group == 1)
     {
@@ -82,12 +81,11 @@ bool Application_Execute(uint8_t group, const char *name, void *parameter)
     {
         if (strcmp(b->Name, name) == 0)
         {
-            b->Action(parameter);
-            r = true;
+            e = b;
             break;
         }
     }
-    return r;
+    return e;
 }
 
 void Application_Invoke(ActionType action)
