@@ -1,37 +1,37 @@
-#include "application.h"
+#include <WtApplication.h>
 
 static void ready(void)
 {
     printf("ready!");
-    const Application_CommandType *cmd;
-    cmd = Application_GetCommand(1, "CMD1");
+    const WtApplication_CommandType *cmd;
+    cmd = WtApplication_GetCommand( "CMD1",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD2");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD2",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD3");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD3",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD4");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD4",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD5");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD5",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD6");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD6",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD7");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD7",1);
     if (cmd)
-        cmd->Action(0, 0);
-    cmd = Application_GetCommand(1, "CMD8");
+        cmd->Command(0, 0);
+    cmd = WtApplication_GetCommand( "CMD8",1);
     if (cmd)
-        cmd->Action(0, 0);
+        cmd->Command(0, 0);
 }
 static void entry1(void)
 {
-    printf(VERSION_FULL);
+    printf(WT_VERSION_FULL);
 }
 static void entry2(void)
 {
@@ -53,47 +53,55 @@ static void entry7(void)
 }
 static void entry8(void)
 {
-    Application_Invoke(ready);
+    WtApplication_Invoke(ready);
 }
-APPLICATION_REGISTER_ENTRY1(entry1);
-APPLICATION_REGISTER_ENTRY2(entry2);
-APPLICATION_REGISTER_ENTRY3(entry3);
-APPLICATION_REGISTER_ENTRY4(entry4);
-APPLICATION_REGISTER_ENTRY5(entry5);
-APPLICATION_REGISTER_ENTRY6(entry6);
-APPLICATION_REGISTER_ENTRY7(entry7);
-APPLICATION_REGISTER_ENTRY8(entry8);
+WT_APPLICATION_REGISTER_ENTRY1(entry1);
+WT_APPLICATION_REGISTER_ENTRY2(entry2);
+WT_APPLICATION_REGISTER_ENTRY3(entry3);
+WT_APPLICATION_REGISTER_ENTRY4(entry4);
+WT_APPLICATION_REGISTER_ENTRY5(entry5);
+WT_APPLICATION_REGISTER_ENTRY6(entry6);
+WT_APPLICATION_REGISTER_ENTRY7(entry7);
+WT_APPLICATION_REGISTER_ENTRY8(entry8);
 
-static void cmd1(void *parameter)
+static int cmd1(int sender,void *parameter)
 {
-    printf(VERSION_FULL);
+    printf(WT_VERSION_TINY);
+    return 0;
 }
-static void cmd2(void *parameter)
+static int cmd2(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd3(void *parameter)
+static int cmd3(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd4(void *parameter)
+static int cmd4(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd5(void *parameter)
+static int cmd5(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd6(void *parameter)
+static int cmd6(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd7(void *parameter)
+static int cmd7(int sender,void *parameter)
 {
+    return 0;
 }
-static void cmd8(void *parameter)
+static int cmd8(int sender,void *parameter)
 {
+    return 0;
 }
-APPLICATION_REGISTER_COMMAND1("CMD1", cmd1);
-APPLICATION_REGISTER_COMMAND1("CMD2", cmd2);
-APPLICATION_REGISTER_COMMAND1("CMD3", cmd3);
-APPLICATION_REGISTER_COMMAND1("CMD4", cmd4);
-APPLICATION_REGISTER_COMMAND1("CMD5", cmd5);
-APPLICATION_REGISTER_COMMAND1("CMD6", cmd6);
-APPLICATION_REGISTER_COMMAND1("CMD7", cmd7);
-APPLICATION_REGISTER_COMMAND1("CMD8", cmd8);
+WT_APPLICATION_REGISTER_COMMAND1("CMD1", cmd1);
+WT_APPLICATION_REGISTER_COMMAND1("CMD2", cmd2);
+WT_APPLICATION_REGISTER_COMMAND1("CMD3", cmd3);
+WT_APPLICATION_REGISTER_COMMAND1("CMD4", cmd4);
+WT_APPLICATION_REGISTER_COMMAND1("CMD5", cmd5);
+WT_APPLICATION_REGISTER_COMMAND1("CMD6", cmd6);
+WT_APPLICATION_REGISTER_COMMAND1("CMD7", cmd7);
+WT_APPLICATION_REGISTER_COMMAND1("CMD8", cmd8);
