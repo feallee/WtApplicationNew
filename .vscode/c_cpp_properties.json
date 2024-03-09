@@ -1,0 +1,53 @@
+{
+    "configurations": [
+        {
+            "intelliSenseMode": "clang-x64",
+            "name": "Win32",
+            "cppStandard": "c++11",
+            "cStandard": "c99",
+            "compilerPath": "C:/RT-ThreadStudio/platform/env_released/env/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc",
+            "includePath": [
+                "C:/RT-ThreadStudio/workspace/A9",
+                "C:/RT-ThreadStudio/workspace/A9/applications",
+                "C:/RT-ThreadStudio/workspace/A9/drivers",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/cplusplus",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/dfs/filesystems/devfs",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/dfs/filesystems/elmfat",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/dfs/filesystems/ramfs",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/dfs/filesystems/romfs",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/dfs/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/drivers/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/drivers/spi",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/drivers/spi/sfud/inc",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/finsh",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/aio",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/compilers/newlib",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/mmap",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/pthreads",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/signal",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/termios",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/libc/time",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/lwp",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/lwip-2.0.2/src",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/lwip-2.0.2/src/arch/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/lwip-2.0.2/src/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/lwip-2.0.2/src/include/ipv4",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/lwip-2.0.2/src/include/netif",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/netdev/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/sal_socket/impl",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/sal_socket/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/sal_socket/include/dfs_net",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/sal_socket/include/socket",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/components/net/sal_socket/include/socket/sys_socket",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/include",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/libcpu/arm/common",
+                "C:/RT-ThreadStudio/workspace/A9/rt-thread/libcpu/arm/cortex-a"
+            ],
+            "defines": [
+                "HAVE_CCONFIG_H",
+                "RT_USING_NEWLIB"
+            ]
+        }
+    ],
+    "version": 4
+}
