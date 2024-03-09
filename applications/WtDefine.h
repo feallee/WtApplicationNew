@@ -30,8 +30,10 @@ typedef void (*WtActionType)(void);
 typedef int (*WtCommandType)(int sender, void *parameter);
 
 /*应用程序命令源相关，最多支持 32 条*/
+/// @brief 未知命令源。
+#define WT_APPLICATION_COMMAND_SENDER_UNKNOWN 0x00000000
 /// @brief 所有命令源。
-#define WT_APPLICATION_COMMAND_SENDER_ALL 0x00000000
+#define WT_APPLICATION_COMMAND_SENDER_ALL 0xFFFFFFFF
 /// @brief 命令源为控制台。
 #define WT_APPLICATION_COMMAND_SENDER_CONSOLE 0x00000001
 /// @brief 命令源为网络。
