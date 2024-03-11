@@ -291,7 +291,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\applications\lcd_init.o
  .debug_line    0x00000000       0x1d build\applications\lcd_init.o
- .debug_str     0x00000000      0x156 build\applications\lcd_init.o
+ .debug_str     0x00000000      0x153 build\applications\lcd_init.o
  .comment       0x00000000       0x6f build\applications\lcd_init.o
  .ARM.attributes
                 0x00000000       0x2f build\applications\lcd_init.o
@@ -308,7 +308,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\drivers\drv_keyboard.o
  .debug_line    0x00000000       0x1d build\drivers\drv_keyboard.o
- .debug_str     0x00000000      0x155 build\drivers\drv_keyboard.o
+ .debug_str     0x00000000      0x152 build\drivers\drv_keyboard.o
  .comment       0x00000000       0x6f build\drivers\drv_keyboard.o
  .ARM.attributes
                 0x00000000       0x2f build\drivers\drv_keyboard.o
@@ -320,7 +320,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\drivers\drv_mouse.o
  .debug_line    0x00000000       0x1d build\drivers\drv_mouse.o
- .debug_str     0x00000000      0x152 build\drivers\drv_mouse.o
+ .debug_str     0x00000000      0x14f build\drivers\drv_mouse.o
  .comment       0x00000000       0x6f build\drivers\drv_mouse.o
  .ARM.attributes
                 0x00000000       0x2f build\drivers\drv_mouse.o
@@ -361,7 +361,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\libcpu\arm\common\backtrace.o
  .debug_line    0x00000000       0x9a build\kernel\libcpu\arm\common\backtrace.o
- .debug_str     0x00000000      0x19a build\kernel\libcpu\arm\common\backtrace.o
+ .debug_str     0x00000000      0x197 build\kernel\libcpu\arm\common\backtrace.o
  .comment       0x00000000       0x6f build\kernel\libcpu\arm\common\backtrace.o
  .debug_frame   0x00000000       0x30 build\kernel\libcpu\arm\common\backtrace.o
  .ARM.attributes
@@ -375,7 +375,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\libcpu\arm\common\div0.o
  .debug_line    0x00000000       0x57 build\kernel\libcpu\arm\common\div0.o
- .debug_str     0x00000000       0xca build\kernel\libcpu\arm\common\div0.o
+ .debug_str     0x00000000       0xc7 build\kernel\libcpu\arm\common\div0.o
  .comment       0x00000000       0x6f build\kernel\libcpu\arm\common\div0.o
  .debug_frame   0x00000000       0x28 build\kernel\libcpu\arm\common\div0.o
  .ARM.attributes
@@ -390,7 +390,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\libcpu\arm\common\showmem.o
  .debug_line    0x00000000       0xa3 build\kernel\libcpu\arm\common\showmem.o
- .debug_str     0x00000000      0x199 build\kernel\libcpu\arm\common\showmem.o
+ .debug_str     0x00000000      0x196 build\kernel\libcpu\arm\common\showmem.o
  .comment       0x00000000       0x6f build\kernel\libcpu\arm\common\showmem.o
  .debug_frame   0x00000000       0x30 build\kernel\libcpu\arm\common\showmem.o
  .ARM.attributes
@@ -404,7 +404,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\libcpu\arm\cortex-a\cache.o
  .debug_line    0x00000000       0xbb build\kernel\libcpu\arm\cortex-a\cache.o
- .debug_str     0x00000000      0x2b4 build\kernel\libcpu\arm\cortex-a\cache.o
+ .debug_str     0x00000000      0x2b1 build\kernel\libcpu\arm\cortex-a\cache.o
  .comment       0x00000000       0x6f build\kernel\libcpu\arm\cortex-a\cache.o
  .debug_frame   0x00000000      0x130 build\kernel\libcpu\arm\cortex-a\cache.o
  .ARM.attributes
@@ -426,7 +426,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\libcpu\arm\cortex-a\pmu.o
  .debug_line    0x00000000       0x73 build\kernel\libcpu\arm\cortex-a\pmu.o
- .debug_str     0x00000000      0x1a1 build\kernel\libcpu\arm\cortex-a\pmu.o
+ .debug_str     0x00000000      0x19e build\kernel\libcpu\arm\cortex-a\pmu.o
  .comment       0x00000000       0x6f build\kernel\libcpu\arm\cortex-a\pmu.o
  .debug_frame   0x00000000       0x50 build\kernel\libcpu\arm\cortex-a\pmu.o
  .ARM.attributes
@@ -454,7 +454,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\cplusplus\Mutex.o
  .debug_line    0x00000000      0x1c1 build\kernel\components\cplusplus\Mutex.o
- .debug_str     0x00000000      0x50e build\kernel\components\cplusplus\Mutex.o
+ .debug_str     0x00000000      0x50b build\kernel\components\cplusplus\Mutex.o
  .comment       0x00000000       0x6f build\kernel\components\cplusplus\Mutex.o
  .debug_frame   0x00000000       0xb0 build\kernel\components\cplusplus\Mutex.o
  .ARM.attributes
@@ -468,7 +468,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\cplusplus\Semaphore.o
  .debug_line    0x00000000      0x1c6 build\kernel\components\cplusplus\Semaphore.o
- .debug_str     0x00000000      0x367 build\kernel\components\cplusplus\Semaphore.o
+ .debug_str     0x00000000      0x364 build\kernel\components\cplusplus\Semaphore.o
  .comment       0x00000000       0x6f build\kernel\components\cplusplus\Semaphore.o
  .debug_frame   0x00000000       0x90 build\kernel\components\cplusplus\Semaphore.o
  .ARM.attributes
@@ -483,7 +483,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\cplusplus\Thread.o
  .debug_line    0x00000000      0x1f4 build\kernel\components\cplusplus\Thread.o
- .debug_str     0x00000000      0x63e build\kernel\components\cplusplus\Thread.o
+ .debug_str     0x00000000      0x63b build\kernel\components\cplusplus\Thread.o
  .comment       0x00000000       0x6f build\kernel\components\cplusplus\Thread.o
  .debug_frame   0x00000000      0x150 build\kernel\components\cplusplus\Thread.o
  .ARM.attributes
@@ -498,7 +498,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\cplusplus\crt.o
  .debug_line    0x00000000      0x11c build\kernel\components\cplusplus\crt.o
- .debug_str     0x00000000      0x22c build\kernel\components\cplusplus\crt.o
+ .debug_str     0x00000000      0x229 build\kernel\components\cplusplus\crt.o
  .comment       0x00000000       0x6f build\kernel\components\cplusplus\crt.o
  .debug_frame   0x00000000       0xac build\kernel\components\cplusplus\crt.o
  .ARM.attributes
@@ -533,7 +533,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\kernel\components\dfs\filesystems\romfs\romfs.o
  .debug_line    0x00000000       0x7f build\kernel\components\dfs\filesystems\romfs\romfs.o
- .debug_str     0x00000000      0x1f9 build\kernel\components\dfs\filesystems\romfs\romfs.o
+ .debug_str     0x00000000      0x1f6 build\kernel\components\dfs\filesystems\romfs\romfs.o
  .comment       0x00000000       0x6f build\kernel\components\dfs\filesystems\romfs\romfs.o
  .ARM.attributes
                 0x00000000       0x2f build\kernel\components\dfs\filesystems\romfs\romfs.o
@@ -570,7 +570,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\kernel\components\libc\compilers\newlib\libc_syms.o
  .debug_line    0x00000000       0x1d build\kernel\components\libc\compilers\newlib\libc_syms.o
- .debug_str     0x00000000      0x175 build\kernel\components\libc\compilers\newlib\libc_syms.o
+ .debug_str     0x00000000      0x172 build\kernel\components\libc\compilers\newlib\libc_syms.o
  .comment       0x00000000       0x6f build\kernel\components\libc\compilers\newlib\libc_syms.o
  .ARM.attributes
                 0x00000000       0x2f build\kernel\components\libc\compilers\newlib\libc_syms.o
@@ -587,7 +587,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\mmap\posix_mmap.o
  .debug_line    0x00000000      0x252 build\kernel\components\libc\mmap\posix_mmap.o
- .debug_str     0x00000000      0x1cd build\kernel\components\libc\mmap\posix_mmap.o
+ .debug_str     0x00000000      0x1ca build\kernel\components\libc\mmap\posix_mmap.o
  .comment       0x00000000       0x6f build\kernel\components\libc\mmap\posix_mmap.o
  .debug_frame   0x00000000       0x50 build\kernel\components\libc\mmap\posix_mmap.o
  .ARM.attributes
@@ -605,7 +605,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\pthread_barrier.o
  .debug_line    0x00000000       0xcb build\kernel\components\libc\pthreads\pthread_barrier.o
- .debug_str     0x00000000      0x54f build\kernel\components\libc\pthreads\pthread_barrier.o
+ .debug_str     0x00000000      0x54c build\kernel\components\libc\pthreads\pthread_barrier.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\pthread_barrier.o
  .debug_frame   0x00000000       0xf0 build\kernel\components\libc\pthreads\pthread_barrier.o
  .ARM.attributes
@@ -620,7 +620,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\pthread_cond.o
  .debug_line    0x00000000      0x1d9 build\kernel\components\libc\pthreads\pthread_cond.o
- .debug_str     0x00000000      0x74a build\kernel\components\libc\pthreads\pthread_cond.o
+ .debug_str     0x00000000      0x747 build\kernel\components\libc\pthreads\pthread_cond.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\pthread_cond.o
  .debug_frame   0x00000000      0x1b4 build\kernel\components\libc\pthreads\pthread_cond.o
  .ARM.attributes
@@ -635,7 +635,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\pthread_mutex.o
  .debug_line    0x00000000      0x13f build\kernel\components\libc\pthreads\pthread_mutex.o
- .debug_str     0x00000000      0x73b build\kernel\components\libc\pthreads\pthread_mutex.o
+ .debug_str     0x00000000      0x738 build\kernel\components\libc\pthreads\pthread_mutex.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\pthread_mutex.o
  .debug_frame   0x00000000      0x17c build\kernel\components\libc\pthreads\pthread_mutex.o
  .ARM.attributes
@@ -649,7 +649,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\pthread_rwlock.o
  .debug_line    0x00000000      0x21a build\kernel\components\libc\pthreads\pthread_rwlock.o
- .debug_str     0x00000000      0x642 build\kernel\components\libc\pthreads\pthread_rwlock.o
+ .debug_str     0x00000000      0x63f build\kernel\components\libc\pthreads\pthread_rwlock.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\pthread_rwlock.o
  .debug_frame   0x00000000      0x1b0 build\kernel\components\libc\pthreads\pthread_rwlock.o
  .ARM.attributes
@@ -663,7 +663,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\pthread_spin.o
  .debug_line    0x00000000       0x8f build\kernel\components\libc\pthreads\pthread_spin.o
- .debug_str     0x00000000      0x203 build\kernel\components\libc\pthreads\pthread_spin.o
+ .debug_str     0x00000000      0x200 build\kernel\components\libc\pthreads\pthread_spin.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\pthread_spin.o
  .debug_frame   0x00000000       0xb0 build\kernel\components\libc\pthreads\pthread_spin.o
  .ARM.attributes
@@ -679,7 +679,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\pthreads\sched.o
  .debug_line    0x00000000      0x11f build\kernel\components\libc\pthreads\sched.o
- .debug_str     0x00000000      0x1ff build\kernel\components\libc\pthreads\sched.o
+ .debug_str     0x00000000      0x1fc build\kernel\components\libc\pthreads\sched.o
  .comment       0x00000000       0x6f build\kernel\components\libc\pthreads\sched.o
  .debug_frame   0x00000000       0x8c build\kernel\components\libc\pthreads\sched.o
  .ARM.attributes
@@ -699,7 +699,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\libc\time\posix_sleep.o
  .debug_line    0x00000000      0x10f build\kernel\components\libc\time\posix_sleep.o
- .debug_str     0x00000000      0x19a build\kernel\components\libc\time\posix_sleep.o
+ .debug_str     0x00000000      0x197 build\kernel\components\libc\time\posix_sleep.o
  .comment       0x00000000       0x6f build\kernel\components\libc\time\posix_sleep.o
  .debug_frame   0x00000000       0x30 build\kernel\components\libc\time\posix_sleep.o
  .ARM.attributes
@@ -750,7 +750,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\kernel\components\net\lwip-2.0.2\src\core\stats.o
  .debug_line    0x00000000       0x1d build\kernel\components\net\lwip-2.0.2\src\core\stats.o
- .debug_str     0x00000000      0x173 build\kernel\components\net\lwip-2.0.2\src\core\stats.o
+ .debug_str     0x00000000      0x170 build\kernel\components\net\lwip-2.0.2\src\core\stats.o
  .comment       0x00000000       0x6f build\kernel\components\net\lwip-2.0.2\src\core\stats.o
  .ARM.attributes
                 0x00000000       0x2f build\kernel\components\net\lwip-2.0.2\src\core\stats.o
@@ -763,7 +763,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\net\lwip-2.0.2\src\core\sys.o
  .debug_line    0x00000000      0x245 build\kernel\components\net\lwip-2.0.2\src\core\sys.o
- .debug_str     0x00000000      0x305 build\kernel\components\net\lwip-2.0.2\src\core\sys.o
+ .debug_str     0x00000000      0x302 build\kernel\components\net\lwip-2.0.2\src\core\sys.o
  .comment       0x00000000       0x6f build\kernel\components\net\lwip-2.0.2\src\core\sys.o
  .debug_frame   0x00000000       0x30 build\kernel\components\net\lwip-2.0.2\src\core\sys.o
  .ARM.attributes
@@ -784,7 +784,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
  .debug_line    0x00000000       0x1d build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
- .debug_str     0x00000000      0x176 build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
+ .debug_str     0x00000000      0x173 build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
  .comment       0x00000000       0x6f build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
  .ARM.attributes
                 0x00000000       0x2f build\kernel\components\net\lwip-2.0.2\src\netif\lowpan6.o
@@ -796,7 +796,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
  .debug_line    0x00000000       0x1d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
- .debug_str     0x00000000      0x179 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
+ .debug_str     0x00000000      0x176 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
  .comment       0x00000000       0x6f build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
  .ARM.attributes
                 0x00000000       0x2f build\kernel\components\net\lwip-2.0.2\src\core\ipv4\autoip.o
@@ -821,7 +821,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\net\sal_socket\socket\net_netdb.o
  .debug_line    0x00000000      0x287 build\kernel\components\net\sal_socket\socket\net_netdb.o
- .debug_str     0x00000000      0x2da build\kernel\components\net\sal_socket\socket\net_netdb.o
+ .debug_str     0x00000000      0x2d7 build\kernel\components\net\sal_socket\socket\net_netdb.o
  .comment       0x00000000       0x6f build\kernel\components\net\sal_socket\socket\net_netdb.o
  .debug_frame   0x00000000       0x90 build\kernel\components\net\sal_socket\socket\net_netdb.o
  .ARM.attributes
@@ -846,7 +846,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\i2c\i2c-bit-ops.o
  .debug_line    0x00000000      0x24c build\kernel\components\drivers\i2c\i2c-bit-ops.o
- .debug_str     0x00000000      0x871 build\kernel\components\drivers\i2c\i2c-bit-ops.o
+ .debug_str     0x00000000      0x86e build\kernel\components\drivers\i2c\i2c-bit-ops.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\i2c\i2c-bit-ops.o
  .debug_frame   0x00000000      0x214 build\kernel\components\drivers\i2c\i2c-bit-ops.o
  .ARM.attributes
@@ -862,7 +862,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\mtd\mtd_nor.o
  .debug_line    0x00000000       0xd6 build\kernel\components\drivers\mtd\mtd_nor.o
- .debug_str     0x00000000      0x5b5 build\kernel\components\drivers\mtd\mtd_nor.o
+ .debug_str     0x00000000      0x5b2 build\kernel\components\drivers\mtd\mtd_nor.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\mtd\mtd_nor.o
  .debug_frame   0x00000000       0xf0 build\kernel\components\drivers\mtd\mtd_nor.o
  .ARM.attributes
@@ -895,7 +895,7 @@ Discarded input sections
                 0x00000000       0x20 build\kernel\components\drivers\spi\spi_msd.o
  .debug_ranges  0x00000000       0x48 build\kernel\components\drivers\spi\spi_msd.o
  .debug_line    0x00000000      0x625 build\kernel\components\drivers\spi\spi_msd.o
- .debug_str     0x00000000      0xb04 build\kernel\components\drivers\spi\spi_msd.o
+ .debug_str     0x00000000      0xb01 build\kernel\components\drivers\spi\spi_msd.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\spi\spi_msd.o
  .debug_frame   0x00000000      0x248 build\kernel\components\drivers\spi\spi_msd.o
  .ARM.attributes
@@ -916,7 +916,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\src\dataqueue.o
  .debug_line    0x00000000      0x1e2 build\kernel\components\drivers\src\dataqueue.o
- .debug_str     0x00000000      0x4e5 build\kernel\components\drivers\src\dataqueue.o
+ .debug_str     0x00000000      0x4e2 build\kernel\components\drivers\src\dataqueue.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\src\dataqueue.o
  .debug_frame   0x00000000      0x120 build\kernel\components\drivers\src\dataqueue.o
  .ARM.attributes
@@ -932,7 +932,7 @@ Discarded input sections
                 0x00000000       0x20 build\kernel\components\drivers\src\pipe.o
  .debug_ranges  0x00000000       0x30 build\kernel\components\drivers\src\pipe.o
  .debug_line    0x00000000      0x4b5 build\kernel\components\drivers\src\pipe.o
- .debug_str     0x00000000      0xb51 build\kernel\components\drivers\src\pipe.o
+ .debug_str     0x00000000      0xb4e build\kernel\components\drivers\src\pipe.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\src\pipe.o
  .debug_frame   0x00000000      0x25c build\kernel\components\drivers\src\pipe.o
  .ARM.attributes
@@ -947,7 +947,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\src\ringblk_buf.o
  .debug_line    0x00000000      0x346 build\kernel\components\drivers\src\ringblk_buf.o
- .debug_str     0x00000000      0x4d3 build\kernel\components\drivers\src\ringblk_buf.o
+ .debug_str     0x00000000      0x4d0 build\kernel\components\drivers\src\ringblk_buf.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\src\ringblk_buf.o
  .debug_frame   0x00000000      0x314 build\kernel\components\drivers\src\ringblk_buf.o
  .ARM.attributes
@@ -962,7 +962,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\src\ringbuffer.o
  .debug_line    0x00000000      0x1d9 build\kernel\components\drivers\src\ringbuffer.o
- .debug_str     0x00000000      0x386 build\kernel\components\drivers\src\ringbuffer.o
+ .debug_str     0x00000000      0x383 build\kernel\components\drivers\src\ringbuffer.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\src\ringbuffer.o
  .debug_frame   0x00000000      0x1a0 build\kernel\components\drivers\src\ringbuffer.o
  .ARM.attributes
@@ -980,7 +980,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x20 build\kernel\components\drivers\watchdog\watchdog.o
  .debug_line    0x00000000       0xf9 build\kernel\components\drivers\watchdog\watchdog.o
- .debug_str     0x00000000      0x588 build\kernel\components\drivers\watchdog\watchdog.o
+ .debug_str     0x00000000      0x585 build\kernel\components\drivers\watchdog\watchdog.o
  .comment       0x00000000       0x6f build\kernel\components\drivers\watchdog\watchdog.o
  .debug_frame   0x00000000       0xb0 build\kernel\components\drivers\watchdog\watchdog.o
  .ARM.attributes
@@ -4959,7 +4959,7 @@ OUTPUT(rtthread.elf elf32-littlearm)
  .ARM.attributes
                 0x0000273d       0x29 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-ar/thumb\libgcc.a(_udivmoddi4.o)
 
-.debug_info     0x00000000    0x6cd2d
+.debug_info     0x00000000    0x6cd1e
  .debug_info    0x00000000      0x488 build\applications\WtApplication.o
  .debug_info    0x00000488       0xc9 build\applications\mnt.o
  .debug_info    0x00000551      0x4de build\applications\test.o
@@ -4991,114 +4991,114 @@ OUTPUT(rtthread.elf elf32-littlearm)
  .debug_info    0x0000f20e      0x2d2 build\kernel\libcpu\arm\cortex-a\mmu.o
  .debug_info    0x0000f4e0      0x10a build\kernel\libcpu\arm\cortex-a\stack.o
  .debug_info    0x0000f5ea      0x3a7 build\kernel\libcpu\arm\cortex-a\trap.o
- .debug_info    0x0000f991       0x70 build\kernel\libcpu\arm\cortex-a\context_gcc.o
- .debug_info    0x0000fa01       0x71 build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
- .debug_info    0x0000fa72       0x6e build\kernel\libcpu\arm\cortex-a\start_gcc.o
- .debug_info    0x0000fae0       0x73 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
- .debug_info    0x0000fb53      0x175 build\kernel\components\cplusplus\crt_init.o
- .debug_info    0x0000fcc8     0x1573 build\kernel\components\dfs\src\dfs.o
- .debug_info    0x0001123b     0x146d build\kernel\components\dfs\src\dfs_file.o
- .debug_info    0x000126a8     0x11ff build\kernel\components\dfs\src\dfs_fs.o
- .debug_info    0x000138a7     0x1526 build\kernel\components\dfs\src\dfs_posix.o
- .debug_info    0x00014dcd     0x1274 build\kernel\components\dfs\src\poll.o
- .debug_info    0x00016041      0x2a2 build\kernel\components\dfs\src\select.o
- .debug_info    0x000162e3     0x10d7 build\kernel\components\dfs\filesystems\devfs\devfs.o
- .debug_info    0x000173ba     0x2299 build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
- .debug_info    0x00019653     0x2707 build\kernel\components\dfs\filesystems\elmfat\ff.o
- .debug_info    0x0001bd5a      0x1c8 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
- .debug_info    0x0001bf22     0x1543 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
- .debug_info    0x0001d465     0x1023 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
- .debug_info    0x0001e488     0x15e1 build\kernel\components\finsh\shell.o
- .debug_info    0x0001fa69     0x218e build\kernel\components\finsh\cmd.o
- .debug_info    0x00021bf7      0x9b4 build\kernel\components\finsh\msh.o
- .debug_info    0x000225ab      0x93a build\kernel\components\finsh\msh_file.o
- .debug_info    0x00022ee5      0x597 build\kernel\components\finsh\finsh_compiler.o
- .debug_info    0x0002347c      0x163 build\kernel\components\finsh\finsh_error.o
- .debug_info    0x000235df      0x429 build\kernel\components\finsh\finsh_heap.o
- .debug_info    0x00023a08      0x493 build\kernel\components\finsh\finsh_init.o
- .debug_info    0x00023e9b      0x49e build\kernel\components\finsh\finsh_node.o
- .debug_info    0x00024339      0x64b build\kernel\components\finsh\finsh_ops.o
- .debug_info    0x00024984      0xbff build\kernel\components\finsh\finsh_parser.o
- .debug_info    0x00025583      0x3e1 build\kernel\components\finsh\finsh_var.o
- .debug_info    0x00025964      0x2f0 build\kernel\components\finsh\finsh_vm.o
- .debug_info    0x00025c54      0x6e0 build\kernel\components\finsh\finsh_token.o
- .debug_info    0x00026334      0xbde build\kernel\components\libc\aio\posix_aio.o
- .debug_info    0x00026f12      0x4c0 build\kernel\components\libc\compilers\newlib\libc.o
- .debug_info    0x000273d2      0xa12 build\kernel\components\libc\compilers\newlib\stdio.o
- .debug_info    0x00027de4     0x186c build\kernel\components\libc\compilers\newlib\syscalls.o
- .debug_info    0x00029650      0x5ab build\kernel\components\libc\compilers\newlib\time.o
- .debug_info    0x00029bfb      0x8af build\kernel\components\libc\pthreads\mqueue.o
- .debug_info    0x0002a4aa     0x100b build\kernel\components\libc\pthreads\pthread.o
- .debug_info    0x0002b4b5      0x729 build\kernel\components\libc\pthreads\pthread_attr.o
- .debug_info    0x0002bbde      0x828 build\kernel\components\libc\pthreads\pthread_tls.o
- .debug_info    0x0002c406      0x6a2 build\kernel\components\libc\pthreads\semaphore.o
- .debug_info    0x0002caa8      0x786 build\kernel\components\libc\signal\posix_signal.o
- .debug_info    0x0002d22e      0x3e6 build\kernel\components\libc\termios\posix_termios.o
- .debug_info    0x0002d614      0x72c build\kernel\components\libc\time\clock_time.o
- .debug_info    0x0002dd40     0x12b5 build\kernel\components\lwp\lwp.o
- .debug_info    0x0002eff5      0x7a1 build\kernel\components\lwp\lwp_mem.o
- .debug_info    0x0002f796      0x628 build\kernel\components\lwp\lwp_memheap.o
- .debug_info    0x0002fdbe     0x160e build\kernel\components\lwp\lwp_syscall.o
- .debug_info    0x000313cc       0x7d build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
- .debug_info    0x00031449     0x1a95 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
- .debug_info    0x00032ede     0x1952 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
- .debug_info    0x00034830     0x234a build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
- .debug_info    0x00036b7a      0x105 build\kernel\components\net\lwip-2.0.2\src\api\err.o
- .debug_info    0x00036c7f      0x54e build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
- .debug_info    0x000371cd      0x7bd build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
- .debug_info    0x0003798a      0x7cd build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
- .debug_info    0x00038157     0x3081 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
- .debug_info    0x0003b1d8      0xf53 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
- .debug_info    0x0003c12b      0x349 build\kernel\components\net\lwip-2.0.2\src\core\def.o
- .debug_info    0x0003c474     0x1144 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
- .debug_info    0x0003d5b8      0x5f5 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
- .debug_info    0x0003dbad       0xb1 build\kernel\components\net\lwip-2.0.2\src\core\init.o
- .debug_info    0x0003dc5e      0x5c3 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
- .debug_info    0x0003e221      0xa3d build\kernel\components\net\lwip-2.0.2\src\core\memp.o
- .debug_info    0x0003ec5e      0x971 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
- .debug_info    0x0003f5cf     0x14e7 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
- .debug_info    0x00040ab6      0xaf1 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
- .debug_info    0x000415a7     0x1bcf build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
- .debug_info    0x00043176     0x123b build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
- .debug_info    0x000443b1     0x1542 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
- .debug_info    0x000458f3     0x113e build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
- .debug_info    0x00046a31      0xe16 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
- .debug_info    0x00047847      0x737 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
- .debug_info    0x00047f7e     0x276d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
- .debug_info    0x0004a6eb     0x1767 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
- .debug_info    0x0004be52      0xee0 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
- .debug_info    0x0004cd32      0x88d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
- .debug_info    0x0004d5bf      0xc2c build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
- .debug_info    0x0004e1eb      0xbc3 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
- .debug_info    0x0004edae      0x763 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
- .debug_info    0x0004f511      0xc9d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
- .debug_info    0x000501ae      0x5f6 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
- .debug_info    0x000507a4     0x22a9 build\kernel\components\net\netdev\src\netdev.o
- .debug_info    0x00052a4d      0x3f8 build\kernel\components\net\netdev\src\netdev_ipaddr.o
- .debug_info    0x00052e45     0x28fb build\kernel\components\net\sal_socket\src\sal_socket.o
- .debug_info    0x00055740     0x1cb3 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
- .debug_info    0x000573f3     0x1200 build\kernel\components\net\sal_socket\socket\net_sockets.o
- .debug_info    0x000585f3      0xd4f build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
- .debug_info    0x00059342      0xb7b build\kernel\components\drivers\i2c\i2c_core.o
- .debug_info    0x00059ebd      0xba7 build\kernel\components\drivers\i2c\i2c_dev.o
- .debug_info    0x0005aa64      0xb9f build\kernel\components\drivers\misc\pin.o
- .debug_info    0x0005b603      0xffd build\kernel\components\drivers\mtd\mtd_nand.o
- .debug_info    0x0005c600      0x903 build\kernel\components\drivers\rtc\rtc.o
- .debug_info    0x0005cf03      0x66a build\kernel\components\drivers\rtc\soft_rtc.o
- .debug_info    0x0005d56d     0x1761 build\kernel\components\drivers\sdio\block_dev.o
- .debug_info    0x0005ecce     0x16ed build\kernel\components\drivers\sdio\mmcsd_core.o
- .debug_info    0x000603bb     0x13c2 build\kernel\components\drivers\sdio\sd.o
- .debug_info    0x0006177d     0x21d1 build\kernel\components\drivers\sdio\sdio.o
- .debug_info    0x0006394e     0x134f build\kernel\components\drivers\sdio\mmc.o
- .debug_info    0x00064c9d     0x1aee build\kernel\components\drivers\serial\serial.o
- .debug_info    0x0006678b      0xed0 build\kernel\components\drivers\spi\spi_core.o
- .debug_info    0x0006765b      0xd1a build\kernel\components\drivers\spi\spi_dev.o
- .debug_info    0x00068375     0x1873 build\kernel\components\drivers\spi\spi_flash_sfud.o
- .debug_info    0x00069be8      0xeb0 build\kernel\components\drivers\spi\sfud\src\sfud.o
- .debug_info    0x0006aa98      0x726 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
- .debug_info    0x0006b1be      0x665 build\kernel\components\drivers\src\completion.o
- .debug_info    0x0006b823      0x7bf build\kernel\components\drivers\src\waitqueue.o
- .debug_info    0x0006bfe2      0xd4b build\kernel\components\drivers\src\workqueue.o
+ .debug_info    0x0000f991       0x6d build\kernel\libcpu\arm\cortex-a\context_gcc.o
+ .debug_info    0x0000f9fe       0x6e build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
+ .debug_info    0x0000fa6c       0x6b build\kernel\libcpu\arm\cortex-a\start_gcc.o
+ .debug_info    0x0000fad7       0x70 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
+ .debug_info    0x0000fb47      0x175 build\kernel\components\cplusplus\crt_init.o
+ .debug_info    0x0000fcbc     0x1573 build\kernel\components\dfs\src\dfs.o
+ .debug_info    0x0001122f     0x146d build\kernel\components\dfs\src\dfs_file.o
+ .debug_info    0x0001269c     0x11ff build\kernel\components\dfs\src\dfs_fs.o
+ .debug_info    0x0001389b     0x1526 build\kernel\components\dfs\src\dfs_posix.o
+ .debug_info    0x00014dc1     0x1274 build\kernel\components\dfs\src\poll.o
+ .debug_info    0x00016035      0x2a2 build\kernel\components\dfs\src\select.o
+ .debug_info    0x000162d7     0x10d7 build\kernel\components\dfs\filesystems\devfs\devfs.o
+ .debug_info    0x000173ae     0x2299 build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+ .debug_info    0x00019647     0x2707 build\kernel\components\dfs\filesystems\elmfat\ff.o
+ .debug_info    0x0001bd4e      0x1c8 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+ .debug_info    0x0001bf16     0x1543 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+ .debug_info    0x0001d459     0x1023 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+ .debug_info    0x0001e47c     0x15e1 build\kernel\components\finsh\shell.o
+ .debug_info    0x0001fa5d     0x218e build\kernel\components\finsh\cmd.o
+ .debug_info    0x00021beb      0x9b4 build\kernel\components\finsh\msh.o
+ .debug_info    0x0002259f      0x93a build\kernel\components\finsh\msh_file.o
+ .debug_info    0x00022ed9      0x597 build\kernel\components\finsh\finsh_compiler.o
+ .debug_info    0x00023470      0x163 build\kernel\components\finsh\finsh_error.o
+ .debug_info    0x000235d3      0x429 build\kernel\components\finsh\finsh_heap.o
+ .debug_info    0x000239fc      0x493 build\kernel\components\finsh\finsh_init.o
+ .debug_info    0x00023e8f      0x49e build\kernel\components\finsh\finsh_node.o
+ .debug_info    0x0002432d      0x64b build\kernel\components\finsh\finsh_ops.o
+ .debug_info    0x00024978      0xbff build\kernel\components\finsh\finsh_parser.o
+ .debug_info    0x00025577      0x3e1 build\kernel\components\finsh\finsh_var.o
+ .debug_info    0x00025958      0x2f0 build\kernel\components\finsh\finsh_vm.o
+ .debug_info    0x00025c48      0x6e0 build\kernel\components\finsh\finsh_token.o
+ .debug_info    0x00026328      0xbde build\kernel\components\libc\aio\posix_aio.o
+ .debug_info    0x00026f06      0x4c0 build\kernel\components\libc\compilers\newlib\libc.o
+ .debug_info    0x000273c6      0xa12 build\kernel\components\libc\compilers\newlib\stdio.o
+ .debug_info    0x00027dd8     0x186c build\kernel\components\libc\compilers\newlib\syscalls.o
+ .debug_info    0x00029644      0x5ab build\kernel\components\libc\compilers\newlib\time.o
+ .debug_info    0x00029bef      0x8af build\kernel\components\libc\pthreads\mqueue.o
+ .debug_info    0x0002a49e     0x100b build\kernel\components\libc\pthreads\pthread.o
+ .debug_info    0x0002b4a9      0x729 build\kernel\components\libc\pthreads\pthread_attr.o
+ .debug_info    0x0002bbd2      0x828 build\kernel\components\libc\pthreads\pthread_tls.o
+ .debug_info    0x0002c3fa      0x6a2 build\kernel\components\libc\pthreads\semaphore.o
+ .debug_info    0x0002ca9c      0x786 build\kernel\components\libc\signal\posix_signal.o
+ .debug_info    0x0002d222      0x3e6 build\kernel\components\libc\termios\posix_termios.o
+ .debug_info    0x0002d608      0x72c build\kernel\components\libc\time\clock_time.o
+ .debug_info    0x0002dd34     0x12b5 build\kernel\components\lwp\lwp.o
+ .debug_info    0x0002efe9      0x7a1 build\kernel\components\lwp\lwp_mem.o
+ .debug_info    0x0002f78a      0x628 build\kernel\components\lwp\lwp_memheap.o
+ .debug_info    0x0002fdb2     0x160e build\kernel\components\lwp\lwp_syscall.o
+ .debug_info    0x000313c0       0x7a build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
+ .debug_info    0x0003143a     0x1a95 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+ .debug_info    0x00032ecf     0x1952 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+ .debug_info    0x00034821     0x234a build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+ .debug_info    0x00036b6b      0x105 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .debug_info    0x00036c70      0x54e build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+ .debug_info    0x000371be      0x7bd build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+ .debug_info    0x0003797b      0x7cd build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+ .debug_info    0x00038148     0x3081 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+ .debug_info    0x0003b1c9      0xf53 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+ .debug_info    0x0003c11c      0x349 build\kernel\components\net\lwip-2.0.2\src\core\def.o
+ .debug_info    0x0003c465     0x1144 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+ .debug_info    0x0003d5a9      0x5f5 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+ .debug_info    0x0003db9e       0xb1 build\kernel\components\net\lwip-2.0.2\src\core\init.o
+ .debug_info    0x0003dc4f      0x5c3 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
+ .debug_info    0x0003e212      0xa3d build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+ .debug_info    0x0003ec4f      0x971 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+ .debug_info    0x0003f5c0     0x14e7 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+ .debug_info    0x00040aa7      0xaf1 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+ .debug_info    0x00041598     0x1bcf build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+ .debug_info    0x00043167     0x123b build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+ .debug_info    0x000443a2     0x1542 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+ .debug_info    0x000458e4     0x113e build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+ .debug_info    0x00046a22      0xe16 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+ .debug_info    0x00047838      0x737 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+ .debug_info    0x00047f6f     0x276d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+ .debug_info    0x0004a6dc     0x1767 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+ .debug_info    0x0004be43      0xee0 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+ .debug_info    0x0004cd23      0x88d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+ .debug_info    0x0004d5b0      0xc2c build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+ .debug_info    0x0004e1dc      0xbc3 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+ .debug_info    0x0004ed9f      0x763 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+ .debug_info    0x0004f502      0xc9d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+ .debug_info    0x0005019f      0x5f6 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+ .debug_info    0x00050795     0x22a9 build\kernel\components\net\netdev\src\netdev.o
+ .debug_info    0x00052a3e      0x3f8 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+ .debug_info    0x00052e36     0x28fb build\kernel\components\net\sal_socket\src\sal_socket.o
+ .debug_info    0x00055731     0x1cb3 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+ .debug_info    0x000573e4     0x1200 build\kernel\components\net\sal_socket\socket\net_sockets.o
+ .debug_info    0x000585e4      0xd4f build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+ .debug_info    0x00059333      0xb7b build\kernel\components\drivers\i2c\i2c_core.o
+ .debug_info    0x00059eae      0xba7 build\kernel\components\drivers\i2c\i2c_dev.o
+ .debug_info    0x0005aa55      0xb9f build\kernel\components\drivers\misc\pin.o
+ .debug_info    0x0005b5f4      0xffd build\kernel\components\drivers\mtd\mtd_nand.o
+ .debug_info    0x0005c5f1      0x903 build\kernel\components\drivers\rtc\rtc.o
+ .debug_info    0x0005cef4      0x66a build\kernel\components\drivers\rtc\soft_rtc.o
+ .debug_info    0x0005d55e     0x1761 build\kernel\components\drivers\sdio\block_dev.o
+ .debug_info    0x0005ecbf     0x16ed build\kernel\components\drivers\sdio\mmcsd_core.o
+ .debug_info    0x000603ac     0x13c2 build\kernel\components\drivers\sdio\sd.o
+ .debug_info    0x0006176e     0x21d1 build\kernel\components\drivers\sdio\sdio.o
+ .debug_info    0x0006393f     0x134f build\kernel\components\drivers\sdio\mmc.o
+ .debug_info    0x00064c8e     0x1aee build\kernel\components\drivers\serial\serial.o
+ .debug_info    0x0006677c      0xed0 build\kernel\components\drivers\spi\spi_core.o
+ .debug_info    0x0006764c      0xd1a build\kernel\components\drivers\spi\spi_dev.o
+ .debug_info    0x00068366     0x1873 build\kernel\components\drivers\spi\spi_flash_sfud.o
+ .debug_info    0x00069bd9      0xeb0 build\kernel\components\drivers\spi\sfud\src\sfud.o
+ .debug_info    0x0006aa89      0x726 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+ .debug_info    0x0006b1af      0x665 build\kernel\components\drivers\src\completion.o
+ .debug_info    0x0006b814      0x7bf build\kernel\components\drivers\src\waitqueue.o
+ .debug_info    0x0006bfd3      0xd4b build\kernel\components\drivers\src\workqueue.o
 
 .debug_abbrev   0x00000000     0xf8fd
  .debug_abbrev  0x00000000      0x11d build\applications\WtApplication.o
@@ -5797,275 +5797,275 @@ OUTPUT(rtthread.elf elf32-littlearm)
  .debug_line    0x0001e530      0x144 build\kernel\components\drivers\src\waitqueue.o
  .debug_line    0x0001e674      0x22c build\kernel\components\drivers\src\workqueue.o
 
-.debug_str      0x00000000    0x1046a
- .debug_str     0x00000000      0x348 build\applications\WtApplication.o
-                                0x3d9 (size before relaxing)
- .debug_str     0x00000348       0x30 build\applications\mnt.o
-                                0x177 (size before relaxing)
- .debug_str     0x00000378      0x1c3 build\applications\test.o
-                                0x371 (size before relaxing)
- .debug_str     0x0000053b       0x8b build\drivers\board.o
-                                0x1d7 (size before relaxing)
- .debug_str     0x000005c6      0x70b build\drivers\drv_sdio.o
-                                0xa56 (size before relaxing)
- .debug_str     0x00000cd1      0x78b build\drivers\drv_smc911x.o
-                                0xb29 (size before relaxing)
- .debug_str     0x0000145c       0x5b build\drivers\drv_timer.o
-                                0x1f2 (size before relaxing)
- .debug_str     0x000014b7       0xb3 build\drivers\secondary_cpu.o
-                                0x222 (size before relaxing)
- .debug_str     0x0000156a      0x13e build\drivers\serial.o
-                                0x641 (size before relaxing)
- .debug_str     0x000016a8       0x6c build\kernel\src\clock.o
-                                0x3c4 (size before relaxing)
- .debug_str     0x00001714       0xf6 build\kernel\src\components.o
-                                0x4bc (size before relaxing)
- .debug_str     0x0000180a      0x12f build\kernel\src\cpu.o
-                                0x4ee (size before relaxing)
- .debug_str     0x00001939      0x2e7 build\kernel\src\device.o
-                                0x7d2 (size before relaxing)
- .debug_str     0x00001c20      0x107 build\kernel\src\idle.o
-                                0x481 (size before relaxing)
- .debug_str     0x00001d27      0x3c9 build\kernel\src\ipc.o
-                                0x981 (size before relaxing)
- .debug_str     0x000020f0       0xb6 build\kernel\src\irq.o
-                                0x214 (size before relaxing)
- .debug_str     0x000021a6      0x311 build\kernel\src\kservice.o
-                                0x995 (size before relaxing)
- .debug_str     0x000024b7      0x255 build\kernel\src\mem.o
-                                0x4c2 (size before relaxing)
- .debug_str     0x0000270c      0x12a build\kernel\src\memheap.o
-                                0x4f7 (size before relaxing)
- .debug_str     0x00002836      0x125 build\kernel\src\mempool.o
-                                0x657 (size before relaxing)
- .debug_str     0x0000295b      0x290 build\kernel\src\object.o
-                                0x677 (size before relaxing)
- .debug_str     0x00002beb      0x1f0 build\kernel\src\scheduler.o
-                                0x698 (size before relaxing)
- .debug_str     0x00002ddb      0x1f6 build\kernel\src\signal.o
-                                0x68c (size before relaxing)
- .debug_str     0x00002fd1      0x1db build\kernel\src\thread.o
-                                0x77d (size before relaxing)
- .debug_str     0x000031ac      0x203 build\kernel\src\timer.o
-                                0x762 (size before relaxing)
- .debug_str     0x000033af       0x8a build\kernel\libcpu\arm\cortex-a\cpu.o
-                                0x22c (size before relaxing)
- .debug_str     0x00003439      0x1c3 build\kernel\libcpu\arm\cortex-a\gic.o
-                                0x389 (size before relaxing)
- .debug_str     0x000035fc      0x148 build\kernel\libcpu\arm\cortex-a\interrupt.o
-                                0x2d8 (size before relaxing)
- .debug_str     0x00003744      0x103 build\kernel\libcpu\arm\cortex-a\mmu.o
-                                0x282 (size before relaxing)
- .debug_str     0x00003847       0x3e build\kernel\libcpu\arm\cortex-a\stack.o
-                                0x1ae (size before relaxing)
- .debug_str     0x00003885       0xca build\kernel\libcpu\arm\cortex-a\trap.o
-                                0x256 (size before relaxing)
- .debug_str     0x0000394f       0x81 build\kernel\components\cplusplus\crt_init.o
-                                0x1e5 (size before relaxing)
- .debug_str     0x000039d0      0x344 build\kernel\components\dfs\src\dfs.o
-                                0xb33 (size before relaxing)
- .debug_str     0x00003d14      0x217 build\kernel\components\dfs\src\dfs_file.o
-                                0x9dc (size before relaxing)
- .debug_str     0x00003f2b      0x17c build\kernel\components\dfs\src\dfs_fs.o
-                                0x985 (size before relaxing)
- .debug_str     0x000040a7       0xd8 build\kernel\components\dfs\src\dfs_posix.o
-                                0x8ca (size before relaxing)
- .debug_str     0x0000417f      0x102 build\kernel\components\dfs\src\poll.o
-                                0x9ea (size before relaxing)
- .debug_str     0x00004281       0xa0 build\kernel\components\dfs\src\select.o
-                                0x22d (size before relaxing)
- .debug_str     0x00004321      0x130 build\kernel\components\dfs\filesystems\devfs\devfs.o
-                                0xa50 (size before relaxing)
- .debug_str     0x00004451      0x51f build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
-                                0xf2a (size before relaxing)
- .debug_str     0x00004970      0x327 build\kernel\components\dfs\filesystems\elmfat\ff.o
-                                0x9c7 (size before relaxing)
- .debug_str     0x00004c97       0x5d build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
-                                0x1a6 (size before relaxing)
- .debug_str     0x00004cf4      0x187 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
-                                0xb8d (size before relaxing)
- .debug_str     0x00004e7b      0x141 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
-                                0x8cb (size before relaxing)
- .debug_str     0x00004fbc      0x682 build\kernel\components\finsh\shell.o
-                                0xb72 (size before relaxing)
- .debug_str     0x0000563e      0x963 build\kernel\components\finsh\cmd.o
-                               0x1485 (size before relaxing)
- .debug_str     0x00005fa1      0x239 build\kernel\components\finsh\msh.o
-                                0x4d8 (size before relaxing)
- .debug_str     0x000061da      0x2f9 build\kernel\components\finsh\msh_file.o
-                                0x503 (size before relaxing)
- .debug_str     0x000064d3       0xc8 build\kernel\components\finsh\finsh_compiler.o
-                                0x3ff (size before relaxing)
- .debug_str     0x0000659b       0x8f build\kernel\components\finsh\finsh_error.o
-                                0x1e4 (size before relaxing)
- .debug_str     0x0000662a      0x104 build\kernel\components\finsh\finsh_heap.o
-                                0x3ed (size before relaxing)
- .debug_str     0x0000672e       0x5e build\kernel\components\finsh\finsh_init.o
-                                0x2e7 (size before relaxing)
- .debug_str     0x0000678c       0xdb build\kernel\components\finsh\finsh_node.o
-                                0x2eb (size before relaxing)
- .debug_str     0x00006867      0x2c2 build\kernel\components\finsh\finsh_ops.o
-                                0x457 (size before relaxing)
- .debug_str     0x00006b29      0x4fc build\kernel\components\finsh\finsh_parser.o
-                                0x890 (size before relaxing)
- .debug_str     0x00007025       0x9a build\kernel\components\finsh\finsh_var.o
+.debug_str      0x00000000    0x10467
+ .debug_str     0x00000000      0x345 build\applications\WtApplication.o
+                                0x3d6 (size before relaxing)
+ .debug_str     0x00000345       0x30 build\applications\mnt.o
+                                0x174 (size before relaxing)
+ .debug_str     0x00000375      0x1c3 build\applications\test.o
+                                0x36e (size before relaxing)
+ .debug_str     0x00000538       0x8b build\drivers\board.o
+                                0x1d4 (size before relaxing)
+ .debug_str     0x000005c3      0x70b build\drivers\drv_sdio.o
+                                0xa53 (size before relaxing)
+ .debug_str     0x00000cce      0x78b build\drivers\drv_smc911x.o
+                                0xb26 (size before relaxing)
+ .debug_str     0x00001459       0x5b build\drivers\drv_timer.o
+                                0x1ef (size before relaxing)
+ .debug_str     0x000014b4       0xb3 build\drivers\secondary_cpu.o
+                                0x21f (size before relaxing)
+ .debug_str     0x00001567      0x13e build\drivers\serial.o
+                                0x63e (size before relaxing)
+ .debug_str     0x000016a5       0x6c build\kernel\src\clock.o
                                 0x3c1 (size before relaxing)
- .debug_str     0x000070bf       0x5d build\kernel\components\finsh\finsh_vm.o
-                                0x2ab (size before relaxing)
- .debug_str     0x0000711c      0x128 build\kernel\components\finsh\finsh_token.o
-                                0x625 (size before relaxing)
- .debug_str     0x00007244      0x20d build\kernel\components\libc\aio\posix_aio.o
-                                0x65d (size before relaxing)
- .debug_str     0x00007451       0x59 build\kernel\components\libc\compilers\newlib\libc.o
-                                0x50e (size before relaxing)
- .debug_str     0x000074aa       0x8a build\kernel\components\libc\compilers\newlib\stdio.o
-                                0x5a3 (size before relaxing)
- .debug_str     0x00007534      0x18a build\kernel\components\libc\compilers\newlib\syscalls.o
-                                0xa88 (size before relaxing)
- .debug_str     0x000076be       0x4a build\kernel\components\libc\compilers\newlib\time.o
-                                0x548 (size before relaxing)
- .debug_str     0x00007708      0x16e build\kernel\components\libc\pthreads\mqueue.o
-                                0x515 (size before relaxing)
- .debug_str     0x00007876      0x3c6 build\kernel\components\libc\pthreads\pthread.o
-                                0x86c (size before relaxing)
- .debug_str     0x00007c3c      0x252 build\kernel\components\libc\pthreads\pthread_attr.o
-                                0x453 (size before relaxing)
- .debug_str     0x00007e8e       0xa5 build\kernel\components\libc\pthreads\pthread_tls.o
-                                0x5b4 (size before relaxing)
- .debug_str     0x00007f33      0x118 build\kernel\components\libc\pthreads\semaphore.o
-                                0x3e6 (size before relaxing)
- .debug_str     0x0000804b       0xaa build\kernel\components\libc\signal\posix_signal.o
-                                0x4a2 (size before relaxing)
- .debug_str     0x000080f5      0x116 build\kernel\components\libc\termios\posix_termios.o
-                                0x26d (size before relaxing)
- .debug_str     0x0000820b       0x91 build\kernel\components\libc\time\clock_time.o
-                                0x5ed (size before relaxing)
- .debug_str     0x0000829c       0xec build\kernel\components\lwp\lwp.o
-                                0xa28 (size before relaxing)
- .debug_str     0x00008388       0xe0 build\kernel\components\lwp\lwp_mem.o
-                                0x464 (size before relaxing)
- .debug_str     0x00008468       0xb7 build\kernel\components\lwp\lwp_memheap.o
-                                0x3f9 (size before relaxing)
- .debug_str     0x0000851f      0x1a9 build\kernel\components\lwp\lwp_syscall.o
-                                0xb42 (size before relaxing)
- .debug_str     0x000086c8      0x370 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
-                               0x1067 (size before relaxing)
- .debug_str     0x00008a38      0x71e build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
-                                0xcd5 (size before relaxing)
- .debug_str     0x00009156      0x427 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
-                               0x12dc (size before relaxing)
- .debug_str     0x0000957d       0x52 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .debug_str     0x00001711       0xf6 build\kernel\src\components.o
+                                0x4b9 (size before relaxing)
+ .debug_str     0x00001807      0x12f build\kernel\src\cpu.o
+                                0x4eb (size before relaxing)
+ .debug_str     0x00001936      0x2e7 build\kernel\src\device.o
+                                0x7cf (size before relaxing)
+ .debug_str     0x00001c1d      0x107 build\kernel\src\idle.o
+                                0x47e (size before relaxing)
+ .debug_str     0x00001d24      0x3c9 build\kernel\src\ipc.o
+                                0x97e (size before relaxing)
+ .debug_str     0x000020ed       0xb6 build\kernel\src\irq.o
+                                0x211 (size before relaxing)
+ .debug_str     0x000021a3      0x311 build\kernel\src\kservice.o
+                                0x992 (size before relaxing)
+ .debug_str     0x000024b4      0x255 build\kernel\src\mem.o
+                                0x4bf (size before relaxing)
+ .debug_str     0x00002709      0x12a build\kernel\src\memheap.o
+                                0x4f4 (size before relaxing)
+ .debug_str     0x00002833      0x125 build\kernel\src\mempool.o
+                                0x654 (size before relaxing)
+ .debug_str     0x00002958      0x290 build\kernel\src\object.o
+                                0x674 (size before relaxing)
+ .debug_str     0x00002be8      0x1f0 build\kernel\src\scheduler.o
+                                0x695 (size before relaxing)
+ .debug_str     0x00002dd8      0x1f6 build\kernel\src\signal.o
+                                0x689 (size before relaxing)
+ .debug_str     0x00002fce      0x1db build\kernel\src\thread.o
+                                0x77a (size before relaxing)
+ .debug_str     0x000031a9      0x203 build\kernel\src\timer.o
+                                0x75f (size before relaxing)
+ .debug_str     0x000033ac       0x8a build\kernel\libcpu\arm\cortex-a\cpu.o
+                                0x229 (size before relaxing)
+ .debug_str     0x00003436      0x1c3 build\kernel\libcpu\arm\cortex-a\gic.o
+                                0x386 (size before relaxing)
+ .debug_str     0x000035f9      0x148 build\kernel\libcpu\arm\cortex-a\interrupt.o
+                                0x2d5 (size before relaxing)
+ .debug_str     0x00003741      0x103 build\kernel\libcpu\arm\cortex-a\mmu.o
+                                0x27f (size before relaxing)
+ .debug_str     0x00003844       0x3e build\kernel\libcpu\arm\cortex-a\stack.o
                                 0x1ab (size before relaxing)
- .debug_str     0x000095cf       0xad build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
-                                0x4bd (size before relaxing)
- .debug_str     0x0000967c      0x25e build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
-                                0x646 (size before relaxing)
- .debug_str     0x000098da      0x125 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+ .debug_str     0x00003882       0xca build\kernel\libcpu\arm\cortex-a\trap.o
+                                0x253 (size before relaxing)
+ .debug_str     0x0000394c       0x81 build\kernel\components\cplusplus\crt_init.o
+                                0x1e2 (size before relaxing)
+ .debug_str     0x000039cd      0x344 build\kernel\components\dfs\src\dfs.o
+                                0xb30 (size before relaxing)
+ .debug_str     0x00003d11      0x217 build\kernel\components\dfs\src\dfs_file.o
+                                0x9d9 (size before relaxing)
+ .debug_str     0x00003f28      0x17c build\kernel\components\dfs\src\dfs_fs.o
+                                0x982 (size before relaxing)
+ .debug_str     0x000040a4       0xd8 build\kernel\components\dfs\src\dfs_posix.o
+                                0x8c7 (size before relaxing)
+ .debug_str     0x0000417c      0x102 build\kernel\components\dfs\src\poll.o
+                                0x9e7 (size before relaxing)
+ .debug_str     0x0000427e       0xa0 build\kernel\components\dfs\src\select.o
+                                0x22a (size before relaxing)
+ .debug_str     0x0000431e      0x130 build\kernel\components\dfs\filesystems\devfs\devfs.o
+                                0xa4d (size before relaxing)
+ .debug_str     0x0000444e      0x51f build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+                                0xf27 (size before relaxing)
+ .debug_str     0x0000496d      0x327 build\kernel\components\dfs\filesystems\elmfat\ff.o
+                                0x9c4 (size before relaxing)
+ .debug_str     0x00004c94       0x5d build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+                                0x1a3 (size before relaxing)
+ .debug_str     0x00004cf1      0x187 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+                                0xb8a (size before relaxing)
+ .debug_str     0x00004e78      0x141 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+                                0x8c8 (size before relaxing)
+ .debug_str     0x00004fb9      0x682 build\kernel\components\finsh\shell.o
+                                0xb6f (size before relaxing)
+ .debug_str     0x0000563b      0x963 build\kernel\components\finsh\cmd.o
+                               0x1482 (size before relaxing)
+ .debug_str     0x00005f9e      0x239 build\kernel\components\finsh\msh.o
+                                0x4d5 (size before relaxing)
+ .debug_str     0x000061d7      0x2f9 build\kernel\components\finsh\msh_file.o
+                                0x500 (size before relaxing)
+ .debug_str     0x000064d0       0xc8 build\kernel\components\finsh\finsh_compiler.o
+                                0x3fc (size before relaxing)
+ .debug_str     0x00006598       0x8f build\kernel\components\finsh\finsh_error.o
+                                0x1e1 (size before relaxing)
+ .debug_str     0x00006627      0x104 build\kernel\components\finsh\finsh_heap.o
+                                0x3ea (size before relaxing)
+ .debug_str     0x0000672b       0x5e build\kernel\components\finsh\finsh_init.o
+                                0x2e4 (size before relaxing)
+ .debug_str     0x00006789       0xdb build\kernel\components\finsh\finsh_node.o
+                                0x2e8 (size before relaxing)
+ .debug_str     0x00006864      0x2c2 build\kernel\components\finsh\finsh_ops.o
+                                0x454 (size before relaxing)
+ .debug_str     0x00006b26      0x4fc build\kernel\components\finsh\finsh_parser.o
+                                0x88d (size before relaxing)
+ .debug_str     0x00007022       0x9a build\kernel\components\finsh\finsh_var.o
+                                0x3be (size before relaxing)
+ .debug_str     0x000070bc       0x5d build\kernel\components\finsh\finsh_vm.o
+                                0x2a8 (size before relaxing)
+ .debug_str     0x00007119      0x128 build\kernel\components\finsh\finsh_token.o
+                                0x622 (size before relaxing)
+ .debug_str     0x00007241      0x20d build\kernel\components\libc\aio\posix_aio.o
+                                0x65a (size before relaxing)
+ .debug_str     0x0000744e       0x59 build\kernel\components\libc\compilers\newlib\libc.o
+                                0x50b (size before relaxing)
+ .debug_str     0x000074a7       0x8a build\kernel\components\libc\compilers\newlib\stdio.o
+                                0x5a0 (size before relaxing)
+ .debug_str     0x00007531      0x18a build\kernel\components\libc\compilers\newlib\syscalls.o
+                                0xa85 (size before relaxing)
+ .debug_str     0x000076bb       0x4a build\kernel\components\libc\compilers\newlib\time.o
+                                0x545 (size before relaxing)
+ .debug_str     0x00007705      0x16e build\kernel\components\libc\pthreads\mqueue.o
                                 0x512 (size before relaxing)
- .debug_str     0x000099ff      0x55b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
-                               0x1451 (size before relaxing)
- .debug_str     0x00009f5a      0x1d7 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
-                                0xa8a (size before relaxing)
- .debug_str     0x0000a131       0xaa build\kernel\components\net\lwip-2.0.2\src\core\def.o
-                                0x25f (size before relaxing)
- .debug_str     0x0000a1db      0x35f build\kernel\components\net\lwip-2.0.2\src\core\dns.o
-                                0xa48 (size before relaxing)
- .debug_str     0x0000a53a      0x11f build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
-                                0x323 (size before relaxing)
- .debug_str     0x0000a659       0x3e build\kernel\components\net\lwip-2.0.2\src\core\init.o
-                                0x186 (size before relaxing)
- .debug_str     0x0000a697       0x32 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
-                                0x5be (size before relaxing)
- .debug_str     0x0000a6c9      0x51e build\kernel\components\net\lwip-2.0.2\src\core\memp.o
-                                0x882 (size before relaxing)
- .debug_str     0x0000abe7      0x157 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
-                                0x701 (size before relaxing)
- .debug_str     0x0000ad3e      0x32c build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
-                                0xb80 (size before relaxing)
- .debug_str     0x0000b06a       0xfd build\kernel\components\net\lwip-2.0.2\src\core\raw.o
-                                0x80c (size before relaxing)
- .debug_str     0x0000b167      0x4c3 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
-                                0xdfe (size before relaxing)
- .debug_str     0x0000b62a      0x1b7 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
-                                0xbb5 (size before relaxing)
- .debug_str     0x0000b7e1      0x1e1 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
-                                0xac5 (size before relaxing)
- .debug_str     0x0000b9c2      0x196 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
-                                0xb52 (size before relaxing)
- .debug_str     0x0000bb58      0x1e3 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
-                                0x954 (size before relaxing)
- .debug_str     0x0000bd3b      0x1a4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
-                                0x723 (size before relaxing)
- .debug_str     0x0000bedf      0x5de build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
-                               0x16fe (size before relaxing)
- .debug_str     0x0000c4bd      0x710 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
-                                0xed4 (size before relaxing)
- .debug_str     0x0000cbcd      0x36d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
-                                0xa77 (size before relaxing)
- .debug_str     0x0000cf3a       0xd6 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
-                                0x66f (size before relaxing)
- .debug_str     0x0000d010      0x20a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
-                                0x817 (size before relaxing)
- .debug_str     0x0000d21a      0x13a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
-                                0x85d (size before relaxing)
- .debug_str     0x0000d354       0x80 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
-                                0x5a2 (size before relaxing)
- .debug_str     0x0000d3d4      0x292 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
-                                0x93e (size before relaxing)
- .debug_str     0x0000d666       0x80 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
-                                0x5b5 (size before relaxing)
- .debug_str     0x0000d6e6      0x45b build\kernel\components\net\netdev\src\netdev.o
-                               0x10e5 (size before relaxing)
- .debug_str     0x0000db41       0xb0 build\kernel\components\net\netdev\src\netdev_ipaddr.o
-                                0x274 (size before relaxing)
- .debug_str     0x0000dbf1      0x2fb build\kernel\components\net\sal_socket\src\sal_socket.o
-                               0x1261 (size before relaxing)
- .debug_str     0x0000deec       0xc8 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
-                               0x11c0 (size before relaxing)
- .debug_str     0x0000dfb4       0x39 build\kernel\components\net\sal_socket\socket\net_sockets.o
-                                0x88b (size before relaxing)
- .debug_str     0x0000dfed       0xaf build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
-                                0x7e9 (size before relaxing)
- .debug_str     0x0000e09c      0x112 build\kernel\components\drivers\i2c\i2c_core.o
-                                0x7b3 (size before relaxing)
- .debug_str     0x0000e1ae       0xa2 build\kernel\components\drivers\i2c\i2c_dev.o
-                                0x7a6 (size before relaxing)
- .debug_str     0x0000e250      0x198 build\kernel\components\drivers\misc\pin.o
-                                0x700 (size before relaxing)
- .debug_str     0x0000e3e8      0x3de build\kernel\components\drivers\mtd\mtd_nand.o
-                                0x943 (size before relaxing)
- .debug_str     0x0000e7c6      0x126 build\kernel\components\drivers\rtc\rtc.o
-                                0x6a6 (size before relaxing)
- .debug_str     0x0000e8ec       0x8f build\kernel\components\drivers\rtc\soft_rtc.o
-                                0x5ce (size before relaxing)
- .debug_str     0x0000e97b      0x16e build\kernel\components\drivers\sdio\block_dev.o
-                                0xd8a (size before relaxing)
- .debug_str     0x0000eae9      0x2c2 build\kernel\components\drivers\sdio\mmcsd_core.o
-                                0xbc2 (size before relaxing)
- .debug_str     0x0000edab      0x16d build\kernel\components\drivers\sdio\sd.o
-                                0x9de (size before relaxing)
- .debug_str     0x0000ef18      0x40f build\kernel\components\drivers\sdio\sdio.o
-                                0xd3d (size before relaxing)
- .debug_str     0x0000f327       0xef build\kernel\components\drivers\sdio\mmc.o
-                                0x9ee (size before relaxing)
- .debug_str     0x0000f416      0x282 build\kernel\components\drivers\serial\serial.o
-                                0xb5d (size before relaxing)
- .debug_str     0x0000f698      0x1c1 build\kernel\components\drivers\spi\spi_core.o
-                                0x879 (size before relaxing)
- .debug_str     0x0000f859       0xf6 build\kernel\components\drivers\spi\spi_dev.o
-                                0x819 (size before relaxing)
- .debug_str     0x0000f94f      0x42f build\kernel\components\drivers\spi\spi_flash_sfud.o
-                                0xd07 (size before relaxing)
- .debug_str     0x0000fd7e      0x2f2 build\kernel\components\drivers\spi\sfud\src\sfud.o
-                                0x6d1 (size before relaxing)
- .debug_str     0x00010070       0xc0 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
-                                0x473 (size before relaxing)
- .debug_str     0x00010130       0x67 build\kernel\components\drivers\src\completion.o
-                                0x444 (size before relaxing)
- .debug_str     0x00010197       0xac build\kernel\components\drivers\src\waitqueue.o
-                                0x4d4 (size before relaxing)
- .debug_str     0x00010243      0x227 build\kernel\components\drivers\src\workqueue.o
-                                0x706 (size before relaxing)
+ .debug_str     0x00007873      0x3c6 build\kernel\components\libc\pthreads\pthread.o
+                                0x869 (size before relaxing)
+ .debug_str     0x00007c39      0x252 build\kernel\components\libc\pthreads\pthread_attr.o
+                                0x450 (size before relaxing)
+ .debug_str     0x00007e8b       0xa5 build\kernel\components\libc\pthreads\pthread_tls.o
+                                0x5b1 (size before relaxing)
+ .debug_str     0x00007f30      0x118 build\kernel\components\libc\pthreads\semaphore.o
+                                0x3e3 (size before relaxing)
+ .debug_str     0x00008048       0xaa build\kernel\components\libc\signal\posix_signal.o
+                                0x49f (size before relaxing)
+ .debug_str     0x000080f2      0x116 build\kernel\components\libc\termios\posix_termios.o
+                                0x26a (size before relaxing)
+ .debug_str     0x00008208       0x91 build\kernel\components\libc\time\clock_time.o
+                                0x5ea (size before relaxing)
+ .debug_str     0x00008299       0xec build\kernel\components\lwp\lwp.o
+                                0xa25 (size before relaxing)
+ .debug_str     0x00008385       0xe0 build\kernel\components\lwp\lwp_mem.o
+                                0x461 (size before relaxing)
+ .debug_str     0x00008465       0xb7 build\kernel\components\lwp\lwp_memheap.o
+                                0x3f6 (size before relaxing)
+ .debug_str     0x0000851c      0x1a9 build\kernel\components\lwp\lwp_syscall.o
+                                0xb3f (size before relaxing)
+ .debug_str     0x000086c5      0x370 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+                               0x1064 (size before relaxing)
+ .debug_str     0x00008a35      0x71e build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+                                0xcd2 (size before relaxing)
+ .debug_str     0x00009153      0x427 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+                               0x12d9 (size before relaxing)
+ .debug_str     0x0000957a       0x52 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+                                0x1a8 (size before relaxing)
+ .debug_str     0x000095cc       0xad build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+                                0x4ba (size before relaxing)
+ .debug_str     0x00009679      0x25e build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+                                0x643 (size before relaxing)
+ .debug_str     0x000098d7      0x125 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+                                0x50f (size before relaxing)
+ .debug_str     0x000099fc      0x55b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+                               0x144e (size before relaxing)
+ .debug_str     0x00009f57      0x1d7 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+                                0xa87 (size before relaxing)
+ .debug_str     0x0000a12e       0xaa build\kernel\components\net\lwip-2.0.2\src\core\def.o
+                                0x25c (size before relaxing)
+ .debug_str     0x0000a1d8      0x35f build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+                                0xa45 (size before relaxing)
+ .debug_str     0x0000a537      0x11f build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+                                0x320 (size before relaxing)
+ .debug_str     0x0000a656       0x3e build\kernel\components\net\lwip-2.0.2\src\core\init.o
+                                0x183 (size before relaxing)
+ .debug_str     0x0000a694       0x32 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
+                                0x5bb (size before relaxing)
+ .debug_str     0x0000a6c6      0x51e build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+                                0x87f (size before relaxing)
+ .debug_str     0x0000abe4      0x157 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+                                0x6fe (size before relaxing)
+ .debug_str     0x0000ad3b      0x32c build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+                                0xb7d (size before relaxing)
+ .debug_str     0x0000b067       0xfd build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+                                0x809 (size before relaxing)
+ .debug_str     0x0000b164      0x4c3 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+                                0xdfb (size before relaxing)
+ .debug_str     0x0000b627      0x1b7 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+                                0xbb2 (size before relaxing)
+ .debug_str     0x0000b7de      0x1e1 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+                                0xac2 (size before relaxing)
+ .debug_str     0x0000b9bf      0x196 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+                                0xb4f (size before relaxing)
+ .debug_str     0x0000bb55      0x1e3 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+                                0x951 (size before relaxing)
+ .debug_str     0x0000bd38      0x1a4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+                                0x720 (size before relaxing)
+ .debug_str     0x0000bedc      0x5de build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+                               0x16fb (size before relaxing)
+ .debug_str     0x0000c4ba      0x710 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+                                0xed1 (size before relaxing)
+ .debug_str     0x0000cbca      0x36d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+                                0xa74 (size before relaxing)
+ .debug_str     0x0000cf37       0xd6 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+                                0x66c (size before relaxing)
+ .debug_str     0x0000d00d      0x20a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+                                0x814 (size before relaxing)
+ .debug_str     0x0000d217      0x13a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+                                0x85a (size before relaxing)
+ .debug_str     0x0000d351       0x80 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+                                0x59f (size before relaxing)
+ .debug_str     0x0000d3d1      0x292 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+                                0x93b (size before relaxing)
+ .debug_str     0x0000d663       0x80 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+                                0x5b2 (size before relaxing)
+ .debug_str     0x0000d6e3      0x45b build\kernel\components\net\netdev\src\netdev.o
+                               0x10e2 (size before relaxing)
+ .debug_str     0x0000db3e       0xb0 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+                                0x271 (size before relaxing)
+ .debug_str     0x0000dbee      0x2fb build\kernel\components\net\sal_socket\src\sal_socket.o
+                               0x125e (size before relaxing)
+ .debug_str     0x0000dee9       0xc8 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+                               0x11bd (size before relaxing)
+ .debug_str     0x0000dfb1       0x39 build\kernel\components\net\sal_socket\socket\net_sockets.o
+                                0x888 (size before relaxing)
+ .debug_str     0x0000dfea       0xaf build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+                                0x7e6 (size before relaxing)
+ .debug_str     0x0000e099      0x112 build\kernel\components\drivers\i2c\i2c_core.o
+                                0x7b0 (size before relaxing)
+ .debug_str     0x0000e1ab       0xa2 build\kernel\components\drivers\i2c\i2c_dev.o
+                                0x7a3 (size before relaxing)
+ .debug_str     0x0000e24d      0x198 build\kernel\components\drivers\misc\pin.o
+                                0x6fd (size before relaxing)
+ .debug_str     0x0000e3e5      0x3de build\kernel\components\drivers\mtd\mtd_nand.o
+                                0x940 (size before relaxing)
+ .debug_str     0x0000e7c3      0x126 build\kernel\components\drivers\rtc\rtc.o
+                                0x6a3 (size before relaxing)
+ .debug_str     0x0000e8e9       0x8f build\kernel\components\drivers\rtc\soft_rtc.o
+                                0x5cb (size before relaxing)
+ .debug_str     0x0000e978      0x16e build\kernel\components\drivers\sdio\block_dev.o
+                                0xd87 (size before relaxing)
+ .debug_str     0x0000eae6      0x2c2 build\kernel\components\drivers\sdio\mmcsd_core.o
+                                0xbbf (size before relaxing)
+ .debug_str     0x0000eda8      0x16d build\kernel\components\drivers\sdio\sd.o
+                                0x9db (size before relaxing)
+ .debug_str     0x0000ef15      0x40f build\kernel\components\drivers\sdio\sdio.o
+                                0xd3a (size before relaxing)
+ .debug_str     0x0000f324       0xef build\kernel\components\drivers\sdio\mmc.o
+                                0x9eb (size before relaxing)
+ .debug_str     0x0000f413      0x282 build\kernel\components\drivers\serial\serial.o
+                                0xb5a (size before relaxing)
+ .debug_str     0x0000f695      0x1c1 build\kernel\components\drivers\spi\spi_core.o
+                                0x876 (size before relaxing)
+ .debug_str     0x0000f856       0xf6 build\kernel\components\drivers\spi\spi_dev.o
+                                0x816 (size before relaxing)
+ .debug_str     0x0000f94c      0x42f build\kernel\components\drivers\spi\spi_flash_sfud.o
+                                0xd04 (size before relaxing)
+ .debug_str     0x0000fd7b      0x2f2 build\kernel\components\drivers\spi\sfud\src\sfud.o
+                                0x6ce (size before relaxing)
+ .debug_str     0x0001006d       0xc0 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+                                0x470 (size before relaxing)
+ .debug_str     0x0001012d       0x67 build\kernel\components\drivers\src\completion.o
+                                0x441 (size before relaxing)
+ .debug_str     0x00010194       0xac build\kernel\components\drivers\src\waitqueue.o
+                                0x4d1 (size before relaxing)
+ .debug_str     0x00010240      0x227 build\kernel\components\drivers\src\workqueue.o
+                                0x703 (size before relaxing)
 
 .debug_frame    0x00000000    0x1110c
  .debug_frame   0x00000000       0x6c build\applications\WtApplication.o
