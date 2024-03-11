@@ -29,9 +29,12 @@
 /// @brief 修订版本号。
 #define WT_VERSION_REVISION 1 // 0 to 999...
 
+/*构建参数相关*/
+#include <WtBuild.h>
+
 /*应用程序相关*/
 /// @brief 应用程序委托执行器数量。
-#define WT_APPLICATION_INVOKER_COUNT (8) //最小为 1。
+#define WT_APPLICATION_INVOKER_COUNT (8) // 最小为 1。
 
 /*模块相关*/
 #endif

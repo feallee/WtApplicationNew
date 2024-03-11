@@ -3544,36 +3544,63 @@ END GROUP
                 0x60096030                __rt_init_end = .
  *(SORT(.app_entry.*))
  .app_entry.0   0x60096030        0x4 build\applications\WtApplication.o
+                0x60096030                mApp_Entry_0_NULL
  .app_entry.1   0x60096034        0x4 build\applications\test.o
+                0x60096034                mApp_Entry_1_entry1
  .app_entry.2   0x60096038        0x4 build\applications\test.o
+                0x60096038                mApp_Entry_2_entry2
  .app_entry.3   0x6009603c        0x4 build\applications\test.o
+                0x6009603c                mApp_Entry_3_entry3
  .app_entry.4   0x60096040        0x4 build\applications\test.o
+                0x60096040                mApp_Entry_4_entry4
  .app_entry.5   0x60096044        0x4 build\applications\test.o
+                0x60096044                mApp_Entry_5_entry5
  .app_entry.6   0x60096048        0x4 build\applications\test.o
+                0x60096048                mApp_Entry_6_entry6
  .app_entry.7   0x6009604c        0x4 build\applications\test.o
+                0x6009604c                mApp_Entry_7_entry7
  .app_entry.8   0x60096050        0x4 build\applications\test.o
+                0x60096050                mApp_Entry_8_entry8
  .app_entry.9   0x60096054        0x4 build\applications\WtApplication.o
+                0x60096054                mApp_Entry_9_NULL
  *(SORT(.app_command.*))
  .app_command.10
                 0x60096058        0x8 build\applications\WtApplication.o
+                0x60096058                mApp_Command_10_NULL
  .app_command.11
                 0x60096060       0x40 build\applications\test.o
+                0x60096060                mApp_Command_11_cmd1
+                0x60096068                mApp_Command_11_cmd2
+                0x60096070                mApp_Command_11_cmd3
+                0x60096078                mApp_Command_11_cmd4
+                0x60096080                mApp_Command_11_cmd5
+                0x60096088                mApp_Command_11_cmd6
+                0x60096090                mApp_Command_11_cmd7
+                0x60096098                mApp_Command_11_cmd8
  .app_command.20
                 0x600960a0        0x8 build\applications\WtApplication.o
+                0x600960a0                mApp_Command_20_NULL
  .app_command.30
                 0x600960a8        0x8 build\applications\WtApplication.o
+                0x600960a8                mApp_Command_30_NULL
  .app_command.40
                 0x600960b0        0x8 build\applications\WtApplication.o
+                0x600960b0                mApp_Command_40_NULL
  .app_command.50
                 0x600960b8        0x8 build\applications\WtApplication.o
+                0x600960b8                mApp_Command_50_NULL
  .app_command.60
                 0x600960c0        0x8 build\applications\WtApplication.o
+                0x600960c0                mApp_Command_60_NULL
  .app_command.70
                 0x600960c8        0x8 build\applications\WtApplication.o
+                0x600960c8                mApp_Command_70_NULL
  .app_command.80
                 0x600960d0        0x8 build\applications\WtApplication.o
+                0x600960d0                mApp_Command_80_NULL
  .app_command.90
                 0x600960d8        0x8 build\applications\WtApplication.o
+                0x600960d8                mApp_Command_90_NULL
                 0x600960e0                __text_end = .
                 0x600960e0                __exidx_start = .
 
@@ -3604,454 +3631,455 @@ END GROUP
  *fill*         0x600960f1        0x3 
  .rodata        0x600960f4       0x2e build\applications\mnt.o
  *fill*         0x60096122        0x2 
- .rodata        0x60096124       0x7b build\applications\test.o
- *fill*         0x6009619f        0x1 
- .rodata        0x600961a0        0xa build\drivers\board.o
-                0x600961a0                platform_mem_desc_size
- *fill*         0x600961aa        0x2 
- .rodata        0x600961ac       0x87 build\drivers\drv_sdio.o
- *fill*         0x60096233        0x1 
- .rodata        0x60096234      0x2d0 build\drivers\drv_smc911x.o
- .rodata        0x60096504        0x5 build\drivers\drv_timer.o
- *fill*         0x60096509        0x3 
- .rodata        0x6009650c        0x5 build\drivers\secondary_cpu.o
- *fill*         0x60096511        0x3 
- .rodata        0x60096514       0x66 build\drivers\serial.o
- *fill*         0x6009657a        0x2 
- .rodata        0x6009657c       0x2c build\kernel\src\components.o
- .rodata        0x600965a8      0x206 build\kernel\src\device.o
- *fill*         0x600967ae        0x2 
- .rodata        0x600967b0       0x4a build\kernel\src\idle.o
- *fill*         0x600967fa        0x2 
- .rodata        0x600967fc      0x6aa build\kernel\src\ipc.o
- *fill*         0x60096ea6        0x2 
- .rodata        0x60096ea8      0x1ed build\kernel\src\kservice.o
-                0x60096f38                __lowest_bit_bitmap
- *fill*         0x60097095        0x3 
- .rodata        0x60097098      0x45c build\kernel\src\mem.o
- .rodata        0x600974f4      0x1bc build\kernel\src\memheap.o
- .rodata        0x600976b0      0x198 build\kernel\src\mempool.o
- .rodata        0x60097848      0x11f build\kernel\src\object.o
- *fill*         0x60097967        0x1 
- .rodata        0x60097968       0xba build\kernel\src\scheduler.o
- *fill*         0x60097a22        0x2 
- .rodata        0x60097a24      0x14a build\kernel\src\signal.o
- *fill*         0x60097b6e        0x2 
- .rodata        0x60097b70      0x29b build\kernel\src\thread.o
- *fill*         0x60097e0b        0x1 
- .rodata        0x60097e0c      0x141 build\kernel\src\timer.o
- *fill*         0x60097f4d        0x3 
- .rodata        0x60097f50       0x27 build\kernel\libcpu\arm\cortex-a\cpu.o
- *fill*         0x60097f77        0x1 
- .rodata        0x60097f78      0x1ce build\kernel\libcpu\arm\cortex-a\gic.o
- *fill*         0x60098146        0x2 
- .rodata        0x60098148      0x104 build\kernel\libcpu\arm\cortex-a\mmu.o
- .rodata        0x6009824c      0x13c build\kernel\libcpu\arm\cortex-a\trap.o
- .rodata        0x60098388      0x163 build\kernel\components\dfs\src\dfs.o
- *fill*         0x600984eb        0x1 
- .rodata        0x600984ec      0x1d4 build\kernel\components\dfs\src\dfs_file.o
- .rodata        0x600986c0      0x201 build\kernel\components\dfs\src\dfs_fs.o
- *fill*         0x600988c1        0x3 
- .rodata        0x600988c4        0x4 build\kernel\components\dfs\src\dfs_posix.o
- .rodata        0x600988c8       0x17 build\kernel\components\dfs\src\select.o
- *fill*         0x600988df        0x1 
- .rodata        0x600988e0      0x123 build\kernel\components\dfs\filesystems\devfs\devfs.o
- *fill*         0x60098a03        0x1 
- .rodata        0x60098a04      0x1cd build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
- *fill*         0x60098bd1        0x3 
- .rodata        0x60098bd4       0xf6 build\kernel\components\dfs\filesystems\elmfat\ff.o
- *fill*         0x60098cca        0x2 
- .rodata        0x60098ccc      0x3b0 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
- .rodata        0x6009907c      0x119 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
- *fill*         0x60099195        0x3 
- .rodata        0x60099198       0xa7 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
- *fill*         0x6009923f        0x1 
- .rodata        0x60099240       0xf3 build\kernel\components\finsh\shell.o
- *fill*         0x60099333        0x1 
- .rodata        0x60099334      0x76c build\kernel\components\finsh\cmd.o
- .rodata        0x60099aa0       0x92 build\kernel\components\finsh\msh.o
- *fill*         0x60099b32        0x2 
- .rodata        0x60099b34      0x229 build\kernel\components\finsh\msh_file.o
- *fill*         0x60099d5d        0x3 
- .rodata        0x60099d60       0xf2 build\kernel\components\finsh\finsh_error.o
- *fill*         0x60099e52        0x2 
- .rodata        0x60099e54       0xc4 build\kernel\components\finsh\finsh_ops.o
-                0x60099e54                op_table
- .rodata        0x60099f18       0x80 build\kernel\components\finsh\finsh_token.o
- .rodata        0x60099f98       0x48 build\kernel\components\libc\aio\posix_aio.o
- .rodata        0x60099fe0       0x17 build\kernel\components\libc\compilers\newlib\libc.o
- *fill*         0x60099ff7        0x1 
- .rodata        0x60099ff8       0x13 build\kernel\components\libc\compilers\newlib\stdio.o
- *fill*         0x6009a00b        0x1 
- .rodata        0x6009a00c       0x39 build\kernel\components\libc\compilers\newlib\syscalls.o
- *fill*         0x6009a045        0x3 
- .rodata        0x6009a048       0x25 build\kernel\components\libc\compilers\newlib\time.o
- *fill*         0x6009a06d        0x3 
- .rodata        0x6009a070        0x4 build\kernel\components\libc\pthreads\mqueue.o
- .rodata        0x6009a074      0x11b build\kernel\components\libc\pthreads\pthread.o
- *fill*         0x6009a18f        0x1 
- .rodata        0x6009a190      0x1ae build\kernel\components\libc\pthreads\pthread_attr.o
-                0x6009a190                pthread_default_attr
- *fill*         0x6009a33e        0x2 
- .rodata        0x6009a340       0x34 build\kernel\components\libc\pthreads\pthread_tls.o
- .rodata        0x6009a374       0x11 build\kernel\components\libc\pthreads\semaphore.o
- *fill*         0x6009a385        0x3 
- .rodata        0x6009a388       0x27 build\kernel\components\libc\time\clock_time.o
- *fill*         0x6009a3af        0x1 
- .rodata        0x6009a3b0      0x1a9 build\kernel\components\lwp\lwp.o
- *fill*         0x6009a559        0x3 
- .rodata        0x6009a55c      0x190 build\kernel\components\lwp\lwp_mem.o
- .rodata        0x6009a6ec      0x15c build\kernel\components\lwp\lwp_memheap.o
- .rodata        0x6009a848      0x234 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
- .rodata        0x6009aa7c      0x330 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
- .rodata        0x6009adac      0x4a1 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
- *fill*         0x6009b24d        0x3 
- .rodata        0x6009b250       0x44 build\kernel\components\net\lwip-2.0.2\src\api\err.o
- .rodata        0x6009b294      0x172 build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
- *fill*         0x6009b406        0x2 
- .rodata        0x6009b408       0x7b build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
- *fill*         0x6009b483        0x1 
- .rodata        0x6009b484      0x24b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
- *fill*         0x6009b6cf        0x1 
- .rodata        0x6009b6d0       0xb2 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
- *fill*         0x6009b782        0x2 
- .rodata        0x6009b784       0x48 build\kernel\components\net\lwip-2.0.2\src\core\def.o
- .rodata        0x6009b7cc       0x8b build\kernel\components\net\lwip-2.0.2\src\core\dns.o
-                0x6009b7cc                dns_mquery_v4group
- *fill*         0x6009b857        0x1 
- .rodata        0x6009b858       0x47 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
- *fill*         0x6009b89f        0x1 
- .rodata        0x6009b8a0      0x3db build\kernel\components\net\lwip-2.0.2\src\core\memp.o
-                0x6009b8a8                memp_RAW_PCB
-                0x6009b8c0                memp_UDP_PCB
-                0x6009b8d8                memp_TCP_PCB
-                0x6009b8f8                memp_TCP_PCB_LISTEN
-                0x6009b910                memp_TCP_SEG
-                0x6009b92c                memp_REASSDATA
-                0x6009b948                memp_FRAG_PBUF
-                0x6009b960                memp_NETBUF
-                0x6009b978                memp_NETCONN
-                0x6009b998                memp_TCPIP_MSG_API
-                0x6009b9b8                memp_TCPIP_MSG_INPKT
-                0x6009b9d4                memp_ARP_QUEUE
-                0x6009b9f0                memp_IGMP_GROUP
-                0x6009ba0c                memp_SYS_TIMEOUT
-                0x6009ba24                memp_NETDB
-                0x6009ba44                memp_PBUF
-                0x6009ba60                memp_PBUF_POOL
-                0x6009ba70                memp_pools
- *fill*         0x6009bc7b        0x1 
- .rodata        0x6009bc7c       0x4d build\kernel\components\net\lwip-2.0.2\src\core\netif.o
- *fill*         0x6009bcc9        0x3 
- .rodata        0x6009bccc      0x4e5 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
- *fill*         0x6009c1b1        0x3 
- .rodata        0x6009c1b4       0xa6 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
- *fill*         0x6009c25a        0x2 
- .rodata        0x6009c25c      0x4ab build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
-                0x6009c318                tcp_pcb_lists
- *fill*         0x6009c707        0x1 
- .rodata        0x6009c708      0x361 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
- *fill*         0x6009ca69        0x3 
- .rodata        0x6009ca6c      0x41f build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
- *fill*         0x6009ce8b        0x1 
- .rodata        0x6009ce8c       0xad build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
-                0x6009ce8c                lwip_cyclic_timers
- *fill*         0x6009cf39        0x3 
- .rodata        0x6009cf3c       0x76 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
- *fill*         0x6009cfb2        0x2 
- .rodata        0x6009cfb4       0x7d build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
-                0x6009cfb4                ethbroadcast
-                0x6009cfbc                ethzero
- *fill*         0x6009d031        0x3 
- .rodata        0x6009d034      0x3bf build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
-                0x6009d050                lwip_netdev_ops
- *fill*         0x6009d3f3        0x1 
- .rodata        0x6009d3f4      0x4eb build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
- *fill*         0x6009d8df        0x1 
- .rodata        0x6009d8e0      0x261 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
- *fill*         0x6009db41        0x3 
- .rodata        0x6009db44       0xd4 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
- .rodata        0x6009dc18      0x332 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
- *fill*         0x6009df4a        0x2 
- .rodata        0x6009df4c       0x71 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
- *fill*         0x6009dfbd        0x3 
- .rodata        0x6009dfc0       0x51 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
-                0x6009dfc0                ip_addr_any
-                0x6009dfc4                ip_addr_broadcast
- *fill*         0x6009e011        0x3 
- .rodata        0x6009e014      0x1fc build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
- .rodata        0x6009e210       0x51 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
- *fill*         0x6009e261        0x3 
- .rodata        0x6009e264      0x93c build\kernel\components\net\netdev\src\netdev.o
- .rodata        0x6009eba0       0x18 build\kernel\components\net\netdev\src\netdev_ipaddr.o
- .rodata        0x6009ebb8      0x27d build\kernel\components\net\sal_socket\src\sal_socket.o
- *fill*         0x6009ee35        0x3 
- .rodata        0x6009ee38       0xec build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
- .rodata        0x6009ef24       0x24 build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
-                0x6009ef24                _net_fops
- .rodata        0x6009ef48       0xab build\kernel\components\drivers\i2c\i2c_core.o
- *fill*         0x6009eff3        0x1 
- .rodata        0x6009eff4       0x9e build\kernel\components\drivers\i2c\i2c_dev.o
- *fill*         0x6009f092        0x2 
- .rodata        0x6009f094       0xcc build\kernel\components\drivers\misc\pin.o
- .rodata        0x6009f160      0x3fc build\kernel\components\drivers\mtd\mtd_nand.o
- .rodata        0x6009f55c      0x12f build\kernel\components\drivers\rtc\rtc.o
- *fill*         0x6009f68b        0x1 
- .rodata        0x6009f68c       0x69 build\kernel\components\drivers\rtc\soft_rtc.o
- *fill*         0x6009f6f5        0x3 
- .rodata        0x6009f6f8      0x133 build\kernel\components\drivers\sdio\block_dev.o
- *fill*         0x6009f82b        0x1 
- .rodata        0x6009f82c      0x10b build\kernel\components\drivers\sdio\mmcsd_core.o
- *fill*         0x6009f937        0x1 
- .rodata        0x6009f938      0x17b build\kernel\components\drivers\sdio\sd.o
- *fill*         0x6009fab3        0x1 
- .rodata        0x6009fab4      0x3e2 build\kernel\components\drivers\sdio\sdio.o
- *fill*         0x6009fe96        0x2 
- .rodata        0x6009fe98      0x1ca build\kernel\components\drivers\sdio\mmc.o
- *fill*         0x600a0062        0x2 
- .rodata        0x600a0064      0x2ed build\kernel\components\drivers\serial\serial.o
- *fill*         0x600a0351        0x3 
- .rodata        0x600a0354       0xf7 build\kernel\components\drivers\spi\spi_core.o
- *fill*         0x600a044b        0x1 
- .rodata        0x600a044c      0x11e build\kernel\components\drivers\spi\spi_dev.o
- *fill*         0x600a056a        0x2 
- .rodata        0x600a056c      0x9d9 build\kernel\components\drivers\spi\spi_flash_sfud.o
- *fill*         0x600a0f45        0x3 
- .rodata        0x600a0f48      0x62d build\kernel\components\drivers\spi\sfud\src\sfud.o
- *fill*         0x600a1575        0x3 
- .rodata        0x600a1578      0x261 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
- *fill*         0x600a17d9        0x3 
- .rodata        0x600a17dc       0xaf build\kernel\components\drivers\src\completion.o
- *fill*         0x600a188b        0x1 
- .rodata        0x600a188c       0x3b build\kernel\components\drivers\src\waitqueue.o
- *fill*         0x600a18c7        0x1 
- .rodata        0x600a18c8      0x115 build\kernel\components\drivers\src\workqueue.o
+ .rodata        0x60096124       0x77 build\applications\test.o
+ *fill*         0x6009619b        0x1 
+ .rodata        0x6009619c        0xa build\drivers\board.o
+                0x6009619c                platform_mem_desc_size
+ *fill*         0x600961a6        0x2 
+ .rodata        0x600961a8       0x87 build\drivers\drv_sdio.o
+ *fill*         0x6009622f        0x1 
+ .rodata        0x60096230      0x2d0 build\drivers\drv_smc911x.o
+ .rodata        0x60096500        0x5 build\drivers\drv_timer.o
+ *fill*         0x60096505        0x3 
+ .rodata        0x60096508        0x5 build\drivers\secondary_cpu.o
+ *fill*         0x6009650d        0x3 
+ .rodata        0x60096510       0x66 build\drivers\serial.o
+ *fill*         0x60096576        0x2 
+ .rodata        0x60096578       0x2c build\kernel\src\components.o
+ .rodata        0x600965a4      0x206 build\kernel\src\device.o
+ *fill*         0x600967aa        0x2 
+ .rodata        0x600967ac       0x4a build\kernel\src\idle.o
+ *fill*         0x600967f6        0x2 
+ .rodata        0x600967f8      0x6aa build\kernel\src\ipc.o
+ *fill*         0x60096ea2        0x2 
+ .rodata        0x60096ea4      0x1ed build\kernel\src\kservice.o
+                0x60096f34                __lowest_bit_bitmap
+ *fill*         0x60097091        0x3 
+ .rodata        0x60097094      0x45c build\kernel\src\mem.o
+ .rodata        0x600974f0      0x1bc build\kernel\src\memheap.o
+ .rodata        0x600976ac      0x198 build\kernel\src\mempool.o
+ .rodata        0x60097844      0x11f build\kernel\src\object.o
+ *fill*         0x60097963        0x1 
+ .rodata        0x60097964       0xba build\kernel\src\scheduler.o
+ *fill*         0x60097a1e        0x2 
+ .rodata        0x60097a20      0x14a build\kernel\src\signal.o
+ *fill*         0x60097b6a        0x2 
+ .rodata        0x60097b6c      0x29b build\kernel\src\thread.o
+ *fill*         0x60097e07        0x1 
+ .rodata        0x60097e08      0x141 build\kernel\src\timer.o
+ *fill*         0x60097f49        0x3 
+ .rodata        0x60097f4c       0x27 build\kernel\libcpu\arm\cortex-a\cpu.o
+ *fill*         0x60097f73        0x1 
+ .rodata        0x60097f74      0x1ce build\kernel\libcpu\arm\cortex-a\gic.o
+ *fill*         0x60098142        0x2 
+ .rodata        0x60098144      0x104 build\kernel\libcpu\arm\cortex-a\mmu.o
+ .rodata        0x60098248      0x13c build\kernel\libcpu\arm\cortex-a\trap.o
+ .rodata        0x60098384      0x163 build\kernel\components\dfs\src\dfs.o
+ *fill*         0x600984e7        0x1 
+ .rodata        0x600984e8      0x1d4 build\kernel\components\dfs\src\dfs_file.o
+ .rodata        0x600986bc      0x201 build\kernel\components\dfs\src\dfs_fs.o
+ *fill*         0x600988bd        0x3 
+ .rodata        0x600988c0        0x4 build\kernel\components\dfs\src\dfs_posix.o
+ .rodata        0x600988c4       0x17 build\kernel\components\dfs\src\select.o
+ *fill*         0x600988db        0x1 
+ .rodata        0x600988dc      0x123 build\kernel\components\dfs\filesystems\devfs\devfs.o
+ *fill*         0x600989ff        0x1 
+ .rodata        0x60098a00      0x1cd build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+ *fill*         0x60098bcd        0x3 
+ .rodata        0x60098bd0       0xf6 build\kernel\components\dfs\filesystems\elmfat\ff.o
+ *fill*         0x60098cc6        0x2 
+ .rodata        0x60098cc8      0x3b0 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+ .rodata        0x60099078      0x119 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+ *fill*         0x60099191        0x3 
+ .rodata        0x60099194       0xa7 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+ *fill*         0x6009923b        0x1 
+ .rodata        0x6009923c       0xf3 build\kernel\components\finsh\shell.o
+ *fill*         0x6009932f        0x1 
+ .rodata        0x60099330      0x76c build\kernel\components\finsh\cmd.o
+ .rodata        0x60099a9c       0x92 build\kernel\components\finsh\msh.o
+ *fill*         0x60099b2e        0x2 
+ .rodata        0x60099b30      0x229 build\kernel\components\finsh\msh_file.o
+ *fill*         0x60099d59        0x3 
+ .rodata        0x60099d5c       0xf2 build\kernel\components\finsh\finsh_error.o
+ *fill*         0x60099e4e        0x2 
+ .rodata        0x60099e50       0xc4 build\kernel\components\finsh\finsh_ops.o
+                0x60099e50                op_table
+ .rodata        0x60099f14       0x80 build\kernel\components\finsh\finsh_token.o
+ .rodata        0x60099f94       0x48 build\kernel\components\libc\aio\posix_aio.o
+ .rodata        0x60099fdc       0x17 build\kernel\components\libc\compilers\newlib\libc.o
+ *fill*         0x60099ff3        0x1 
+ .rodata        0x60099ff4       0x13 build\kernel\components\libc\compilers\newlib\stdio.o
+ *fill*         0x6009a007        0x1 
+ .rodata        0x6009a008       0x39 build\kernel\components\libc\compilers\newlib\syscalls.o
+ *fill*         0x6009a041        0x3 
+ .rodata        0x6009a044       0x25 build\kernel\components\libc\compilers\newlib\time.o
+ *fill*         0x6009a069        0x3 
+ .rodata        0x6009a06c        0x4 build\kernel\components\libc\pthreads\mqueue.o
+ .rodata        0x6009a070      0x11b build\kernel\components\libc\pthreads\pthread.o
+ *fill*         0x6009a18b        0x1 
+ .rodata        0x6009a18c      0x1ae build\kernel\components\libc\pthreads\pthread_attr.o
+                0x6009a18c                pthread_default_attr
+ *fill*         0x6009a33a        0x2 
+ .rodata        0x6009a33c       0x34 build\kernel\components\libc\pthreads\pthread_tls.o
+ .rodata        0x6009a370       0x11 build\kernel\components\libc\pthreads\semaphore.o
+ *fill*         0x6009a381        0x3 
+ .rodata        0x6009a384       0x27 build\kernel\components\libc\time\clock_time.o
+ *fill*         0x6009a3ab        0x1 
+ .rodata        0x6009a3ac      0x1a9 build\kernel\components\lwp\lwp.o
+ *fill*         0x6009a555        0x3 
+ .rodata        0x6009a558      0x190 build\kernel\components\lwp\lwp_mem.o
+ .rodata        0x6009a6e8      0x15c build\kernel\components\lwp\lwp_memheap.o
+ .rodata        0x6009a844      0x234 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+ .rodata        0x6009aa78      0x330 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+ .rodata        0x6009ada8      0x4a1 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+ *fill*         0x6009b249        0x3 
+ .rodata        0x6009b24c       0x44 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .rodata        0x6009b290      0x172 build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+ *fill*         0x6009b402        0x2 
+ .rodata        0x6009b404       0x7b build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+ *fill*         0x6009b47f        0x1 
+ .rodata        0x6009b480      0x24b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+ *fill*         0x6009b6cb        0x1 
+ .rodata        0x6009b6cc       0xb2 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+ *fill*         0x6009b77e        0x2 
+ .rodata        0x6009b780       0x48 build\kernel\components\net\lwip-2.0.2\src\core\def.o
+ .rodata        0x6009b7c8       0x8b build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+                0x6009b7c8                dns_mquery_v4group
+ *fill*         0x6009b853        0x1 
+ .rodata        0x6009b854       0x47 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+ *fill*         0x6009b89b        0x1 
+ .rodata        0x6009b89c      0x3db build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+                0x6009b8a4                memp_RAW_PCB
+                0x6009b8bc                memp_UDP_PCB
+                0x6009b8d4                memp_TCP_PCB
+                0x6009b8f4                memp_TCP_PCB_LISTEN
+                0x6009b90c                memp_TCP_SEG
+                0x6009b928                memp_REASSDATA
+                0x6009b944                memp_FRAG_PBUF
+                0x6009b95c                memp_NETBUF
+                0x6009b974                memp_NETCONN
+                0x6009b994                memp_TCPIP_MSG_API
+                0x6009b9b4                memp_TCPIP_MSG_INPKT
+                0x6009b9d0                memp_ARP_QUEUE
+                0x6009b9ec                memp_IGMP_GROUP
+                0x6009ba08                memp_SYS_TIMEOUT
+                0x6009ba20                memp_NETDB
+                0x6009ba40                memp_PBUF
+                0x6009ba5c                memp_PBUF_POOL
+                0x6009ba6c                memp_pools
+ *fill*         0x6009bc77        0x1 
+ .rodata        0x6009bc78       0x4d build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+ *fill*         0x6009bcc5        0x3 
+ .rodata        0x6009bcc8      0x4e5 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+ *fill*         0x6009c1ad        0x3 
+ .rodata        0x6009c1b0       0xa6 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+ *fill*         0x6009c256        0x2 
+ .rodata        0x6009c258      0x4ab build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+                0x6009c314                tcp_pcb_lists
+ *fill*         0x6009c703        0x1 
+ .rodata        0x6009c704      0x361 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+ *fill*         0x6009ca65        0x3 
+ .rodata        0x6009ca68      0x41f build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+ *fill*         0x6009ce87        0x1 
+ .rodata        0x6009ce88       0xad build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+                0x6009ce88                lwip_cyclic_timers
+ *fill*         0x6009cf35        0x3 
+ .rodata        0x6009cf38       0x76 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+ *fill*         0x6009cfae        0x2 
+ .rodata        0x6009cfb0       0x7d build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+                0x6009cfb0                ethbroadcast
+                0x6009cfb8                ethzero
+ *fill*         0x6009d02d        0x3 
+ .rodata        0x6009d030      0x3bf build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+                0x6009d04c                lwip_netdev_ops
+ *fill*         0x6009d3ef        0x1 
+ .rodata        0x6009d3f0      0x4eb build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+ *fill*         0x6009d8db        0x1 
+ .rodata        0x6009d8dc      0x261 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+ *fill*         0x6009db3d        0x3 
+ .rodata        0x6009db40       0xd4 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+ .rodata        0x6009dc14      0x332 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+ *fill*         0x6009df46        0x2 
+ .rodata        0x6009df48       0x71 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+ *fill*         0x6009dfb9        0x3 
+ .rodata        0x6009dfbc       0x51 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+                0x6009dfbc                ip_addr_any
+                0x6009dfc0                ip_addr_broadcast
+ *fill*         0x6009e00d        0x3 
+ .rodata        0x6009e010      0x1fc build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+ .rodata        0x6009e20c       0x51 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+ *fill*         0x6009e25d        0x3 
+ .rodata        0x6009e260      0x93c build\kernel\components\net\netdev\src\netdev.o
+ .rodata        0x6009eb9c       0x18 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+ .rodata        0x6009ebb4      0x27d build\kernel\components\net\sal_socket\src\sal_socket.o
+ *fill*         0x6009ee31        0x3 
+ .rodata        0x6009ee34       0xec build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+ .rodata        0x6009ef20       0x24 build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+                0x6009ef20                _net_fops
+ .rodata        0x6009ef44       0xab build\kernel\components\drivers\i2c\i2c_core.o
+ *fill*         0x6009efef        0x1 
+ .rodata        0x6009eff0       0x9e build\kernel\components\drivers\i2c\i2c_dev.o
+ *fill*         0x6009f08e        0x2 
+ .rodata        0x6009f090       0xcc build\kernel\components\drivers\misc\pin.o
+ .rodata        0x6009f15c      0x3fc build\kernel\components\drivers\mtd\mtd_nand.o
+ .rodata        0x6009f558      0x12f build\kernel\components\drivers\rtc\rtc.o
+ *fill*         0x6009f687        0x1 
+ .rodata        0x6009f688       0x69 build\kernel\components\drivers\rtc\soft_rtc.o
+ *fill*         0x6009f6f1        0x3 
+ .rodata        0x6009f6f4      0x133 build\kernel\components\drivers\sdio\block_dev.o
+ *fill*         0x6009f827        0x1 
+ .rodata        0x6009f828      0x10b build\kernel\components\drivers\sdio\mmcsd_core.o
+ *fill*         0x6009f933        0x1 
+ .rodata        0x6009f934      0x17b build\kernel\components\drivers\sdio\sd.o
+ *fill*         0x6009faaf        0x1 
+ .rodata        0x6009fab0      0x3e2 build\kernel\components\drivers\sdio\sdio.o
+ *fill*         0x6009fe92        0x2 
+ .rodata        0x6009fe94      0x1ca build\kernel\components\drivers\sdio\mmc.o
+ *fill*         0x600a005e        0x2 
+ .rodata        0x600a0060      0x2ed build\kernel\components\drivers\serial\serial.o
+ *fill*         0x600a034d        0x3 
+ .rodata        0x600a0350       0xf7 build\kernel\components\drivers\spi\spi_core.o
+ *fill*         0x600a0447        0x1 
+ .rodata        0x600a0448      0x11e build\kernel\components\drivers\spi\spi_dev.o
+ *fill*         0x600a0566        0x2 
+ .rodata        0x600a0568      0x9d9 build\kernel\components\drivers\spi\spi_flash_sfud.o
+ *fill*         0x600a0f41        0x3 
+ .rodata        0x600a0f44      0x62d build\kernel\components\drivers\spi\sfud\src\sfud.o
+ *fill*         0x600a1571        0x3 
+ .rodata        0x600a1574      0x261 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+ *fill*         0x600a17d5        0x3 
+ .rodata        0x600a17d8       0xaf build\kernel\components\drivers\src\completion.o
+ *fill*         0x600a1887        0x1 
+ .rodata        0x600a1888       0x3b build\kernel\components\drivers\src\waitqueue.o
+ *fill*         0x600a18c3        0x1 
+ .rodata        0x600a18c4      0x115 build\kernel\components\drivers\src\workqueue.o
  *(.rodata.*)
- *fill*         0x600a19dd        0x3 
- .rodata.name   0x600a19e0       0x7e build\kernel\src\mem.o
-                0x600a19e0                __fsym_list_mem_name
-                0x600a19ec                __fsym_list_mem_desc
-                0x600a1a0c                __fsym___cmd_memcheck_name
-                0x600a1a1c                __fsym___cmd_memcheck_desc
-                0x600a1a30                __fsym___cmd_memtrace_name
-                0x600a1a40                __fsym___cmd_memtrace_desc
- *fill*         0x600a1a5e        0x2 
- .rodata.name   0x600a1a60       0x14 build\kernel\libcpu\arm\cortex-a\gic.o
-                0x600a1a60                __fsym_gic_name
-                0x600a1a64                __fsym_gic_desc
- .rodata.name   0x600a1a74       0x25 build\kernel\components\dfs\src\dfs.o
-                0x600a1a74                __fsym___cmd_list_fd_name
-                0x600a1a84                __fsym___cmd_list_fd_desc
- *fill*         0x600a1a99        0x3 
- .rodata.name   0x600a1a9c       0x65 build\kernel\components\dfs\src\dfs_file.o
-                0x600a1a9c                __fsym_ls_name
-                0x600a1aa0                __fsym_ls_desc
-                0x600a1ab8                __fsym_rm_name
-                0x600a1abc                __fsym_rm_desc
-                0x600a1ad8                __fsym_cat_name
-                0x600a1adc                __fsym_cat_desc
-                0x600a1ae8                __fsym_copy_name
-                0x600a1af0                __fsym_copy_desc
- *fill*         0x600a1b01        0x3 
- .rodata.name   0x600a1b04       0x2e build\kernel\components\dfs\src\dfs_fs.o
-                0x600a1b04                __fsym_mkfs_name
-                0x600a1b0c                __fsym_mkfs_desc
-                0x600a1b20                __fsym_df_name
-                0x600a1b24                __fsym_df_desc
- *fill*         0x600a1b32        0x2 
- .rodata.name   0x600a1b34       0x41 build\kernel\components\dfs\src\dfs_posix.o
-                0x600a1b34                __fsym_mkdir_name
-                0x600a1b3c                __fsym_mkdir_desc
-                0x600a1b50                __fsym_cd_name
-                0x600a1b54                __fsym_cd_desc
- *fill*         0x600a1b75        0x3 
- .rodata.name   0x600a1b78      0x3f9 build\kernel\components\finsh\cmd.o
-                0x600a1b78                __fsym_hello_name
-                0x600a1b80                __fsym_hello_desc
-                0x600a1b90                __fsym_version_name
-                0x600a1b98                __fsym_version_desc
-                0x600a1bbc                __fsym___cmd_version_name
-                0x600a1bcc                __fsym___cmd_version_desc
-                0x600a1bf0                __fsym_list_thread_name
-                0x600a1bfc                __fsym_list_thread_desc
-                0x600a1c08                __fsym___cmd_list_thread_name
-                0x600a1c1c                __fsym___cmd_list_thread_desc
-                0x600a1c28                __fsym_list_sem_name
-                0x600a1c34                __fsym_list_sem_desc
-                0x600a1c50                __fsym___cmd_list_sem_name
-                0x600a1c60                __fsym___cmd_list_sem_desc
-                0x600a1c7c                __fsym_list_event_name
-                0x600a1c88                __fsym_list_event_desc
-                0x600a1ca0                __fsym___cmd_list_event_name
-                0x600a1cb4                __fsym___cmd_list_event_desc
-                0x600a1ccc                __fsym_list_mutex_name
-                0x600a1cd8                __fsym_list_mutex_desc
-                0x600a1cf0                __fsym___cmd_list_mutex_name
-                0x600a1d04                __fsym___cmd_list_mutex_desc
-                0x600a1d1c                __fsym_list_mailbox_name
-                0x600a1d2c                __fsym_list_mailbox_desc
-                0x600a1d44                __fsym___cmd_list_mailbox_name
-                0x600a1d58                __fsym___cmd_list_mailbox_desc
-                0x600a1d70                __fsym_list_msgqueue_name
-                0x600a1d80                __fsym_list_msgqueue_desc
-                0x600a1da0                __fsym___cmd_list_msgqueue_name
-                0x600a1db4                __fsym___cmd_list_msgqueue_desc
-                0x600a1dd4                __fsym_list_memheap_name
-                0x600a1de4                __fsym_list_memheap_desc
-                0x600a1e00                __fsym___cmd_list_memheap_name
-                0x600a1e14                __fsym___cmd_list_memheap_desc
-                0x600a1e30                __fsym_list_mempool_name
-                0x600a1e40                __fsym_list_mempool_desc
-                0x600a1e5c                __fsym___cmd_list_mempool_name
-                0x600a1e70                __fsym___cmd_list_mempool_desc
-                0x600a1e8c                __fsym_list_timer_name
-                0x600a1e98                __fsym_list_timer_desc
-                0x600a1eb0                __fsym___cmd_list_timer_name
-                0x600a1ec4                __fsym___cmd_list_timer_desc
-                0x600a1edc                __fsym_list_device_name
-                0x600a1ee8                __fsym_list_device_desc
-                0x600a1f00                __fsym___cmd_list_device_name
-                0x600a1f14                __fsym___cmd_list_device_desc
-                0x600a1f2c                __fsym_list_name
-                0x600a1f34                __fsym_list_desc
-                0x600a1f50                __vsym_dummy_name
-                0x600a1f58                __vsym_dummy_desc
- *fill*         0x600a1f71        0x3 
- .rodata.name   0x600a1f74       0xc1 build\kernel\components\finsh\msh.o
-                0x600a1f74                __fsym___cmd_exit_name
-                0x600a1f80                __fsym___cmd_exit_desc
-                0x600a1fa0                __fsym_msh_name
-                0x600a1fa4                __fsym_msh_desc
-                0x600a1fb8                __fsym___cmd_help_name
-                0x600a1fc4                __fsym___cmd_help_desc
-                0x600a1fdc                __fsym___cmd_ps_name
-                0x600a1fe8                __fsym___cmd_ps_desc
-                0x600a2004                __fsym___cmd_free_name
-                0x600a2010                __fsym___cmd_free_desc
- *fill*         0x600a2035        0x3 
- .rodata.name   0x600a2038      0x1b8 build\kernel\components\finsh\msh_file.o
-                0x600a2038                __fsym___cmd_ls_name
-                0x600a2044                __fsym___cmd_ls_desc
-                0x600a2068                __fsym___cmd_cp_name
-                0x600a2074                __fsym___cmd_cp_desc
-                0x600a208c                __fsym___cmd_mv_name
-                0x600a2098                __fsym___cmd_mv_desc
-                0x600a20b0                __fsym___cmd_cat_name
-                0x600a20bc                __fsym___cmd_cat_desc
-                0x600a20d0                __fsym___cmd_rm_name
-                0x600a20dc                __fsym___cmd_rm_desc
-                0x600a20f8                __fsym___cmd_cd_name
-                0x600a2104                __fsym___cmd_cd_desc
-                0x600a2128                __fsym___cmd_pwd_name
-                0x600a2134                __fsym___cmd_pwd_desc
-                0x600a2168                __fsym___cmd_mkdir_name
-                0x600a2174                __fsym___cmd_mkdir_desc
-                0x600a218c                __fsym___cmd_mkfs_name
-                0x600a2198                __fsym___cmd_mkfs_desc
-                0x600a21b8                __fsym___cmd_df_name
-                0x600a21c4                __fsym___cmd_df_desc
-                0x600a21d0                __fsym___cmd_echo_name
-                0x600a21dc                __fsym___cmd_echo_desc
- .rodata.name   0x600a21f0       0xc4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
-                0x600a21f0                __fsym_set_if_name
-                0x600a21f8                __fsym_set_if_desc
-                0x600a2218                __fsym_set_dns_name
-                0x600a2220                __fsym_set_dns_desc
-                0x600a2238                __fsym_list_if_name
-                0x600a2240                __fsym_list_if_desc
-                0x600a2264                __fsym_list_tcps_name
-                0x600a2270                __fsym_list_tcps_desc
-                0x600a228c                __fsym_list_udps_name
-                0x600a2298                __fsym_list_udps_desc
- .rodata.name   0x600a22b4       0xc1 build\kernel\components\net\netdev\src\netdev.o
-                0x600a22b4                __fsym___cmd_ifconfig_name
-                0x600a22c4                __fsym___cmd_ifconfig_desc
-                0x600a22f4                __fsym___cmd_ping_name
-                0x600a2300                __fsym___cmd_ping_desc
-                0x600a2314                __fsym___cmd_dns_name
-                0x600a2320                __fsym___cmd_dns_desc
-                0x600a2344                __fsym___cmd_netstat_name
-                0x600a2354                __fsym___cmd_netstat_desc
- *fill*         0x600a2375        0x3 
- .rodata.name   0x600a2378       0x6e build\kernel\components\drivers\misc\pin.o
-                0x600a2378                __fsym_pinMode_name
-                0x600a2380                __fsym_pinMode_desc
-                0x600a2398                __fsym_pinWrite_name
-                0x600a23a4                __fsym_pinWrite_desc
-                0x600a23c0                __fsym_pinRead_name
-                0x600a23c8                __fsym_pinRead_desc
- *fill*         0x600a23e6        0x2 
- .rodata.name   0x600a23e8      0x18b build\kernel\components\drivers\mtd\mtd_nand.o
-                0x600a23e8                __fsym___cmd_mtd_nand_name
-                0x600a23f8                __fsym___cmd_mtd_nand_desc
-                0x600a2418                __fsym_nand_id_name
-                0x600a2420                __fsym_nand_id_desc
-                0x600a2438                __fsym_nand_read_name
-                0x600a2444                __fsym_nand_read_desc
-                0x600a2478                __fsym_nand_readoob_name
-                0x600a2488                __fsym_nand_readoob_desc
-                0x600a24c4                __fsym_nand_write_name
-                0x600a24d0                __fsym_nand_write_desc
-                0x600a2508                __fsym_nand_erase_name
-                0x600a2514                __fsym_nand_erase_desc
-                0x600a252c                __fsym_nand_erase_all_name
-                0x600a253c                __fsym_nand_erase_all_desc
- *fill*         0x600a2573        0x1 
- .rodata.name   0x600a2574       0xc3 build\kernel\components\drivers\rtc\rtc.o
-                0x600a2574                __fsym_list_date_name
-                0x600a2580                __fsym_list_date_desc
-                0x600a2594                __fsym_set_date_name
-                0x600a25a0                __fsym_set_date_desc
-                0x600a25c4                __fsym_set_time_name
-                0x600a25d0                __fsym_set_time_desc
-                0x600a25f4                __fsym___cmd_date_name
-                0x600a2600                __fsym___cmd_date_desc
- *fill*         0x600a2637        0x1 
- .rodata.name   0x600a2638       0x1f build\kernel\components\drivers\spi\spi_flash_sfud.o
-                0x600a2638                __fsym___cmd_sf_name
-                0x600a2644                __fsym___cmd_sf_desc
- *fill*         0x600a2657        0x1 
+ *fill*         0x600a19d9        0x3 
+ .rodata.name   0x600a19dc       0x7e build\kernel\src\mem.o
+                0x600a19dc                __fsym_list_mem_name
+                0x600a19e8                __fsym_list_mem_desc
+                0x600a1a08                __fsym___cmd_memcheck_name
+                0x600a1a18                __fsym___cmd_memcheck_desc
+                0x600a1a2c                __fsym___cmd_memtrace_name
+                0x600a1a3c                __fsym___cmd_memtrace_desc
+ *fill*         0x600a1a5a        0x2 
+ .rodata.name   0x600a1a5c       0x14 build\kernel\libcpu\arm\cortex-a\gic.o
+                0x600a1a5c                __fsym_gic_name
+                0x600a1a60                __fsym_gic_desc
+ .rodata.name   0x600a1a70       0x25 build\kernel\components\dfs\src\dfs.o
+                0x600a1a70                __fsym___cmd_list_fd_name
+                0x600a1a80                __fsym___cmd_list_fd_desc
+ *fill*         0x600a1a95        0x3 
+ .rodata.name   0x600a1a98       0x65 build\kernel\components\dfs\src\dfs_file.o
+                0x600a1a98                __fsym_ls_name
+                0x600a1a9c                __fsym_ls_desc
+                0x600a1ab4                __fsym_rm_name
+                0x600a1ab8                __fsym_rm_desc
+                0x600a1ad4                __fsym_cat_name
+                0x600a1ad8                __fsym_cat_desc
+                0x600a1ae4                __fsym_copy_name
+                0x600a1aec                __fsym_copy_desc
+ *fill*         0x600a1afd        0x3 
+ .rodata.name   0x600a1b00       0x2e build\kernel\components\dfs\src\dfs_fs.o
+                0x600a1b00                __fsym_mkfs_name
+                0x600a1b08                __fsym_mkfs_desc
+                0x600a1b1c                __fsym_df_name
+                0x600a1b20                __fsym_df_desc
+ *fill*         0x600a1b2e        0x2 
+ .rodata.name   0x600a1b30       0x41 build\kernel\components\dfs\src\dfs_posix.o
+                0x600a1b30                __fsym_mkdir_name
+                0x600a1b38                __fsym_mkdir_desc
+                0x600a1b4c                __fsym_cd_name
+                0x600a1b50                __fsym_cd_desc
+ *fill*         0x600a1b71        0x3 
+ .rodata.name   0x600a1b74      0x3f9 build\kernel\components\finsh\cmd.o
+                0x600a1b74                __fsym_hello_name
+                0x600a1b7c                __fsym_hello_desc
+                0x600a1b8c                __fsym_version_name
+                0x600a1b94                __fsym_version_desc
+                0x600a1bb8                __fsym___cmd_version_name
+                0x600a1bc8                __fsym___cmd_version_desc
+                0x600a1bec                __fsym_list_thread_name
+                0x600a1bf8                __fsym_list_thread_desc
+                0x600a1c04                __fsym___cmd_list_thread_name
+                0x600a1c18                __fsym___cmd_list_thread_desc
+                0x600a1c24                __fsym_list_sem_name
+                0x600a1c30                __fsym_list_sem_desc
+                0x600a1c4c                __fsym___cmd_list_sem_name
+                0x600a1c5c                __fsym___cmd_list_sem_desc
+                0x600a1c78                __fsym_list_event_name
+                0x600a1c84                __fsym_list_event_desc
+                0x600a1c9c                __fsym___cmd_list_event_name
+                0x600a1cb0                __fsym___cmd_list_event_desc
+                0x600a1cc8                __fsym_list_mutex_name
+                0x600a1cd4                __fsym_list_mutex_desc
+                0x600a1cec                __fsym___cmd_list_mutex_name
+                0x600a1d00                __fsym___cmd_list_mutex_desc
+                0x600a1d18                __fsym_list_mailbox_name
+                0x600a1d28                __fsym_list_mailbox_desc
+                0x600a1d40                __fsym___cmd_list_mailbox_name
+                0x600a1d54                __fsym___cmd_list_mailbox_desc
+                0x600a1d6c                __fsym_list_msgqueue_name
+                0x600a1d7c                __fsym_list_msgqueue_desc
+                0x600a1d9c                __fsym___cmd_list_msgqueue_name
+                0x600a1db0                __fsym___cmd_list_msgqueue_desc
+                0x600a1dd0                __fsym_list_memheap_name
+                0x600a1de0                __fsym_list_memheap_desc
+                0x600a1dfc                __fsym___cmd_list_memheap_name
+                0x600a1e10                __fsym___cmd_list_memheap_desc
+                0x600a1e2c                __fsym_list_mempool_name
+                0x600a1e3c                __fsym_list_mempool_desc
+                0x600a1e58                __fsym___cmd_list_mempool_name
+                0x600a1e6c                __fsym___cmd_list_mempool_desc
+                0x600a1e88                __fsym_list_timer_name
+                0x600a1e94                __fsym_list_timer_desc
+                0x600a1eac                __fsym___cmd_list_timer_name
+                0x600a1ec0                __fsym___cmd_list_timer_desc
+                0x600a1ed8                __fsym_list_device_name
+                0x600a1ee4                __fsym_list_device_desc
+                0x600a1efc                __fsym___cmd_list_device_name
+                0x600a1f10                __fsym___cmd_list_device_desc
+                0x600a1f28                __fsym_list_name
+                0x600a1f30                __fsym_list_desc
+                0x600a1f4c                __vsym_dummy_name
+                0x600a1f54                __vsym_dummy_desc
+ *fill*         0x600a1f6d        0x3 
+ .rodata.name   0x600a1f70       0xc1 build\kernel\components\finsh\msh.o
+                0x600a1f70                __fsym___cmd_exit_name
+                0x600a1f7c                __fsym___cmd_exit_desc
+                0x600a1f9c                __fsym_msh_name
+                0x600a1fa0                __fsym_msh_desc
+                0x600a1fb4                __fsym___cmd_help_name
+                0x600a1fc0                __fsym___cmd_help_desc
+                0x600a1fd8                __fsym___cmd_ps_name
+                0x600a1fe4                __fsym___cmd_ps_desc
+                0x600a2000                __fsym___cmd_free_name
+                0x600a200c                __fsym___cmd_free_desc
+ *fill*         0x600a2031        0x3 
+ .rodata.name   0x600a2034      0x1b8 build\kernel\components\finsh\msh_file.o
+                0x600a2034                __fsym___cmd_ls_name
+                0x600a2040                __fsym___cmd_ls_desc
+                0x600a2064                __fsym___cmd_cp_name
+                0x600a2070                __fsym___cmd_cp_desc
+                0x600a2088                __fsym___cmd_mv_name
+                0x600a2094                __fsym___cmd_mv_desc
+                0x600a20ac                __fsym___cmd_cat_name
+                0x600a20b8                __fsym___cmd_cat_desc
+                0x600a20cc                __fsym___cmd_rm_name
+                0x600a20d8                __fsym___cmd_rm_desc
+                0x600a20f4                __fsym___cmd_cd_name
+                0x600a2100                __fsym___cmd_cd_desc
+                0x600a2124                __fsym___cmd_pwd_name
+                0x600a2130                __fsym___cmd_pwd_desc
+                0x600a2164                __fsym___cmd_mkdir_name
+                0x600a2170                __fsym___cmd_mkdir_desc
+                0x600a2188                __fsym___cmd_mkfs_name
+                0x600a2194                __fsym___cmd_mkfs_desc
+                0x600a21b4                __fsym___cmd_df_name
+                0x600a21c0                __fsym___cmd_df_desc
+                0x600a21cc                __fsym___cmd_echo_name
+                0x600a21d8                __fsym___cmd_echo_desc
+ .rodata.name   0x600a21ec       0xc4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+                0x600a21ec                __fsym_set_if_name
+                0x600a21f4                __fsym_set_if_desc
+                0x600a2214                __fsym_set_dns_name
+                0x600a221c                __fsym_set_dns_desc
+                0x600a2234                __fsym_list_if_name
+                0x600a223c                __fsym_list_if_desc
+                0x600a2260                __fsym_list_tcps_name
+                0x600a226c                __fsym_list_tcps_desc
+                0x600a2288                __fsym_list_udps_name
+                0x600a2294                __fsym_list_udps_desc
+ .rodata.name   0x600a22b0       0xc1 build\kernel\components\net\netdev\src\netdev.o
+                0x600a22b0                __fsym___cmd_ifconfig_name
+                0x600a22c0                __fsym___cmd_ifconfig_desc
+                0x600a22f0                __fsym___cmd_ping_name
+                0x600a22fc                __fsym___cmd_ping_desc
+                0x600a2310                __fsym___cmd_dns_name
+                0x600a231c                __fsym___cmd_dns_desc
+                0x600a2340                __fsym___cmd_netstat_name
+                0x600a2350                __fsym___cmd_netstat_desc
+ *fill*         0x600a2371        0x3 
+ .rodata.name   0x600a2374       0x6e build\kernel\components\drivers\misc\pin.o
+                0x600a2374                __fsym_pinMode_name
+                0x600a237c                __fsym_pinMode_desc
+                0x600a2394                __fsym_pinWrite_name
+                0x600a23a0                __fsym_pinWrite_desc
+                0x600a23bc                __fsym_pinRead_name
+                0x600a23c4                __fsym_pinRead_desc
+ *fill*         0x600a23e2        0x2 
+ .rodata.name   0x600a23e4      0x18b build\kernel\components\drivers\mtd\mtd_nand.o
+                0x600a23e4                __fsym___cmd_mtd_nand_name
+                0x600a23f4                __fsym___cmd_mtd_nand_desc
+                0x600a2414                __fsym_nand_id_name
+                0x600a241c                __fsym_nand_id_desc
+                0x600a2434                __fsym_nand_read_name
+                0x600a2440                __fsym_nand_read_desc
+                0x600a2474                __fsym_nand_readoob_name
+                0x600a2484                __fsym_nand_readoob_desc
+                0x600a24c0                __fsym_nand_write_name
+                0x600a24cc                __fsym_nand_write_desc
+                0x600a2504                __fsym_nand_erase_name
+                0x600a2510                __fsym_nand_erase_desc
+                0x600a2528                __fsym_nand_erase_all_name
+                0x600a2538                __fsym_nand_erase_all_desc
+ *fill*         0x600a256f        0x1 
+ .rodata.name   0x600a2570       0xc3 build\kernel\components\drivers\rtc\rtc.o
+                0x600a2570                __fsym_list_date_name
+                0x600a257c                __fsym_list_date_desc
+                0x600a2590                __fsym_set_date_name
+                0x600a259c                __fsym_set_date_desc
+                0x600a25c0                __fsym_set_time_name
+                0x600a25cc                __fsym_set_time_desc
+                0x600a25f0                __fsym___cmd_date_name
+                0x600a25fc                __fsym___cmd_date_desc
+ *fill*         0x600a2633        0x1 
+ .rodata.name   0x600a2634       0x1f build\kernel\components\drivers\spi\spi_flash_sfud.o
+                0x600a2634                __fsym___cmd_sf_name
+                0x600a2640                __fsym___cmd_sf_desc
+ *fill*         0x600a2653        0x1 
  .rodata._global_impure_ptr
-                0x600a2658        0x4 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-impure.o)
-                0x600a2658                _global_impure_ptr
+                0x600a2654        0x4 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-impure.o)
+                0x600a2654                _global_impure_ptr
  .rodata._DAYS_BEFORE_MONTH
-                0x600a265c       0x30 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-mktime.o)
+                0x600a2658       0x30 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-mktime.o)
  .rodata.DAYS_IN_MONTH
-                0x600a268c       0x30 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-mktime.o)
+                0x600a2688       0x30 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-mktime.o)
  .rodata.__month_lengths
-                0x600a26bc       0x60 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-month_lengths.o)
-                0x600a26bc                __month_lengths
+                0x600a26b8       0x60 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-month_lengths.o)
+                0x600a26b8                __month_lengths
  .rodata.zeroes.7256
-                0x600a271c       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
+                0x600a2718       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
  .rodata.str1.4
-                0x600a272c       0x42 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
- *fill*         0x600a276e        0x2 
+                0x600a2728       0x42 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
+ *fill*         0x600a276a        0x2 
  .rodata.blanks.7255
-                0x600a2770       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
+                0x600a276c       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-svfprintf.o)
  .rodata.str1.4
-                0x600a2780       0x53 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-tzset_r.o)
+                0x600a277c       0x53 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-tzset_r.o)
  .rodata.str1.4
-                0x600a27d3        0x4 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-tzvars.o)
- *fill*         0x600a27d3        0x1 
+                0x600a27cf        0x4 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-tzvars.o)
+ *fill*         0x600a27cf        0x1 
  .rodata.zeroes.7271
-                0x600a27d4       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
+                0x600a27d0       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
  .rodata.str1.4
-                0x600a27e4       0x42 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
+                0x600a27e0       0x42 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
  .rodata.blanks.7270
-                0x600a27e4       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
+                0x600a27e0       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-vfprintf.o)
  .rodata.day_name.4754
-                0x600a27f4       0x15 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
- *fill*         0x600a2809        0x3 
+                0x600a27f0       0x15 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
+ *fill*         0x600a2805        0x3 
  .rodata.str1.4
-                0x600a280c       0x20 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
+                0x600a2808       0x20 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
  .rodata.mon_name.4755
-                0x600a282c       0x24 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
+                0x600a2828       0x24 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-asctime_r.o)
  .rodata.str1.4
-                0x600a2850       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-dtoa.o)
+                0x600a284c       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-dtoa.o)
                                  0x12 (size before relaxing)
  .rodata.str1.4
-                0x600a2860       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-locale.o)
+                0x600a285c       0x10 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-locale.o)
                                  0x12 (size before relaxing)
+ *fill*         0x600a286c        0x4 
  .rodata.__mprec_tens
                 0x600a2870       0xc8 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-ar/thumb\libc.a(lib_a-mprec.o)
                 0x600a2870                __mprec_tens
@@ -4959,287 +4987,287 @@ OUTPUT(rtthread.elf elf32-littlearm)
  .ARM.attributes
                 0x0000273d       0x29 c:/rt-threadstudio/repo/extract/toolchain_support_packages/arm/gnu_tools_for_arm_embedded_processors/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-ar/thumb\libgcc.a(_udivmoddi4.o)
 
-.debug_info     0x00000000    0x6cd1e
- .debug_info    0x00000000      0x488 build\applications\WtApplication.o
- .debug_info    0x00000488       0xc9 build\applications\mnt.o
- .debug_info    0x00000551      0x4de build\applications\test.o
- .debug_info    0x00000a2f      0x143 build\drivers\board.o
- .debug_info    0x00000b72     0x144c build\drivers\drv_sdio.o
- .debug_info    0x00001fbe     0x114c build\drivers\drv_smc911x.o
- .debug_info    0x0000310a      0x1a3 build\drivers\drv_timer.o
- .debug_info    0x000032ad      0x16a build\drivers\secondary_cpu.o
- .debug_info    0x00003417      0x8fd build\drivers\serial.o
- .debug_info    0x00003d14      0x4fb build\kernel\src\clock.o
- .debug_info    0x0000420f      0x682 build\kernel\src\components.o
- .debug_info    0x00004891      0x7bf build\kernel\src\cpu.o
- .debug_info    0x00005050      0xa79 build\kernel\src\device.o
- .debug_info    0x00005ac9      0x708 build\kernel\src\idle.o
- .debug_info    0x000061d1     0x1c5f build\kernel\src\ipc.o
- .debug_info    0x00007e30      0x1a0 build\kernel\src\irq.o
- .debug_info    0x00007fd0     0x13f3 build\kernel\src\kservice.o
- .debug_info    0x000093c3      0x96b build\kernel\src\mem.o
- .debug_info    0x00009d2e      0x669 build\kernel\src\memheap.o
- .debug_info    0x0000a397      0x9b0 build\kernel\src\mempool.o
- .debug_info    0x0000ad47      0x79f build\kernel\src\object.o
- .debug_info    0x0000b4e6      0xaf3 build\kernel\src\scheduler.o
- .debug_info    0x0000bfd9      0xd06 build\kernel\src\signal.o
- .debug_info    0x0000ccdf      0xd58 build\kernel\src\thread.o
- .debug_info    0x0000da37      0xbff build\kernel\src\timer.o
- .debug_info    0x0000e636      0x20a build\kernel\libcpu\arm\cortex-a\cpu.o
- .debug_info    0x0000e840      0x6f1 build\kernel\libcpu\arm\cortex-a\gic.o
- .debug_info    0x0000ef31      0x2dd build\kernel\libcpu\arm\cortex-a\interrupt.o
- .debug_info    0x0000f20e      0x2d2 build\kernel\libcpu\arm\cortex-a\mmu.o
- .debug_info    0x0000f4e0      0x10a build\kernel\libcpu\arm\cortex-a\stack.o
- .debug_info    0x0000f5ea      0x3a7 build\kernel\libcpu\arm\cortex-a\trap.o
- .debug_info    0x0000f991       0x6d build\kernel\libcpu\arm\cortex-a\context_gcc.o
- .debug_info    0x0000f9fe       0x6e build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
- .debug_info    0x0000fa6c       0x6b build\kernel\libcpu\arm\cortex-a\start_gcc.o
- .debug_info    0x0000fad7       0x70 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
- .debug_info    0x0000fb47      0x175 build\kernel\components\cplusplus\crt_init.o
- .debug_info    0x0000fcbc     0x1573 build\kernel\components\dfs\src\dfs.o
- .debug_info    0x0001122f     0x146d build\kernel\components\dfs\src\dfs_file.o
- .debug_info    0x0001269c     0x11ff build\kernel\components\dfs\src\dfs_fs.o
- .debug_info    0x0001389b     0x1526 build\kernel\components\dfs\src\dfs_posix.o
- .debug_info    0x00014dc1     0x1274 build\kernel\components\dfs\src\poll.o
- .debug_info    0x00016035      0x2a2 build\kernel\components\dfs\src\select.o
- .debug_info    0x000162d7     0x10d7 build\kernel\components\dfs\filesystems\devfs\devfs.o
- .debug_info    0x000173ae     0x2299 build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
- .debug_info    0x00019647     0x2707 build\kernel\components\dfs\filesystems\elmfat\ff.o
- .debug_info    0x0001bd4e      0x1c8 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
- .debug_info    0x0001bf16     0x1543 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
- .debug_info    0x0001d459     0x1023 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
- .debug_info    0x0001e47c     0x15e1 build\kernel\components\finsh\shell.o
- .debug_info    0x0001fa5d     0x218e build\kernel\components\finsh\cmd.o
- .debug_info    0x00021beb      0x9b4 build\kernel\components\finsh\msh.o
- .debug_info    0x0002259f      0x93a build\kernel\components\finsh\msh_file.o
- .debug_info    0x00022ed9      0x597 build\kernel\components\finsh\finsh_compiler.o
- .debug_info    0x00023470      0x163 build\kernel\components\finsh\finsh_error.o
- .debug_info    0x000235d3      0x429 build\kernel\components\finsh\finsh_heap.o
- .debug_info    0x000239fc      0x493 build\kernel\components\finsh\finsh_init.o
- .debug_info    0x00023e8f      0x49e build\kernel\components\finsh\finsh_node.o
- .debug_info    0x0002432d      0x64b build\kernel\components\finsh\finsh_ops.o
- .debug_info    0x00024978      0xbff build\kernel\components\finsh\finsh_parser.o
- .debug_info    0x00025577      0x3e1 build\kernel\components\finsh\finsh_var.o
- .debug_info    0x00025958      0x2f0 build\kernel\components\finsh\finsh_vm.o
- .debug_info    0x00025c48      0x6e0 build\kernel\components\finsh\finsh_token.o
- .debug_info    0x00026328      0xbde build\kernel\components\libc\aio\posix_aio.o
- .debug_info    0x00026f06      0x4c0 build\kernel\components\libc\compilers\newlib\libc.o
- .debug_info    0x000273c6      0xa12 build\kernel\components\libc\compilers\newlib\stdio.o
- .debug_info    0x00027dd8     0x186c build\kernel\components\libc\compilers\newlib\syscalls.o
- .debug_info    0x00029644      0x5ab build\kernel\components\libc\compilers\newlib\time.o
- .debug_info    0x00029bef      0x8af build\kernel\components\libc\pthreads\mqueue.o
- .debug_info    0x0002a49e     0x100b build\kernel\components\libc\pthreads\pthread.o
- .debug_info    0x0002b4a9      0x729 build\kernel\components\libc\pthreads\pthread_attr.o
- .debug_info    0x0002bbd2      0x828 build\kernel\components\libc\pthreads\pthread_tls.o
- .debug_info    0x0002c3fa      0x6a2 build\kernel\components\libc\pthreads\semaphore.o
- .debug_info    0x0002ca9c      0x786 build\kernel\components\libc\signal\posix_signal.o
- .debug_info    0x0002d222      0x3e6 build\kernel\components\libc\termios\posix_termios.o
- .debug_info    0x0002d608      0x72c build\kernel\components\libc\time\clock_time.o
- .debug_info    0x0002dd34     0x12b5 build\kernel\components\lwp\lwp.o
- .debug_info    0x0002efe9      0x7a1 build\kernel\components\lwp\lwp_mem.o
- .debug_info    0x0002f78a      0x628 build\kernel\components\lwp\lwp_memheap.o
- .debug_info    0x0002fdb2     0x160e build\kernel\components\lwp\lwp_syscall.o
- .debug_info    0x000313c0       0x7a build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
- .debug_info    0x0003143a     0x1a95 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
- .debug_info    0x00032ecf     0x1952 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
- .debug_info    0x00034821     0x234a build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
- .debug_info    0x00036b6b      0x105 build\kernel\components\net\lwip-2.0.2\src\api\err.o
- .debug_info    0x00036c70      0x54e build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
- .debug_info    0x000371be      0x7bd build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
- .debug_info    0x0003797b      0x7cd build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
- .debug_info    0x00038148     0x3081 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
- .debug_info    0x0003b1c9      0xf53 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
- .debug_info    0x0003c11c      0x349 build\kernel\components\net\lwip-2.0.2\src\core\def.o
- .debug_info    0x0003c465     0x1144 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
- .debug_info    0x0003d5a9      0x5f5 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
- .debug_info    0x0003db9e       0xb1 build\kernel\components\net\lwip-2.0.2\src\core\init.o
- .debug_info    0x0003dc4f      0x5c3 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
- .debug_info    0x0003e212      0xa3d build\kernel\components\net\lwip-2.0.2\src\core\memp.o
- .debug_info    0x0003ec4f      0x971 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
- .debug_info    0x0003f5c0     0x14e7 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
- .debug_info    0x00040aa7      0xaf1 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
- .debug_info    0x00041598     0x1bcf build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
- .debug_info    0x00043167     0x123b build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
- .debug_info    0x000443a2     0x1542 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
- .debug_info    0x000458e4     0x113e build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
- .debug_info    0x00046a22      0xe16 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
- .debug_info    0x00047838      0x737 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
- .debug_info    0x00047f6f     0x276d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
- .debug_info    0x0004a6dc     0x1767 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
- .debug_info    0x0004be43      0xee0 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
- .debug_info    0x0004cd23      0x88d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
- .debug_info    0x0004d5b0      0xc2c build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
- .debug_info    0x0004e1dc      0xbc3 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
- .debug_info    0x0004ed9f      0x763 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
- .debug_info    0x0004f502      0xc9d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
- .debug_info    0x0005019f      0x5f6 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
- .debug_info    0x00050795     0x22a9 build\kernel\components\net\netdev\src\netdev.o
- .debug_info    0x00052a3e      0x3f8 build\kernel\components\net\netdev\src\netdev_ipaddr.o
- .debug_info    0x00052e36     0x28fb build\kernel\components\net\sal_socket\src\sal_socket.o
- .debug_info    0x00055731     0x1cb3 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
- .debug_info    0x000573e4     0x1200 build\kernel\components\net\sal_socket\socket\net_sockets.o
- .debug_info    0x000585e4      0xd4f build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
- .debug_info    0x00059333      0xb7b build\kernel\components\drivers\i2c\i2c_core.o
- .debug_info    0x00059eae      0xba7 build\kernel\components\drivers\i2c\i2c_dev.o
- .debug_info    0x0005aa55      0xb9f build\kernel\components\drivers\misc\pin.o
- .debug_info    0x0005b5f4      0xffd build\kernel\components\drivers\mtd\mtd_nand.o
- .debug_info    0x0005c5f1      0x903 build\kernel\components\drivers\rtc\rtc.o
- .debug_info    0x0005cef4      0x66a build\kernel\components\drivers\rtc\soft_rtc.o
- .debug_info    0x0005d55e     0x1761 build\kernel\components\drivers\sdio\block_dev.o
- .debug_info    0x0005ecbf     0x16ed build\kernel\components\drivers\sdio\mmcsd_core.o
- .debug_info    0x000603ac     0x13c2 build\kernel\components\drivers\sdio\sd.o
- .debug_info    0x0006176e     0x21d1 build\kernel\components\drivers\sdio\sdio.o
- .debug_info    0x0006393f     0x134f build\kernel\components\drivers\sdio\mmc.o
- .debug_info    0x00064c8e     0x1aee build\kernel\components\drivers\serial\serial.o
- .debug_info    0x0006677c      0xed0 build\kernel\components\drivers\spi\spi_core.o
- .debug_info    0x0006764c      0xd1a build\kernel\components\drivers\spi\spi_dev.o
- .debug_info    0x00068366     0x1873 build\kernel\components\drivers\spi\spi_flash_sfud.o
- .debug_info    0x00069bd9      0xeb0 build\kernel\components\drivers\spi\sfud\src\sfud.o
- .debug_info    0x0006aa89      0x726 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
- .debug_info    0x0006b1af      0x665 build\kernel\components\drivers\src\completion.o
- .debug_info    0x0006b814      0x7bf build\kernel\components\drivers\src\waitqueue.o
- .debug_info    0x0006bfd3      0xd4b build\kernel\components\drivers\src\workqueue.o
+.debug_info     0x00000000    0x6cd43
+ .debug_info    0x00000000      0x498 build\applications\WtApplication.o
+ .debug_info    0x00000498       0xc9 build\applications\mnt.o
+ .debug_info    0x00000561      0x4f3 build\applications\test.o
+ .debug_info    0x00000a54      0x143 build\drivers\board.o
+ .debug_info    0x00000b97     0x144c build\drivers\drv_sdio.o
+ .debug_info    0x00001fe3     0x114c build\drivers\drv_smc911x.o
+ .debug_info    0x0000312f      0x1a3 build\drivers\drv_timer.o
+ .debug_info    0x000032d2      0x16a build\drivers\secondary_cpu.o
+ .debug_info    0x0000343c      0x8fd build\drivers\serial.o
+ .debug_info    0x00003d39      0x4fb build\kernel\src\clock.o
+ .debug_info    0x00004234      0x682 build\kernel\src\components.o
+ .debug_info    0x000048b6      0x7bf build\kernel\src\cpu.o
+ .debug_info    0x00005075      0xa79 build\kernel\src\device.o
+ .debug_info    0x00005aee      0x708 build\kernel\src\idle.o
+ .debug_info    0x000061f6     0x1c5f build\kernel\src\ipc.o
+ .debug_info    0x00007e55      0x1a0 build\kernel\src\irq.o
+ .debug_info    0x00007ff5     0x13f3 build\kernel\src\kservice.o
+ .debug_info    0x000093e8      0x96b build\kernel\src\mem.o
+ .debug_info    0x00009d53      0x669 build\kernel\src\memheap.o
+ .debug_info    0x0000a3bc      0x9b0 build\kernel\src\mempool.o
+ .debug_info    0x0000ad6c      0x79f build\kernel\src\object.o
+ .debug_info    0x0000b50b      0xaf3 build\kernel\src\scheduler.o
+ .debug_info    0x0000bffe      0xd06 build\kernel\src\signal.o
+ .debug_info    0x0000cd04      0xd58 build\kernel\src\thread.o
+ .debug_info    0x0000da5c      0xbff build\kernel\src\timer.o
+ .debug_info    0x0000e65b      0x20a build\kernel\libcpu\arm\cortex-a\cpu.o
+ .debug_info    0x0000e865      0x6f1 build\kernel\libcpu\arm\cortex-a\gic.o
+ .debug_info    0x0000ef56      0x2dd build\kernel\libcpu\arm\cortex-a\interrupt.o
+ .debug_info    0x0000f233      0x2d2 build\kernel\libcpu\arm\cortex-a\mmu.o
+ .debug_info    0x0000f505      0x10a build\kernel\libcpu\arm\cortex-a\stack.o
+ .debug_info    0x0000f60f      0x3a7 build\kernel\libcpu\arm\cortex-a\trap.o
+ .debug_info    0x0000f9b6       0x6d build\kernel\libcpu\arm\cortex-a\context_gcc.o
+ .debug_info    0x0000fa23       0x6e build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
+ .debug_info    0x0000fa91       0x6b build\kernel\libcpu\arm\cortex-a\start_gcc.o
+ .debug_info    0x0000fafc       0x70 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
+ .debug_info    0x0000fb6c      0x175 build\kernel\components\cplusplus\crt_init.o
+ .debug_info    0x0000fce1     0x1573 build\kernel\components\dfs\src\dfs.o
+ .debug_info    0x00011254     0x146d build\kernel\components\dfs\src\dfs_file.o
+ .debug_info    0x000126c1     0x11ff build\kernel\components\dfs\src\dfs_fs.o
+ .debug_info    0x000138c0     0x1526 build\kernel\components\dfs\src\dfs_posix.o
+ .debug_info    0x00014de6     0x1274 build\kernel\components\dfs\src\poll.o
+ .debug_info    0x0001605a      0x2a2 build\kernel\components\dfs\src\select.o
+ .debug_info    0x000162fc     0x10d7 build\kernel\components\dfs\filesystems\devfs\devfs.o
+ .debug_info    0x000173d3     0x2299 build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+ .debug_info    0x0001966c     0x2707 build\kernel\components\dfs\filesystems\elmfat\ff.o
+ .debug_info    0x0001bd73      0x1c8 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+ .debug_info    0x0001bf3b     0x1543 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+ .debug_info    0x0001d47e     0x1023 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+ .debug_info    0x0001e4a1     0x15e1 build\kernel\components\finsh\shell.o
+ .debug_info    0x0001fa82     0x218e build\kernel\components\finsh\cmd.o
+ .debug_info    0x00021c10      0x9b4 build\kernel\components\finsh\msh.o
+ .debug_info    0x000225c4      0x93a build\kernel\components\finsh\msh_file.o
+ .debug_info    0x00022efe      0x597 build\kernel\components\finsh\finsh_compiler.o
+ .debug_info    0x00023495      0x163 build\kernel\components\finsh\finsh_error.o
+ .debug_info    0x000235f8      0x429 build\kernel\components\finsh\finsh_heap.o
+ .debug_info    0x00023a21      0x493 build\kernel\components\finsh\finsh_init.o
+ .debug_info    0x00023eb4      0x49e build\kernel\components\finsh\finsh_node.o
+ .debug_info    0x00024352      0x64b build\kernel\components\finsh\finsh_ops.o
+ .debug_info    0x0002499d      0xbff build\kernel\components\finsh\finsh_parser.o
+ .debug_info    0x0002559c      0x3e1 build\kernel\components\finsh\finsh_var.o
+ .debug_info    0x0002597d      0x2f0 build\kernel\components\finsh\finsh_vm.o
+ .debug_info    0x00025c6d      0x6e0 build\kernel\components\finsh\finsh_token.o
+ .debug_info    0x0002634d      0xbde build\kernel\components\libc\aio\posix_aio.o
+ .debug_info    0x00026f2b      0x4c0 build\kernel\components\libc\compilers\newlib\libc.o
+ .debug_info    0x000273eb      0xa12 build\kernel\components\libc\compilers\newlib\stdio.o
+ .debug_info    0x00027dfd     0x186c build\kernel\components\libc\compilers\newlib\syscalls.o
+ .debug_info    0x00029669      0x5ab build\kernel\components\libc\compilers\newlib\time.o
+ .debug_info    0x00029c14      0x8af build\kernel\components\libc\pthreads\mqueue.o
+ .debug_info    0x0002a4c3     0x100b build\kernel\components\libc\pthreads\pthread.o
+ .debug_info    0x0002b4ce      0x729 build\kernel\components\libc\pthreads\pthread_attr.o
+ .debug_info    0x0002bbf7      0x828 build\kernel\components\libc\pthreads\pthread_tls.o
+ .debug_info    0x0002c41f      0x6a2 build\kernel\components\libc\pthreads\semaphore.o
+ .debug_info    0x0002cac1      0x786 build\kernel\components\libc\signal\posix_signal.o
+ .debug_info    0x0002d247      0x3e6 build\kernel\components\libc\termios\posix_termios.o
+ .debug_info    0x0002d62d      0x72c build\kernel\components\libc\time\clock_time.o
+ .debug_info    0x0002dd59     0x12b5 build\kernel\components\lwp\lwp.o
+ .debug_info    0x0002f00e      0x7a1 build\kernel\components\lwp\lwp_mem.o
+ .debug_info    0x0002f7af      0x628 build\kernel\components\lwp\lwp_memheap.o
+ .debug_info    0x0002fdd7     0x160e build\kernel\components\lwp\lwp_syscall.o
+ .debug_info    0x000313e5       0x7a build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
+ .debug_info    0x0003145f     0x1a95 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+ .debug_info    0x00032ef4     0x1952 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+ .debug_info    0x00034846     0x234a build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+ .debug_info    0x00036b90      0x105 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .debug_info    0x00036c95      0x54e build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+ .debug_info    0x000371e3      0x7bd build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+ .debug_info    0x000379a0      0x7cd build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+ .debug_info    0x0003816d     0x3081 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+ .debug_info    0x0003b1ee      0xf53 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+ .debug_info    0x0003c141      0x349 build\kernel\components\net\lwip-2.0.2\src\core\def.o
+ .debug_info    0x0003c48a     0x1144 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+ .debug_info    0x0003d5ce      0x5f5 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+ .debug_info    0x0003dbc3       0xb1 build\kernel\components\net\lwip-2.0.2\src\core\init.o
+ .debug_info    0x0003dc74      0x5c3 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
+ .debug_info    0x0003e237      0xa3d build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+ .debug_info    0x0003ec74      0x971 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+ .debug_info    0x0003f5e5     0x14e7 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+ .debug_info    0x00040acc      0xaf1 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+ .debug_info    0x000415bd     0x1bcf build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+ .debug_info    0x0004318c     0x123b build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+ .debug_info    0x000443c7     0x1542 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+ .debug_info    0x00045909     0x113e build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+ .debug_info    0x00046a47      0xe16 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+ .debug_info    0x0004785d      0x737 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+ .debug_info    0x00047f94     0x276d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+ .debug_info    0x0004a701     0x1767 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+ .debug_info    0x0004be68      0xee0 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+ .debug_info    0x0004cd48      0x88d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+ .debug_info    0x0004d5d5      0xc2c build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+ .debug_info    0x0004e201      0xbc3 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+ .debug_info    0x0004edc4      0x763 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+ .debug_info    0x0004f527      0xc9d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+ .debug_info    0x000501c4      0x5f6 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+ .debug_info    0x000507ba     0x22a9 build\kernel\components\net\netdev\src\netdev.o
+ .debug_info    0x00052a63      0x3f8 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+ .debug_info    0x00052e5b     0x28fb build\kernel\components\net\sal_socket\src\sal_socket.o
+ .debug_info    0x00055756     0x1cb3 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+ .debug_info    0x00057409     0x1200 build\kernel\components\net\sal_socket\socket\net_sockets.o
+ .debug_info    0x00058609      0xd4f build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+ .debug_info    0x00059358      0xb7b build\kernel\components\drivers\i2c\i2c_core.o
+ .debug_info    0x00059ed3      0xba7 build\kernel\components\drivers\i2c\i2c_dev.o
+ .debug_info    0x0005aa7a      0xb9f build\kernel\components\drivers\misc\pin.o
+ .debug_info    0x0005b619      0xffd build\kernel\components\drivers\mtd\mtd_nand.o
+ .debug_info    0x0005c616      0x903 build\kernel\components\drivers\rtc\rtc.o
+ .debug_info    0x0005cf19      0x66a build\kernel\components\drivers\rtc\soft_rtc.o
+ .debug_info    0x0005d583     0x1761 build\kernel\components\drivers\sdio\block_dev.o
+ .debug_info    0x0005ece4     0x16ed build\kernel\components\drivers\sdio\mmcsd_core.o
+ .debug_info    0x000603d1     0x13c2 build\kernel\components\drivers\sdio\sd.o
+ .debug_info    0x00061793     0x21d1 build\kernel\components\drivers\sdio\sdio.o
+ .debug_info    0x00063964     0x134f build\kernel\components\drivers\sdio\mmc.o
+ .debug_info    0x00064cb3     0x1aee build\kernel\components\drivers\serial\serial.o
+ .debug_info    0x000667a1      0xed0 build\kernel\components\drivers\spi\spi_core.o
+ .debug_info    0x00067671      0xd1a build\kernel\components\drivers\spi\spi_dev.o
+ .debug_info    0x0006838b     0x1873 build\kernel\components\drivers\spi\spi_flash_sfud.o
+ .debug_info    0x00069bfe      0xeb0 build\kernel\components\drivers\spi\sfud\src\sfud.o
+ .debug_info    0x0006aaae      0x726 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+ .debug_info    0x0006b1d4      0x665 build\kernel\components\drivers\src\completion.o
+ .debug_info    0x0006b839      0x7bf build\kernel\components\drivers\src\waitqueue.o
+ .debug_info    0x0006bff8      0xd4b build\kernel\components\drivers\src\workqueue.o
 
-.debug_abbrev   0x00000000     0xf8fd
- .debug_abbrev  0x00000000      0x11d build\applications\WtApplication.o
- .debug_abbrev  0x0000011d       0x7b build\applications\mnt.o
- .debug_abbrev  0x00000198      0x128 build\applications\test.o
- .debug_abbrev  0x000002c0       0xc0 build\drivers\board.o
- .debug_abbrev  0x00000380      0x257 build\drivers\drv_sdio.o
- .debug_abbrev  0x000005d7      0x2d0 build\drivers\drv_smc911x.o
- .debug_abbrev  0x000008a7       0xd4 build\drivers\drv_timer.o
- .debug_abbrev  0x0000097b      0x109 build\drivers\secondary_cpu.o
- .debug_abbrev  0x00000a84      0x1e1 build\drivers\serial.o
- .debug_abbrev  0x00000c65      0x136 build\kernel\src\clock.o
- .debug_abbrev  0x00000d9b      0x1a6 build\kernel\src\components.o
- .debug_abbrev  0x00000f41      0x1a6 build\kernel\src\cpu.o
- .debug_abbrev  0x000010e7      0x1d7 build\kernel\src\device.o
- .debug_abbrev  0x000012be      0x1f8 build\kernel\src\idle.o
- .debug_abbrev  0x000014b6      0x1f9 build\kernel\src\ipc.o
- .debug_abbrev  0x000016af       0xc4 build\kernel\src\irq.o
- .debug_abbrev  0x00001773      0x2c8 build\kernel\src\kservice.o
- .debug_abbrev  0x00001a3b      0x22b build\kernel\src\mem.o
- .debug_abbrev  0x00001c66      0x163 build\kernel\src\memheap.o
- .debug_abbrev  0x00001dc9      0x1f0 build\kernel\src\mempool.o
- .debug_abbrev  0x00001fb9      0x1f6 build\kernel\src\object.o
- .debug_abbrev  0x000021af      0x27c build\kernel\src\scheduler.o
- .debug_abbrev  0x0000242b      0x24b build\kernel\src\signal.o
- .debug_abbrev  0x00002676      0x226 build\kernel\src\thread.o
- .debug_abbrev  0x0000289c      0x28f build\kernel\src\timer.o
- .debug_abbrev  0x00002b2b      0x11b build\kernel\libcpu\arm\cortex-a\cpu.o
- .debug_abbrev  0x00002c46      0x16a build\kernel\libcpu\arm\cortex-a\gic.o
- .debug_abbrev  0x00002db0      0x14e build\kernel\libcpu\arm\cortex-a\interrupt.o
- .debug_abbrev  0x00002efe      0x124 build\kernel\libcpu\arm\cortex-a\mmu.o
- .debug_abbrev  0x00003022       0x81 build\kernel\libcpu\arm\cortex-a\stack.o
- .debug_abbrev  0x000030a3       0xf3 build\kernel\libcpu\arm\cortex-a\trap.o
- .debug_abbrev  0x00003196       0x12 build\kernel\libcpu\arm\cortex-a\context_gcc.o
- .debug_abbrev  0x000031a8       0x14 build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
- .debug_abbrev  0x000031bc       0x12 build\kernel\libcpu\arm\cortex-a\start_gcc.o
- .debug_abbrev  0x000031ce       0x14 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
- .debug_abbrev  0x000031e2       0xd4 build\kernel\components\cplusplus\crt_init.o
- .debug_abbrev  0x000032b6      0x272 build\kernel\components\dfs\src\dfs.o
- .debug_abbrev  0x00003528      0x277 build\kernel\components\dfs\src\dfs_file.o
- .debug_abbrev  0x0000379f      0x23a build\kernel\components\dfs\src\dfs_fs.o
- .debug_abbrev  0x000039d9      0x248 build\kernel\components\dfs\src\dfs_posix.o
- .debug_abbrev  0x00003c21      0x1b9 build\kernel\components\dfs\src\poll.o
- .debug_abbrev  0x00003dda      0x10c build\kernel\components\dfs\src\select.o
- .debug_abbrev  0x00003ee6      0x217 build\kernel\components\dfs\filesystems\devfs\devfs.o
- .debug_abbrev  0x000040fd      0x2ef build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
- .debug_abbrev  0x000043ec      0x1ed build\kernel\components\dfs\filesystems\elmfat\ff.o
- .debug_abbrev  0x000045d9       0xb1 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
- .debug_abbrev  0x0000468a      0x23e build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
- .debug_abbrev  0x000048c8      0x1ee build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
- .debug_abbrev  0x00004ab6      0x340 build\kernel\components\finsh\shell.o
- .debug_abbrev  0x00004df6      0x2c2 build\kernel\components\finsh\cmd.o
- .debug_abbrev  0x000050b8      0x2b1 build\kernel\components\finsh\msh.o
- .debug_abbrev  0x00005369      0x1a5 build\kernel\components\finsh\msh_file.o
- .debug_abbrev  0x0000550e      0x1d6 build\kernel\components\finsh\finsh_compiler.o
- .debug_abbrev  0x000056e4       0xbe build\kernel\components\finsh\finsh_error.o
- .debug_abbrev  0x000057a2      0x19b build\kernel\components\finsh\finsh_heap.o
- .debug_abbrev  0x0000593d      0x122 build\kernel\components\finsh\finsh_init.o
- .debug_abbrev  0x00005a5f      0x15c build\kernel\components\finsh\finsh_node.o
- .debug_abbrev  0x00005bbb      0x15d build\kernel\components\finsh\finsh_ops.o
- .debug_abbrev  0x00005d18      0x1c9 build\kernel\components\finsh\finsh_parser.o
- .debug_abbrev  0x00005ee1      0x16d build\kernel\components\finsh\finsh_var.o
- .debug_abbrev  0x0000604e      0x146 build\kernel\components\finsh\finsh_vm.o
- .debug_abbrev  0x00006194      0x207 build\kernel\components\finsh\finsh_token.o
- .debug_abbrev  0x0000639b      0x260 build\kernel\components\libc\aio\posix_aio.o
- .debug_abbrev  0x000065fb      0x119 build\kernel\components\libc\compilers\newlib\libc.o
- .debug_abbrev  0x00006714      0x1c3 build\kernel\components\libc\compilers\newlib\stdio.o
- .debug_abbrev  0x000068d7      0x2f6 build\kernel\components\libc\compilers\newlib\syscalls.o
- .debug_abbrev  0x00006bcd      0x17e build\kernel\components\libc\compilers\newlib\time.o
- .debug_abbrev  0x00006d4b      0x1f7 build\kernel\components\libc\pthreads\mqueue.o
- .debug_abbrev  0x00006f42      0x2a2 build\kernel\components\libc\pthreads\pthread.o
- .debug_abbrev  0x000071e4       0xfb build\kernel\components\libc\pthreads\pthread_attr.o
- .debug_abbrev  0x000072df      0x17c build\kernel\components\libc\pthreads\pthread_tls.o
- .debug_abbrev  0x0000745b      0x1da build\kernel\components\libc\pthreads\semaphore.o
- .debug_abbrev  0x00007635      0x172 build\kernel\components\libc\signal\posix_signal.o
- .debug_abbrev  0x000077a7       0xf6 build\kernel\components\libc\termios\posix_termios.o
- .debug_abbrev  0x0000789d      0x194 build\kernel\components\libc\time\clock_time.o
- .debug_abbrev  0x00007a31      0x247 build\kernel\components\lwp\lwp.o
- .debug_abbrev  0x00007c78      0x1ad build\kernel\components\lwp\lwp_mem.o
- .debug_abbrev  0x00007e25      0x181 build\kernel\components\lwp\lwp_memheap.o
- .debug_abbrev  0x00007fa6      0x218 build\kernel\components\lwp\lwp_syscall.o
- .debug_abbrev  0x000081be       0x14 build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
- .debug_abbrev  0x000081d2      0x333 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
- .debug_abbrev  0x00008505      0x240 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
- .debug_abbrev  0x00008745      0x2a5 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
- .debug_abbrev  0x000089ea       0x8a build\kernel\components\net\lwip-2.0.2\src\api\err.o
- .debug_abbrev  0x00008a74      0x115 build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
- .debug_abbrev  0x00008b89      0x185 build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
- .debug_abbrev  0x00008d0e      0x1a0 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
- .debug_abbrev  0x00008eae      0x2c2 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
- .debug_abbrev  0x00009170      0x24d build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
- .debug_abbrev  0x000093bd       0xde build\kernel\components\net\lwip-2.0.2\src\core\def.o
- .debug_abbrev  0x0000949b      0x267 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
- .debug_abbrev  0x00009702      0x155 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
- .debug_abbrev  0x00009857       0x5e build\kernel\components\net\lwip-2.0.2\src\core\init.o
- .debug_abbrev  0x000098b5       0xfc build\kernel\components\net\lwip-2.0.2\src\core\ip.o
- .debug_abbrev  0x000099b1      0x1eb build\kernel\components\net\lwip-2.0.2\src\core\memp.o
- .debug_abbrev  0x00009b9c      0x228 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
- .debug_abbrev  0x00009dc4      0x240 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
- .debug_abbrev  0x0000a004      0x246 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
- .debug_abbrev  0x0000a24a      0x301 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
- .debug_abbrev  0x0000a54b      0x25f build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
- .debug_abbrev  0x0000a7aa      0x23d build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
- .debug_abbrev  0x0000a9e7      0x281 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
- .debug_abbrev  0x0000ac68      0x26f build\kernel\components\net\lwip-2.0.2\src\core\udp.o
- .debug_abbrev  0x0000aed7      0x1be build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
- .debug_abbrev  0x0000b095      0x33d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
- .debug_abbrev  0x0000b3d2      0x270 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
- .debug_abbrev  0x0000b642      0x211 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
- .debug_abbrev  0x0000b853      0x1dd build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
- .debug_abbrev  0x0000ba30      0x281 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
- .debug_abbrev  0x0000bcb1      0x1da build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
- .debug_abbrev  0x0000be8b      0x1e8 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
- .debug_abbrev  0x0000c073      0x220 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
- .debug_abbrev  0x0000c293      0x121 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
- .debug_abbrev  0x0000c3b4      0x27a build\kernel\components\net\netdev\src\netdev.o
- .debug_abbrev  0x0000c62e      0x176 build\kernel\components\net\netdev\src\netdev_ipaddr.o
- .debug_abbrev  0x0000c7a4      0x2b6 build\kernel\components\net\sal_socket\src\sal_socket.o
- .debug_abbrev  0x0000ca5a      0x245 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
- .debug_abbrev  0x0000cc9f      0x1a9 build\kernel\components\net\sal_socket\socket\net_sockets.o
- .debug_abbrev  0x0000ce48      0x1b1 build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
- .debug_abbrev  0x0000cff9      0x194 build\kernel\components\drivers\i2c\i2c_core.o
- .debug_abbrev  0x0000d18d      0x189 build\kernel\components\drivers\i2c\i2c_dev.o
- .debug_abbrev  0x0000d316      0x1bd build\kernel\components\drivers\misc\pin.o
- .debug_abbrev  0x0000d4d3      0x22b build\kernel\components\drivers\mtd\mtd_nand.o
- .debug_abbrev  0x0000d6fe      0x1b9 build\kernel\components\drivers\rtc\rtc.o
- .debug_abbrev  0x0000d8b7      0x17c build\kernel\components\drivers\rtc\soft_rtc.o
- .debug_abbrev  0x0000da33      0x272 build\kernel\components\drivers\sdio\block_dev.o
- .debug_abbrev  0x0000dca5      0x28b build\kernel\components\drivers\sdio\mmcsd_core.o
- .debug_abbrev  0x0000df30      0x20b build\kernel\components\drivers\sdio\sd.o
- .debug_abbrev  0x0000e13b      0x2d3 build\kernel\components\drivers\sdio\sdio.o
- .debug_abbrev  0x0000e40e      0x20b build\kernel\components\drivers\sdio\mmc.o
- .debug_abbrev  0x0000e619      0x27b build\kernel\components\drivers\serial\serial.o
- .debug_abbrev  0x0000e894      0x1d8 build\kernel\components\drivers\spi\spi_core.o
- .debug_abbrev  0x0000ea6c      0x1b8 build\kernel\components\drivers\spi\spi_dev.o
- .debug_abbrev  0x0000ec24      0x2d1 build\kernel\components\drivers\spi\spi_flash_sfud.o
- .debug_abbrev  0x0000eef5      0x29d build\kernel\components\drivers\spi\sfud\src\sfud.o
- .debug_abbrev  0x0000f192      0x1d9 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
- .debug_abbrev  0x0000f36b      0x180 build\kernel\components\drivers\src\completion.o
- .debug_abbrev  0x0000f4eb      0x1c5 build\kernel\components\drivers\src\waitqueue.o
- .debug_abbrev  0x0000f6b0      0x24d build\kernel\components\drivers\src\workqueue.o
+.debug_abbrev   0x00000000     0xf910
+ .debug_abbrev  0x00000000      0x12e build\applications\WtApplication.o
+ .debug_abbrev  0x0000012e       0x7b build\applications\mnt.o
+ .debug_abbrev  0x000001a9      0x12a build\applications\test.o
+ .debug_abbrev  0x000002d3       0xc0 build\drivers\board.o
+ .debug_abbrev  0x00000393      0x257 build\drivers\drv_sdio.o
+ .debug_abbrev  0x000005ea      0x2d0 build\drivers\drv_smc911x.o
+ .debug_abbrev  0x000008ba       0xd4 build\drivers\drv_timer.o
+ .debug_abbrev  0x0000098e      0x109 build\drivers\secondary_cpu.o
+ .debug_abbrev  0x00000a97      0x1e1 build\drivers\serial.o
+ .debug_abbrev  0x00000c78      0x136 build\kernel\src\clock.o
+ .debug_abbrev  0x00000dae      0x1a6 build\kernel\src\components.o
+ .debug_abbrev  0x00000f54      0x1a6 build\kernel\src\cpu.o
+ .debug_abbrev  0x000010fa      0x1d7 build\kernel\src\device.o
+ .debug_abbrev  0x000012d1      0x1f8 build\kernel\src\idle.o
+ .debug_abbrev  0x000014c9      0x1f9 build\kernel\src\ipc.o
+ .debug_abbrev  0x000016c2       0xc4 build\kernel\src\irq.o
+ .debug_abbrev  0x00001786      0x2c8 build\kernel\src\kservice.o
+ .debug_abbrev  0x00001a4e      0x22b build\kernel\src\mem.o
+ .debug_abbrev  0x00001c79      0x163 build\kernel\src\memheap.o
+ .debug_abbrev  0x00001ddc      0x1f0 build\kernel\src\mempool.o
+ .debug_abbrev  0x00001fcc      0x1f6 build\kernel\src\object.o
+ .debug_abbrev  0x000021c2      0x27c build\kernel\src\scheduler.o
+ .debug_abbrev  0x0000243e      0x24b build\kernel\src\signal.o
+ .debug_abbrev  0x00002689      0x226 build\kernel\src\thread.o
+ .debug_abbrev  0x000028af      0x28f build\kernel\src\timer.o
+ .debug_abbrev  0x00002b3e      0x11b build\kernel\libcpu\arm\cortex-a\cpu.o
+ .debug_abbrev  0x00002c59      0x16a build\kernel\libcpu\arm\cortex-a\gic.o
+ .debug_abbrev  0x00002dc3      0x14e build\kernel\libcpu\arm\cortex-a\interrupt.o
+ .debug_abbrev  0x00002f11      0x124 build\kernel\libcpu\arm\cortex-a\mmu.o
+ .debug_abbrev  0x00003035       0x81 build\kernel\libcpu\arm\cortex-a\stack.o
+ .debug_abbrev  0x000030b6       0xf3 build\kernel\libcpu\arm\cortex-a\trap.o
+ .debug_abbrev  0x000031a9       0x12 build\kernel\libcpu\arm\cortex-a\context_gcc.o
+ .debug_abbrev  0x000031bb       0x14 build\kernel\libcpu\arm\cortex-a\cp15_gcc.o
+ .debug_abbrev  0x000031cf       0x12 build\kernel\libcpu\arm\cortex-a\start_gcc.o
+ .debug_abbrev  0x000031e1       0x14 build\kernel\libcpu\arm\cortex-a\vector_gcc.o
+ .debug_abbrev  0x000031f5       0xd4 build\kernel\components\cplusplus\crt_init.o
+ .debug_abbrev  0x000032c9      0x272 build\kernel\components\dfs\src\dfs.o
+ .debug_abbrev  0x0000353b      0x277 build\kernel\components\dfs\src\dfs_file.o
+ .debug_abbrev  0x000037b2      0x23a build\kernel\components\dfs\src\dfs_fs.o
+ .debug_abbrev  0x000039ec      0x248 build\kernel\components\dfs\src\dfs_posix.o
+ .debug_abbrev  0x00003c34      0x1b9 build\kernel\components\dfs\src\poll.o
+ .debug_abbrev  0x00003ded      0x10c build\kernel\components\dfs\src\select.o
+ .debug_abbrev  0x00003ef9      0x217 build\kernel\components\dfs\filesystems\devfs\devfs.o
+ .debug_abbrev  0x00004110      0x2ef build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+ .debug_abbrev  0x000043ff      0x1ed build\kernel\components\dfs\filesystems\elmfat\ff.o
+ .debug_abbrev  0x000045ec       0xb1 build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+ .debug_abbrev  0x0000469d      0x23e build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+ .debug_abbrev  0x000048db      0x1ee build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+ .debug_abbrev  0x00004ac9      0x340 build\kernel\components\finsh\shell.o
+ .debug_abbrev  0x00004e09      0x2c2 build\kernel\components\finsh\cmd.o
+ .debug_abbrev  0x000050cb      0x2b1 build\kernel\components\finsh\msh.o
+ .debug_abbrev  0x0000537c      0x1a5 build\kernel\components\finsh\msh_file.o
+ .debug_abbrev  0x00005521      0x1d6 build\kernel\components\finsh\finsh_compiler.o
+ .debug_abbrev  0x000056f7       0xbe build\kernel\components\finsh\finsh_error.o
+ .debug_abbrev  0x000057b5      0x19b build\kernel\components\finsh\finsh_heap.o
+ .debug_abbrev  0x00005950      0x122 build\kernel\components\finsh\finsh_init.o
+ .debug_abbrev  0x00005a72      0x15c build\kernel\components\finsh\finsh_node.o
+ .debug_abbrev  0x00005bce      0x15d build\kernel\components\finsh\finsh_ops.o
+ .debug_abbrev  0x00005d2b      0x1c9 build\kernel\components\finsh\finsh_parser.o
+ .debug_abbrev  0x00005ef4      0x16d build\kernel\components\finsh\finsh_var.o
+ .debug_abbrev  0x00006061      0x146 build\kernel\components\finsh\finsh_vm.o
+ .debug_abbrev  0x000061a7      0x207 build\kernel\components\finsh\finsh_token.o
+ .debug_abbrev  0x000063ae      0x260 build\kernel\components\libc\aio\posix_aio.o
+ .debug_abbrev  0x0000660e      0x119 build\kernel\components\libc\compilers\newlib\libc.o
+ .debug_abbrev  0x00006727      0x1c3 build\kernel\components\libc\compilers\newlib\stdio.o
+ .debug_abbrev  0x000068ea      0x2f6 build\kernel\components\libc\compilers\newlib\syscalls.o
+ .debug_abbrev  0x00006be0      0x17e build\kernel\components\libc\compilers\newlib\time.o
+ .debug_abbrev  0x00006d5e      0x1f7 build\kernel\components\libc\pthreads\mqueue.o
+ .debug_abbrev  0x00006f55      0x2a2 build\kernel\components\libc\pthreads\pthread.o
+ .debug_abbrev  0x000071f7       0xfb build\kernel\components\libc\pthreads\pthread_attr.o
+ .debug_abbrev  0x000072f2      0x17c build\kernel\components\libc\pthreads\pthread_tls.o
+ .debug_abbrev  0x0000746e      0x1da build\kernel\components\libc\pthreads\semaphore.o
+ .debug_abbrev  0x00007648      0x172 build\kernel\components\libc\signal\posix_signal.o
+ .debug_abbrev  0x000077ba       0xf6 build\kernel\components\libc\termios\posix_termios.o
+ .debug_abbrev  0x000078b0      0x194 build\kernel\components\libc\time\clock_time.o
+ .debug_abbrev  0x00007a44      0x247 build\kernel\components\lwp\lwp.o
+ .debug_abbrev  0x00007c8b      0x1ad build\kernel\components\lwp\lwp_mem.o
+ .debug_abbrev  0x00007e38      0x181 build\kernel\components\lwp\lwp_memheap.o
+ .debug_abbrev  0x00007fb9      0x218 build\kernel\components\lwp\lwp_syscall.o
+ .debug_abbrev  0x000081d1       0x14 build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
+ .debug_abbrev  0x000081e5      0x333 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+ .debug_abbrev  0x00008518      0x240 build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+ .debug_abbrev  0x00008758      0x2a5 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+ .debug_abbrev  0x000089fd       0x8a build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .debug_abbrev  0x00008a87      0x115 build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+ .debug_abbrev  0x00008b9c      0x185 build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+ .debug_abbrev  0x00008d21      0x1a0 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+ .debug_abbrev  0x00008ec1      0x2c2 build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+ .debug_abbrev  0x00009183      0x24d build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+ .debug_abbrev  0x000093d0       0xde build\kernel\components\net\lwip-2.0.2\src\core\def.o
+ .debug_abbrev  0x000094ae      0x267 build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+ .debug_abbrev  0x00009715      0x155 build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+ .debug_abbrev  0x0000986a       0x5e build\kernel\components\net\lwip-2.0.2\src\core\init.o
+ .debug_abbrev  0x000098c8       0xfc build\kernel\components\net\lwip-2.0.2\src\core\ip.o
+ .debug_abbrev  0x000099c4      0x1eb build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+ .debug_abbrev  0x00009baf      0x228 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+ .debug_abbrev  0x00009dd7      0x240 build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+ .debug_abbrev  0x0000a017      0x246 build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+ .debug_abbrev  0x0000a25d      0x301 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+ .debug_abbrev  0x0000a55e      0x25f build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+ .debug_abbrev  0x0000a7bd      0x23d build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+ .debug_abbrev  0x0000a9fa      0x281 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+ .debug_abbrev  0x0000ac7b      0x26f build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+ .debug_abbrev  0x0000aeea      0x1be build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+ .debug_abbrev  0x0000b0a8      0x33d build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+ .debug_abbrev  0x0000b3e5      0x270 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+ .debug_abbrev  0x0000b655      0x211 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+ .debug_abbrev  0x0000b866      0x1dd build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+ .debug_abbrev  0x0000ba43      0x281 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+ .debug_abbrev  0x0000bcc4      0x1da build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+ .debug_abbrev  0x0000be9e      0x1e8 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+ .debug_abbrev  0x0000c086      0x220 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+ .debug_abbrev  0x0000c2a6      0x121 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+ .debug_abbrev  0x0000c3c7      0x27a build\kernel\components\net\netdev\src\netdev.o
+ .debug_abbrev  0x0000c641      0x176 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+ .debug_abbrev  0x0000c7b7      0x2b6 build\kernel\components\net\sal_socket\src\sal_socket.o
+ .debug_abbrev  0x0000ca6d      0x245 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+ .debug_abbrev  0x0000ccb2      0x1a9 build\kernel\components\net\sal_socket\socket\net_sockets.o
+ .debug_abbrev  0x0000ce5b      0x1b1 build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+ .debug_abbrev  0x0000d00c      0x194 build\kernel\components\drivers\i2c\i2c_core.o
+ .debug_abbrev  0x0000d1a0      0x189 build\kernel\components\drivers\i2c\i2c_dev.o
+ .debug_abbrev  0x0000d329      0x1bd build\kernel\components\drivers\misc\pin.o
+ .debug_abbrev  0x0000d4e6      0x22b build\kernel\components\drivers\mtd\mtd_nand.o
+ .debug_abbrev  0x0000d711      0x1b9 build\kernel\components\drivers\rtc\rtc.o
+ .debug_abbrev  0x0000d8ca      0x17c build\kernel\components\drivers\rtc\soft_rtc.o
+ .debug_abbrev  0x0000da46      0x272 build\kernel\components\drivers\sdio\block_dev.o
+ .debug_abbrev  0x0000dcb8      0x28b build\kernel\components\drivers\sdio\mmcsd_core.o
+ .debug_abbrev  0x0000df43      0x20b build\kernel\components\drivers\sdio\sd.o
+ .debug_abbrev  0x0000e14e      0x2d3 build\kernel\components\drivers\sdio\sdio.o
+ .debug_abbrev  0x0000e421      0x20b build\kernel\components\drivers\sdio\mmc.o
+ .debug_abbrev  0x0000e62c      0x27b build\kernel\components\drivers\serial\serial.o
+ .debug_abbrev  0x0000e8a7      0x1d8 build\kernel\components\drivers\spi\spi_core.o
+ .debug_abbrev  0x0000ea7f      0x1b8 build\kernel\components\drivers\spi\spi_dev.o
+ .debug_abbrev  0x0000ec37      0x2d1 build\kernel\components\drivers\spi\spi_flash_sfud.o
+ .debug_abbrev  0x0000ef08      0x29d build\kernel\components\drivers\spi\sfud\src\sfud.o
+ .debug_abbrev  0x0000f1a5      0x1d9 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+ .debug_abbrev  0x0000f37e      0x180 build\kernel\components\drivers\src\completion.o
+ .debug_abbrev  0x0000f4fe      0x1c5 build\kernel\components\drivers\src\waitqueue.o
+ .debug_abbrev  0x0000f6c3      0x24d build\kernel\components\drivers\src\workqueue.o
 
 .debug_loc      0x00000000    0x1a3e8
  .debug_loc     0x00000000       0x9c build\applications\WtApplication.o
@@ -5797,274 +5825,274 @@ OUTPUT(rtthread.elf elf32-littlearm)
  .debug_line    0x0001e530      0x144 build\kernel\components\drivers\src\waitqueue.o
  .debug_line    0x0001e674      0x22c build\kernel\components\drivers\src\workqueue.o
 
-.debug_str      0x00000000    0x10467
+.debug_str      0x00000000    0x10407
  .debug_str     0x00000000      0x345 build\applications\WtApplication.o
                                 0x3d6 (size before relaxing)
  .debug_str     0x00000345       0x30 build\applications\mnt.o
                                 0x174 (size before relaxing)
- .debug_str     0x00000375      0x1c3 build\applications\test.o
+ .debug_str     0x00000375      0x163 build\applications\test.o
                                 0x36e (size before relaxing)
- .debug_str     0x00000538       0x8b build\drivers\board.o
+ .debug_str     0x000004d8       0x8b build\drivers\board.o
                                 0x1d4 (size before relaxing)
- .debug_str     0x000005c3      0x70b build\drivers\drv_sdio.o
+ .debug_str     0x00000563      0x70b build\drivers\drv_sdio.o
                                 0xa53 (size before relaxing)
- .debug_str     0x00000cce      0x78b build\drivers\drv_smc911x.o
+ .debug_str     0x00000c6e      0x78b build\drivers\drv_smc911x.o
                                 0xb26 (size before relaxing)
- .debug_str     0x00001459       0x5b build\drivers\drv_timer.o
+ .debug_str     0x000013f9       0x5b build\drivers\drv_timer.o
                                 0x1ef (size before relaxing)
- .debug_str     0x000014b4       0xb3 build\drivers\secondary_cpu.o
+ .debug_str     0x00001454       0xb3 build\drivers\secondary_cpu.o
                                 0x21f (size before relaxing)
- .debug_str     0x00001567      0x13e build\drivers\serial.o
+ .debug_str     0x00001507      0x13e build\drivers\serial.o
                                 0x63e (size before relaxing)
- .debug_str     0x000016a5       0x6c build\kernel\src\clock.o
+ .debug_str     0x00001645       0x6c build\kernel\src\clock.o
                                 0x3c1 (size before relaxing)
- .debug_str     0x00001711       0xf6 build\kernel\src\components.o
+ .debug_str     0x000016b1       0xf6 build\kernel\src\components.o
                                 0x4b9 (size before relaxing)
- .debug_str     0x00001807      0x12f build\kernel\src\cpu.o
+ .debug_str     0x000017a7      0x12f build\kernel\src\cpu.o
                                 0x4eb (size before relaxing)
- .debug_str     0x00001936      0x2e7 build\kernel\src\device.o
+ .debug_str     0x000018d6      0x2e7 build\kernel\src\device.o
                                 0x7cf (size before relaxing)
- .debug_str     0x00001c1d      0x107 build\kernel\src\idle.o
+ .debug_str     0x00001bbd      0x107 build\kernel\src\idle.o
                                 0x47e (size before relaxing)
- .debug_str     0x00001d24      0x3c9 build\kernel\src\ipc.o
+ .debug_str     0x00001cc4      0x3c9 build\kernel\src\ipc.o
                                 0x97e (size before relaxing)
- .debug_str     0x000020ed       0xb6 build\kernel\src\irq.o
+ .debug_str     0x0000208d       0xb6 build\kernel\src\irq.o
                                 0x211 (size before relaxing)
- .debug_str     0x000021a3      0x311 build\kernel\src\kservice.o
+ .debug_str     0x00002143      0x311 build\kernel\src\kservice.o
                                 0x992 (size before relaxing)
- .debug_str     0x000024b4      0x255 build\kernel\src\mem.o
+ .debug_str     0x00002454      0x255 build\kernel\src\mem.o
                                 0x4bf (size before relaxing)
- .debug_str     0x00002709      0x12a build\kernel\src\memheap.o
+ .debug_str     0x000026a9      0x12a build\kernel\src\memheap.o
                                 0x4f4 (size before relaxing)
- .debug_str     0x00002833      0x125 build\kernel\src\mempool.o
+ .debug_str     0x000027d3      0x125 build\kernel\src\mempool.o
                                 0x654 (size before relaxing)
- .debug_str     0x00002958      0x290 build\kernel\src\object.o
+ .debug_str     0x000028f8      0x290 build\kernel\src\object.o
                                 0x674 (size before relaxing)
- .debug_str     0x00002be8      0x1f0 build\kernel\src\scheduler.o
+ .debug_str     0x00002b88      0x1f0 build\kernel\src\scheduler.o
                                 0x695 (size before relaxing)
- .debug_str     0x00002dd8      0x1f6 build\kernel\src\signal.o
+ .debug_str     0x00002d78      0x1f6 build\kernel\src\signal.o
                                 0x689 (size before relaxing)
- .debug_str     0x00002fce      0x1db build\kernel\src\thread.o
+ .debug_str     0x00002f6e      0x1db build\kernel\src\thread.o
                                 0x77a (size before relaxing)
- .debug_str     0x000031a9      0x203 build\kernel\src\timer.o
+ .debug_str     0x00003149      0x203 build\kernel\src\timer.o
                                 0x75f (size before relaxing)
- .debug_str     0x000033ac       0x8a build\kernel\libcpu\arm\cortex-a\cpu.o
+ .debug_str     0x0000334c       0x8a build\kernel\libcpu\arm\cortex-a\cpu.o
                                 0x229 (size before relaxing)
- .debug_str     0x00003436      0x1c3 build\kernel\libcpu\arm\cortex-a\gic.o
+ .debug_str     0x000033d6      0x1c3 build\kernel\libcpu\arm\cortex-a\gic.o
                                 0x386 (size before relaxing)
- .debug_str     0x000035f9      0x148 build\kernel\libcpu\arm\cortex-a\interrupt.o
+ .debug_str     0x00003599      0x148 build\kernel\libcpu\arm\cortex-a\interrupt.o
                                 0x2d5 (size before relaxing)
- .debug_str     0x00003741      0x103 build\kernel\libcpu\arm\cortex-a\mmu.o
+ .debug_str     0x000036e1      0x103 build\kernel\libcpu\arm\cortex-a\mmu.o
                                 0x27f (size before relaxing)
- .debug_str     0x00003844       0x3e build\kernel\libcpu\arm\cortex-a\stack.o
+ .debug_str     0x000037e4       0x3e build\kernel\libcpu\arm\cortex-a\stack.o
                                 0x1ab (size before relaxing)
- .debug_str     0x00003882       0xca build\kernel\libcpu\arm\cortex-a\trap.o
+ .debug_str     0x00003822       0xca build\kernel\libcpu\arm\cortex-a\trap.o
                                 0x253 (size before relaxing)
- .debug_str     0x0000394c       0x81 build\kernel\components\cplusplus\crt_init.o
+ .debug_str     0x000038ec       0x81 build\kernel\components\cplusplus\crt_init.o
                                 0x1e2 (size before relaxing)
- .debug_str     0x000039cd      0x344 build\kernel\components\dfs\src\dfs.o
+ .debug_str     0x0000396d      0x344 build\kernel\components\dfs\src\dfs.o
                                 0xb30 (size before relaxing)
- .debug_str     0x00003d11      0x217 build\kernel\components\dfs\src\dfs_file.o
+ .debug_str     0x00003cb1      0x217 build\kernel\components\dfs\src\dfs_file.o
                                 0x9d9 (size before relaxing)
- .debug_str     0x00003f28      0x17c build\kernel\components\dfs\src\dfs_fs.o
+ .debug_str     0x00003ec8      0x17c build\kernel\components\dfs\src\dfs_fs.o
                                 0x982 (size before relaxing)
- .debug_str     0x000040a4       0xd8 build\kernel\components\dfs\src\dfs_posix.o
+ .debug_str     0x00004044       0xd8 build\kernel\components\dfs\src\dfs_posix.o
                                 0x8c7 (size before relaxing)
- .debug_str     0x0000417c      0x102 build\kernel\components\dfs\src\poll.o
+ .debug_str     0x0000411c      0x102 build\kernel\components\dfs\src\poll.o
                                 0x9e7 (size before relaxing)
- .debug_str     0x0000427e       0xa0 build\kernel\components\dfs\src\select.o
+ .debug_str     0x0000421e       0xa0 build\kernel\components\dfs\src\select.o
                                 0x22a (size before relaxing)
- .debug_str     0x0000431e      0x130 build\kernel\components\dfs\filesystems\devfs\devfs.o
+ .debug_str     0x000042be      0x130 build\kernel\components\dfs\filesystems\devfs\devfs.o
                                 0xa4d (size before relaxing)
- .debug_str     0x0000444e      0x51f build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
+ .debug_str     0x000043ee      0x51f build\kernel\components\dfs\filesystems\elmfat\dfs_elm.o
                                 0xf27 (size before relaxing)
- .debug_str     0x0000496d      0x327 build\kernel\components\dfs\filesystems\elmfat\ff.o
+ .debug_str     0x0000490d      0x327 build\kernel\components\dfs\filesystems\elmfat\ff.o
                                 0x9c4 (size before relaxing)
- .debug_str     0x00004c94       0x5d build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
+ .debug_str     0x00004c34       0x5d build\kernel\components\dfs\filesystems\elmfat\option\ccsbcs.o
                                 0x1a3 (size before relaxing)
- .debug_str     0x00004cf1      0x187 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
+ .debug_str     0x00004c91      0x187 build\kernel\components\dfs\filesystems\ramfs\dfs_ramfs.o
                                 0xb8a (size before relaxing)
- .debug_str     0x00004e78      0x141 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
+ .debug_str     0x00004e18      0x141 build\kernel\components\dfs\filesystems\romfs\dfs_romfs.o
                                 0x8c8 (size before relaxing)
- .debug_str     0x00004fb9      0x682 build\kernel\components\finsh\shell.o
+ .debug_str     0x00004f59      0x682 build\kernel\components\finsh\shell.o
                                 0xb6f (size before relaxing)
- .debug_str     0x0000563b      0x963 build\kernel\components\finsh\cmd.o
+ .debug_str     0x000055db      0x963 build\kernel\components\finsh\cmd.o
                                0x1482 (size before relaxing)
- .debug_str     0x00005f9e      0x239 build\kernel\components\finsh\msh.o
+ .debug_str     0x00005f3e      0x239 build\kernel\components\finsh\msh.o
                                 0x4d5 (size before relaxing)
- .debug_str     0x000061d7      0x2f9 build\kernel\components\finsh\msh_file.o
+ .debug_str     0x00006177      0x2f9 build\kernel\components\finsh\msh_file.o
                                 0x500 (size before relaxing)
- .debug_str     0x000064d0       0xc8 build\kernel\components\finsh\finsh_compiler.o
+ .debug_str     0x00006470       0xc8 build\kernel\components\finsh\finsh_compiler.o
                                 0x3fc (size before relaxing)
- .debug_str     0x00006598       0x8f build\kernel\components\finsh\finsh_error.o
+ .debug_str     0x00006538       0x8f build\kernel\components\finsh\finsh_error.o
                                 0x1e1 (size before relaxing)
- .debug_str     0x00006627      0x104 build\kernel\components\finsh\finsh_heap.o
+ .debug_str     0x000065c7      0x104 build\kernel\components\finsh\finsh_heap.o
                                 0x3ea (size before relaxing)
- .debug_str     0x0000672b       0x5e build\kernel\components\finsh\finsh_init.o
+ .debug_str     0x000066cb       0x5e build\kernel\components\finsh\finsh_init.o
                                 0x2e4 (size before relaxing)
- .debug_str     0x00006789       0xdb build\kernel\components\finsh\finsh_node.o
+ .debug_str     0x00006729       0xdb build\kernel\components\finsh\finsh_node.o
                                 0x2e8 (size before relaxing)
- .debug_str     0x00006864      0x2c2 build\kernel\components\finsh\finsh_ops.o
+ .debug_str     0x00006804      0x2c2 build\kernel\components\finsh\finsh_ops.o
                                 0x454 (size before relaxing)
- .debug_str     0x00006b26      0x4fc build\kernel\components\finsh\finsh_parser.o
+ .debug_str     0x00006ac6      0x4fc build\kernel\components\finsh\finsh_parser.o
                                 0x88d (size before relaxing)
- .debug_str     0x00007022       0x9a build\kernel\components\finsh\finsh_var.o
+ .debug_str     0x00006fc2       0x9a build\kernel\components\finsh\finsh_var.o
                                 0x3be (size before relaxing)
- .debug_str     0x000070bc       0x5d build\kernel\components\finsh\finsh_vm.o
+ .debug_str     0x0000705c       0x5d build\kernel\components\finsh\finsh_vm.o
                                 0x2a8 (size before relaxing)
- .debug_str     0x00007119      0x128 build\kernel\components\finsh\finsh_token.o
+ .debug_str     0x000070b9      0x128 build\kernel\components\finsh\finsh_token.o
                                 0x622 (size before relaxing)
- .debug_str     0x00007241      0x20d build\kernel\components\libc\aio\posix_aio.o
+ .debug_str     0x000071e1      0x20d build\kernel\components\libc\aio\posix_aio.o
                                 0x65a (size before relaxing)
- .debug_str     0x0000744e       0x59 build\kernel\components\libc\compilers\newlib\libc.o
+ .debug_str     0x000073ee       0x59 build\kernel\components\libc\compilers\newlib\libc.o
                                 0x50b (size before relaxing)
- .debug_str     0x000074a7       0x8a build\kernel\components\libc\compilers\newlib\stdio.o
+ .debug_str     0x00007447       0x8a build\kernel\components\libc\compilers\newlib\stdio.o
                                 0x5a0 (size before relaxing)
- .debug_str     0x00007531      0x18a build\kernel\components\libc\compilers\newlib\syscalls.o
+ .debug_str     0x000074d1      0x18a build\kernel\components\libc\compilers\newlib\syscalls.o
                                 0xa85 (size before relaxing)
- .debug_str     0x000076bb       0x4a build\kernel\components\libc\compilers\newlib\time.o
+ .debug_str     0x0000765b       0x4a build\kernel\components\libc\compilers\newlib\time.o
                                 0x545 (size before relaxing)
- .debug_str     0x00007705      0x16e build\kernel\components\libc\pthreads\mqueue.o
+ .debug_str     0x000076a5      0x16e build\kernel\components\libc\pthreads\mqueue.o
                                 0x512 (size before relaxing)
- .debug_str     0x00007873      0x3c6 build\kernel\components\libc\pthreads\pthread.o
+ .debug_str     0x00007813      0x3c6 build\kernel\components\libc\pthreads\pthread.o
                                 0x869 (size before relaxing)
- .debug_str     0x00007c39      0x252 build\kernel\components\libc\pthreads\pthread_attr.o
+ .debug_str     0x00007bd9      0x252 build\kernel\components\libc\pthreads\pthread_attr.o
                                 0x450 (size before relaxing)
- .debug_str     0x00007e8b       0xa5 build\kernel\components\libc\pthreads\pthread_tls.o
+ .debug_str     0x00007e2b       0xa5 build\kernel\components\libc\pthreads\pthread_tls.o
                                 0x5b1 (size before relaxing)
- .debug_str     0x00007f30      0x118 build\kernel\components\libc\pthreads\semaphore.o
+ .debug_str     0x00007ed0      0x118 build\kernel\components\libc\pthreads\semaphore.o
                                 0x3e3 (size before relaxing)
- .debug_str     0x00008048       0xaa build\kernel\components\libc\signal\posix_signal.o
+ .debug_str     0x00007fe8       0xaa build\kernel\components\libc\signal\posix_signal.o
                                 0x49f (size before relaxing)
- .debug_str     0x000080f2      0x116 build\kernel\components\libc\termios\posix_termios.o
+ .debug_str     0x00008092      0x116 build\kernel\components\libc\termios\posix_termios.o
                                 0x26a (size before relaxing)
- .debug_str     0x00008208       0x91 build\kernel\components\libc\time\clock_time.o
+ .debug_str     0x000081a8       0x91 build\kernel\components\libc\time\clock_time.o
                                 0x5ea (size before relaxing)
- .debug_str     0x00008299       0xec build\kernel\components\lwp\lwp.o
+ .debug_str     0x00008239       0xec build\kernel\components\lwp\lwp.o
                                 0xa25 (size before relaxing)
- .debug_str     0x00008385       0xe0 build\kernel\components\lwp\lwp_mem.o
+ .debug_str     0x00008325       0xe0 build\kernel\components\lwp\lwp_mem.o
                                 0x461 (size before relaxing)
- .debug_str     0x00008465       0xb7 build\kernel\components\lwp\lwp_memheap.o
+ .debug_str     0x00008405       0xb7 build\kernel\components\lwp\lwp_memheap.o
                                 0x3f6 (size before relaxing)
- .debug_str     0x0000851c      0x1a9 build\kernel\components\lwp\lwp_syscall.o
+ .debug_str     0x000084bc      0x1a9 build\kernel\components\lwp\lwp_syscall.o
                                 0xb3f (size before relaxing)
- .debug_str     0x000086c5      0x370 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
+ .debug_str     0x00008665      0x370 build\kernel\components\net\lwip-2.0.2\src\arch\sys_arch.o
                                0x1064 (size before relaxing)
- .debug_str     0x00008a35      0x71e build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
+ .debug_str     0x000089d5      0x71e build\kernel\components\net\lwip-2.0.2\src\api\api_lib.o
                                 0xcd2 (size before relaxing)
- .debug_str     0x00009153      0x427 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
+ .debug_str     0x000090f3      0x427 build\kernel\components\net\lwip-2.0.2\src\api\api_msg.o
                                0x12d9 (size before relaxing)
- .debug_str     0x0000957a       0x52 build\kernel\components\net\lwip-2.0.2\src\api\err.o
+ .debug_str     0x0000951a       0x52 build\kernel\components\net\lwip-2.0.2\src\api\err.o
                                 0x1a8 (size before relaxing)
- .debug_str     0x000095cc       0xad build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
+ .debug_str     0x0000956c       0xad build\kernel\components\net\lwip-2.0.2\src\api\netbuf.o
                                 0x4ba (size before relaxing)
- .debug_str     0x00009679      0x25e build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
+ .debug_str     0x00009619      0x25e build\kernel\components\net\lwip-2.0.2\src\api\netdb.o
                                 0x643 (size before relaxing)
- .debug_str     0x000098d7      0x125 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
+ .debug_str     0x00009877      0x125 build\kernel\components\net\lwip-2.0.2\src\api\netifapi.o
                                 0x50f (size before relaxing)
- .debug_str     0x000099fc      0x55b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
+ .debug_str     0x0000999c      0x55b build\kernel\components\net\lwip-2.0.2\src\api\sockets.o
                                0x144e (size before relaxing)
- .debug_str     0x00009f57      0x1d7 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
+ .debug_str     0x00009ef7      0x1d7 build\kernel\components\net\lwip-2.0.2\src\api\tcpip.o
                                 0xa87 (size before relaxing)
- .debug_str     0x0000a12e       0xaa build\kernel\components\net\lwip-2.0.2\src\core\def.o
+ .debug_str     0x0000a0ce       0xaa build\kernel\components\net\lwip-2.0.2\src\core\def.o
                                 0x25c (size before relaxing)
- .debug_str     0x0000a1d8      0x35f build\kernel\components\net\lwip-2.0.2\src\core\dns.o
+ .debug_str     0x0000a178      0x35f build\kernel\components\net\lwip-2.0.2\src\core\dns.o
                                 0xa45 (size before relaxing)
- .debug_str     0x0000a537      0x11f build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
+ .debug_str     0x0000a4d7      0x11f build\kernel\components\net\lwip-2.0.2\src\core\inet_chksum.o
                                 0x320 (size before relaxing)
- .debug_str     0x0000a656       0x3e build\kernel\components\net\lwip-2.0.2\src\core\init.o
+ .debug_str     0x0000a5f6       0x3e build\kernel\components\net\lwip-2.0.2\src\core\init.o
                                 0x183 (size before relaxing)
- .debug_str     0x0000a694       0x32 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
+ .debug_str     0x0000a634       0x32 build\kernel\components\net\lwip-2.0.2\src\core\ip.o
                                 0x5bb (size before relaxing)
- .debug_str     0x0000a6c6      0x51e build\kernel\components\net\lwip-2.0.2\src\core\memp.o
+ .debug_str     0x0000a666      0x51e build\kernel\components\net\lwip-2.0.2\src\core\memp.o
                                 0x87f (size before relaxing)
- .debug_str     0x0000abe4      0x157 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
+ .debug_str     0x0000ab84      0x157 build\kernel\components\net\lwip-2.0.2\src\core\netif.o
                                 0x6fe (size before relaxing)
- .debug_str     0x0000ad3b      0x32c build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
+ .debug_str     0x0000acdb      0x32c build\kernel\components\net\lwip-2.0.2\src\core\pbuf.o
                                 0xb7d (size before relaxing)
- .debug_str     0x0000b067       0xfd build\kernel\components\net\lwip-2.0.2\src\core\raw.o
+ .debug_str     0x0000b007       0xfd build\kernel\components\net\lwip-2.0.2\src\core\raw.o
                                 0x809 (size before relaxing)
- .debug_str     0x0000b164      0x4c3 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
+ .debug_str     0x0000b104      0x4c3 build\kernel\components\net\lwip-2.0.2\src\core\tcp.o
                                 0xdfb (size before relaxing)
- .debug_str     0x0000b627      0x1b7 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
+ .debug_str     0x0000b5c7      0x1b7 build\kernel\components\net\lwip-2.0.2\src\core\tcp_in.o
                                 0xbb2 (size before relaxing)
- .debug_str     0x0000b7de      0x1e1 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
+ .debug_str     0x0000b77e      0x1e1 build\kernel\components\net\lwip-2.0.2\src\core\tcp_out.o
                                 0xac2 (size before relaxing)
- .debug_str     0x0000b9bf      0x196 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
+ .debug_str     0x0000b95f      0x196 build\kernel\components\net\lwip-2.0.2\src\core\timeouts.o
                                 0xb4f (size before relaxing)
- .debug_str     0x0000bb55      0x1e3 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
+ .debug_str     0x0000baf5      0x1e3 build\kernel\components\net\lwip-2.0.2\src\core\udp.o
                                 0x951 (size before relaxing)
- .debug_str     0x0000bd38      0x1a4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
+ .debug_str     0x0000bcd8      0x1a4 build\kernel\components\net\lwip-2.0.2\src\netif\ethernet.o
                                 0x720 (size before relaxing)
- .debug_str     0x0000bedc      0x5de build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
+ .debug_str     0x0000be7c      0x5de build\kernel\components\net\lwip-2.0.2\src\netif\ethernetif.o
                                0x16fb (size before relaxing)
- .debug_str     0x0000c4ba      0x710 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
+ .debug_str     0x0000c45a      0x710 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\dhcp.o
                                 0xed1 (size before relaxing)
- .debug_str     0x0000cbca      0x36d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
+ .debug_str     0x0000cb6a      0x36d build\kernel\components\net\lwip-2.0.2\src\core\ipv4\etharp.o
                                 0xa74 (size before relaxing)
- .debug_str     0x0000cf37       0xd6 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
+ .debug_str     0x0000ced7       0xd6 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\icmp.o
                                 0x66c (size before relaxing)
- .debug_str     0x0000d00d      0x20a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
+ .debug_str     0x0000cfad      0x20a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\igmp.o
                                 0x814 (size before relaxing)
- .debug_str     0x0000d217      0x13a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
+ .debug_str     0x0000d1b7      0x13a build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4.o
                                 0x85a (size before relaxing)
- .debug_str     0x0000d351       0x80 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
+ .debug_str     0x0000d2f1       0x80 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_addr.o
                                 0x59f (size before relaxing)
- .debug_str     0x0000d3d1      0x292 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
+ .debug_str     0x0000d371      0x292 build\kernel\components\net\lwip-2.0.2\src\core\ipv4\ip4_frag.o
                                 0x93b (size before relaxing)
- .debug_str     0x0000d663       0x80 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
+ .debug_str     0x0000d603       0x80 build\kernel\components\net\lwip-2.0.2\src\apps\ping\ping.o
                                 0x5b2 (size before relaxing)
- .debug_str     0x0000d6e3      0x45b build\kernel\components\net\netdev\src\netdev.o
+ .debug_str     0x0000d683      0x45b build\kernel\components\net\netdev\src\netdev.o
                                0x10e2 (size before relaxing)
- .debug_str     0x0000db3e       0xb0 build\kernel\components\net\netdev\src\netdev_ipaddr.o
+ .debug_str     0x0000dade       0xb0 build\kernel\components\net\netdev\src\netdev_ipaddr.o
                                 0x271 (size before relaxing)
- .debug_str     0x0000dbee      0x2fb build\kernel\components\net\sal_socket\src\sal_socket.o
+ .debug_str     0x0000db8e      0x2fb build\kernel\components\net\sal_socket\src\sal_socket.o
                                0x125e (size before relaxing)
- .debug_str     0x0000dee9       0xc8 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
+ .debug_str     0x0000de89       0xc8 build\kernel\components\net\sal_socket\impl\af_inet_lwip.o
                                0x11bd (size before relaxing)
- .debug_str     0x0000dfb1       0x39 build\kernel\components\net\sal_socket\socket\net_sockets.o
+ .debug_str     0x0000df51       0x39 build\kernel\components\net\sal_socket\socket\net_sockets.o
                                 0x888 (size before relaxing)
- .debug_str     0x0000dfea       0xaf build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
+ .debug_str     0x0000df8a       0xaf build\kernel\components\net\sal_socket\dfs_net\dfs_net.o
                                 0x7e6 (size before relaxing)
- .debug_str     0x0000e099      0x112 build\kernel\components\drivers\i2c\i2c_core.o
+ .debug_str     0x0000e039      0x112 build\kernel\components\drivers\i2c\i2c_core.o
                                 0x7b0 (size before relaxing)
- .debug_str     0x0000e1ab       0xa2 build\kernel\components\drivers\i2c\i2c_dev.o
+ .debug_str     0x0000e14b       0xa2 build\kernel\components\drivers\i2c\i2c_dev.o
                                 0x7a3 (size before relaxing)
- .debug_str     0x0000e24d      0x198 build\kernel\components\drivers\misc\pin.o
+ .debug_str     0x0000e1ed      0x198 build\kernel\components\drivers\misc\pin.o
                                 0x6fd (size before relaxing)
- .debug_str     0x0000e3e5      0x3de build\kernel\components\drivers\mtd\mtd_nand.o
+ .debug_str     0x0000e385      0x3de build\kernel\components\drivers\mtd\mtd_nand.o
                                 0x940 (size before relaxing)
- .debug_str     0x0000e7c3      0x126 build\kernel\components\drivers\rtc\rtc.o
+ .debug_str     0x0000e763      0x126 build\kernel\components\drivers\rtc\rtc.o
                                 0x6a3 (size before relaxing)
- .debug_str     0x0000e8e9       0x8f build\kernel\components\drivers\rtc\soft_rtc.o
+ .debug_str     0x0000e889       0x8f build\kernel\components\drivers\rtc\soft_rtc.o
                                 0x5cb (size before relaxing)
- .debug_str     0x0000e978      0x16e build\kernel\components\drivers\sdio\block_dev.o
+ .debug_str     0x0000e918      0x16e build\kernel\components\drivers\sdio\block_dev.o
                                 0xd87 (size before relaxing)
- .debug_str     0x0000eae6      0x2c2 build\kernel\components\drivers\sdio\mmcsd_core.o
+ .debug_str     0x0000ea86      0x2c2 build\kernel\components\drivers\sdio\mmcsd_core.o
                                 0xbbf (size before relaxing)
- .debug_str     0x0000eda8      0x16d build\kernel\components\drivers\sdio\sd.o
+ .debug_str     0x0000ed48      0x16d build\kernel\components\drivers\sdio\sd.o
                                 0x9db (size before relaxing)
- .debug_str     0x0000ef15      0x40f build\kernel\components\drivers\sdio\sdio.o
+ .debug_str     0x0000eeb5      0x40f build\kernel\components\drivers\sdio\sdio.o
                                 0xd3a (size before relaxing)
- .debug_str     0x0000f324       0xef build\kernel\components\drivers\sdio\mmc.o
+ .debug_str     0x0000f2c4       0xef build\kernel\components\drivers\sdio\mmc.o
                                 0x9eb (size before relaxing)
- .debug_str     0x0000f413      0x282 build\kernel\components\drivers\serial\serial.o
+ .debug_str     0x0000f3b3      0x282 build\kernel\components\drivers\serial\serial.o
                                 0xb5a (size before relaxing)
- .debug_str     0x0000f695      0x1c1 build\kernel\components\drivers\spi\spi_core.o
+ .debug_str     0x0000f635      0x1c1 build\kernel\components\drivers\spi\spi_core.o
                                 0x876 (size before relaxing)
- .debug_str     0x0000f856       0xf6 build\kernel\components\drivers\spi\spi_dev.o
+ .debug_str     0x0000f7f6       0xf6 build\kernel\components\drivers\spi\spi_dev.o
                                 0x816 (size before relaxing)
- .debug_str     0x0000f94c      0x42f build\kernel\components\drivers\spi\spi_flash_sfud.o
+ .debug_str     0x0000f8ec      0x42f build\kernel\components\drivers\spi\spi_flash_sfud.o
                                 0xd04 (size before relaxing)
- .debug_str     0x0000fd7b      0x2f2 build\kernel\components\drivers\spi\sfud\src\sfud.o
+ .debug_str     0x0000fd1b      0x2f2 build\kernel\components\drivers\spi\sfud\src\sfud.o
                                 0x6ce (size before relaxing)
- .debug_str     0x0001006d       0xc0 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
+ .debug_str     0x0001000d       0xc0 build\kernel\components\drivers\spi\sfud\src\sfud_sfdp.o
                                 0x470 (size before relaxing)
- .debug_str     0x0001012d       0x67 build\kernel\components\drivers\src\completion.o
+ .debug_str     0x000100cd       0x67 build\kernel\components\drivers\src\completion.o
                                 0x441 (size before relaxing)
- .debug_str     0x00010194       0xac build\kernel\components\drivers\src\waitqueue.o
+ .debug_str     0x00010134       0xac build\kernel\components\drivers\src\waitqueue.o
                                 0x4d1 (size before relaxing)
- .debug_str     0x00010240      0x227 build\kernel\components\drivers\src\workqueue.o
+ .debug_str     0x000101e0      0x227 build\kernel\components\drivers\src\workqueue.o
                                 0x703 (size before relaxing)
 
 .debug_frame    0x00000000    0x1110c
@@ -7969,6 +7997,33 @@ lwp_get_sys_api                                   build\kernel\components\lwp\lw
 lwp_set_kernel_sp                                 build\kernel\components\lwp\lwp.o
 lwp_user_entry                                    build\kernel\components\lwp\arch\arm\cortex-a\lwp_gcc.o
                                                   build\kernel\components\lwp\lwp.o
+mApp_Command_10_NULL                              build\applications\WtApplication.o
+mApp_Command_11_cmd1                              build\applications\test.o
+mApp_Command_11_cmd2                              build\applications\test.o
+mApp_Command_11_cmd3                              build\applications\test.o
+mApp_Command_11_cmd4                              build\applications\test.o
+mApp_Command_11_cmd5                              build\applications\test.o
+mApp_Command_11_cmd6                              build\applications\test.o
+mApp_Command_11_cmd7                              build\applications\test.o
+mApp_Command_11_cmd8                              build\applications\test.o
+mApp_Command_20_NULL                              build\applications\WtApplication.o
+mApp_Command_30_NULL                              build\applications\WtApplication.o
+mApp_Command_40_NULL                              build\applications\WtApplication.o
+mApp_Command_50_NULL                              build\applications\WtApplication.o
+mApp_Command_60_NULL                              build\applications\WtApplication.o
+mApp_Command_70_NULL                              build\applications\WtApplication.o
+mApp_Command_80_NULL                              build\applications\WtApplication.o
+mApp_Command_90_NULL                              build\applications\WtApplication.o
+mApp_Entry_0_NULL                                 build\applications\WtApplication.o
+mApp_Entry_1_entry1                               build\applications\test.o
+mApp_Entry_2_entry2                               build\applications\test.o
+mApp_Entry_3_entry3                               build\applications\test.o
+mApp_Entry_4_entry4                               build\applications\test.o
+mApp_Entry_5_entry5                               build\applications\test.o
+mApp_Entry_6_entry6                               build\applications\test.o
+mApp_Entry_7_entry7                               build\applications\test.o
+mApp_Entry_8_entry8                               build\applications\test.o
+mApp_Entry_9_NULL                                 build\applications\WtApplication.o
 main                                              build\applications\WtApplication.o
                                                   build\kernel\src\components.o
 main_thread_entry                                 build\kernel\src\components.o
