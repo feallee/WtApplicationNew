@@ -15,12 +15,12 @@
 typedef struct
 {
     /// @brief 入口函数。
-    WtActionType Entry;
+    const WtActionType Entry;
 } WtApplication_EntryType;
 /// @brief 向应用程序注册自动执行入口函数。
 /// @param entry 入口函数。不允许为 NULL。
 /// @param level 执行优先级别。共 8 个级别，执行顺序：1->2->3->4->5->6->7->8。
-#define WT_APPLICATION_REGISTER_ENTRY(entry, level) const static WtApplication_EntryType mApp_Entry_##entry##_##level __attribute__((used, __section__(".app_entry." #level))) = {entry}
+#define WT_APPLICATION_REGISTER_ENTRY(entry, level) const WtApplication_EntryType mApp_Entry_##level##_##entry __attribute__((used, __section__(".app_entry." #level))) = {entry}
 /// @brief 向应用程序注册优先级别为 1 的自动执行入口函数。
 /// @param entry 入口函数。不允许为 NULL。
 #define WT_APPLICATION_REGISTER_ENTRY1(entry) WT_APPLICATION_REGISTER_ENTRY(entry, 1)
@@ -59,7 +59,7 @@ typedef struct
 /// @param name 命令名称。不允许为 NULL且不允许重复。
 /// @param command 命令函数。不允许为 NULL。
 /// @param group 命令分组。共 8 个分组：1,2,3,4,5,6,7,8。
-#define WT_APPLICATION_REGISTER_COMMAND(name, command, group) const static WtApplication_CommandType mApp_Command_##command##_##group __attribute__((used, __section__(".app_command." #group))) = {name, command}
+#define WT_APPLICATION_REGISTER_COMMAND(name, command, group) const WtApplication_CommandType mApp_Command_##group##_##command __attribute__((used, __section__(".app_command." #group))) = {name, command}
 /// @brief 向应用程序注册分组为 1 的命令函数。
 /// @param name 命令名称。不允许为 NULL且不允许重复。
 /// @param command 命令函数。不允许为 NULL。
@@ -102,5 +102,5 @@ const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint
 /// @brief 向应用程序委托执行器队列添加动作函数。在当前线程(含中断)不适合处理繁重任务时使用。
 /// @param action 动作函数。
 /// @return 返回是否成功加入队列。
-bool WtApplication_Invoke(WtActionType action);
+bool WtApplication_Invoke(const WtActionType action);
 #endif

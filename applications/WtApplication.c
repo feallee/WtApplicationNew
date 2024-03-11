@@ -8,7 +8,7 @@ static size_t mPool[WT_APPLICATION_INVOKER_COUNT];
 int main(void)
 {
     rt_mb_init(&mInvoker, "invoker", mPool, sizeof(mPool), RT_IPC_FLAG_FIFO);
-    for (const WtApplication_EntryType *e = (&mApp_Entry_NULL_0) + 1; e < &mApp_Entry_NULL_9; e++)
+    for (const WtApplication_EntryType *e = (&mApp_Entry_0_NULL) + 1; e < &mApp_Entry_9_NULL; e++)
     {
         e->Entry();
     }
@@ -38,43 +38,43 @@ const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint
     const WtApplication_CommandType *b = NULL, *e = NULL;
     if (group == 1)
     {
-        b = &mApp_Command_NULL_10;
-        e = &mApp_Command_NULL_20;
+        b = &mApp_Command_10_NULL;
+        e = &mApp_Command_20_NULL;
     }
     else if (group == 2)
     {
-        b = &mApp_Command_NULL_20;
-        e = &mApp_Command_NULL_30;
+        b = &mApp_Command_20_NULL;
+        e = &mApp_Command_30_NULL;
     }
     else if (group == 3)
     {
-        b = &mApp_Command_NULL_30;
-        e = &mApp_Command_NULL_40;
+        b = &mApp_Command_30_NULL;
+        e = &mApp_Command_40_NULL;
     }
     else if (group == 4)
     {
-        b = &mApp_Command_NULL_40;
-        e = &mApp_Command_NULL_50;
+        b = &mApp_Command_40_NULL;
+        e = &mApp_Command_50_NULL;
     }
     else if (group == 5)
     {
-        b = &mApp_Command_NULL_50;
-        e = &mApp_Command_NULL_60;
+        b = &mApp_Command_50_NULL;
+        e = &mApp_Command_60_NULL;
     }
     else if (group == 6)
     {
-        b = &mApp_Command_NULL_60;
-        e = &mApp_Command_NULL_70;
+        b = &mApp_Command_60_NULL;
+        e = &mApp_Command_70_NULL;
     }
     else if (group == 7)
     {
-        b = &mApp_Command_NULL_70;
-        e = &mApp_Command_NULL_80;
+        b = &mApp_Command_70_NULL;
+        e = &mApp_Command_80_NULL;
     }
     else if (group == 8)
     {
-        b = &mApp_Command_NULL_80;
-        e = &mApp_Command_NULL_90;
+        b = &mApp_Command_80_NULL;
+        e = &mApp_Command_90_NULL;
     }
     for (b++; b < e; b++)
     {
@@ -87,7 +87,7 @@ const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint
     return e;
 }
 
-bool WtApplication_Invoke(WtActionType action)
+bool WtApplication_Invoke(const WtActionType action)
 {
     bool r = false;
     if (action)
