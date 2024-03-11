@@ -29,6 +29,10 @@ env['ASCOM'] = env['ASPPCOM']
 Export('RTT_ROOT')
 Export('rtconfig')
 
+# user build
+from subprocess import call
+call("wtbuild applications\WtBuild.h")
+
 # prepare building environment
 objs = PrepareBuilding(env, RTT_ROOT)
 
