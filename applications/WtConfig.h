@@ -23,14 +23,11 @@
 
 /*版本相关*/
 /// @brief 主要版本号。
-#define WT_VERSION_MAJOR 1 // 0 to 4293...
+#define WT_VERSION_MAJOR 1 // 0 to 4293
 /// @brief 次要版本号。
-#define WT_VERSION_MINOR 0 // 0 to 999...
+#define WT_VERSION_MINOR 0 // 0 to 999
 /// @brief 修订版本号。
-#define WT_VERSION_REVISION 1 // 0 to 999...
-
-/*构建参数相关*/
-#include <WtBuild.h>
+#define WT_VERSION_REVISION 1 // 0 to 999
 
 /*应用程序相关*/
 /// @brief 应用程序委托执行器数量。

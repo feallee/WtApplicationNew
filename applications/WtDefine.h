@@ -15,6 +15,7 @@
 #include <stdbool.h>
 #include <stdarg.h>
 #include <rtthread.h>
+#include <WtBuild.h>
 #include <WtConfig.h>
 #include <WtVersion.h>
 
