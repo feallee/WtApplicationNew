@@ -1,17 +1,36 @@
 #include <WtApplication.h>
-WT_APPLICATION_REGISTER_ENTRY(NULL, 0);
-WT_APPLICATION_REGISTER_ENTRY(NULL, 9);
+WT_APPLICATION_REGISTER_ENTRY(NULL, 0, 0);
+WT_APPLICATION_REGISTER_ENTRY(NULL, 0, 9);
 
 /*APPLICATION ENTRY*/
 static struct rt_mailbox mInvoker;
 static size_t mPool[WT_APPLICATION_INVOKER_COUNT];
+
+static void ExecuteEntry(int32_t type)
+{
+    for (const WtApplication_EntryType *e = (&mApp_Entry_0_NULL) + 1; e < &mApp_Entry_9_NULL; e++)
+    {
+        if (e->Type & type)
+        {
+            e->Entry();
+        }
+    }
+}
+
+void WtApplication_Sleep(void)
+{
+    ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_SLEEP);
+}
+
+void WtApplication_Wakeup(void)
+{
+    ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_WAKEUP);
+}
+
 int main(void)
 {
     rt_mb_init(&mInvoker, "invoker", mPool, sizeof(mPool), RT_IPC_FLAG_FIFO);
-    for (const WtApplication_EntryType *e = (&mApp_Entry_0_NULL) + 1; e < &mApp_Entry_9_NULL; e++)
-    {
-        e->Entry();
-    }
+    ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_INITIALIZE);
     while (1)
     {
         WtActionType act;
@@ -23,19 +42,19 @@ int main(void)
 }
 
 /*APPLICATION COMMAND*/
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 10);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 20);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 30);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 40);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 50);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 60);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 70);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 80);
-WT_APPLICATION_REGISTER_COMMAND("", NULL, 90);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "a", 10);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "a", 20);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 30);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 40);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 50);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 60);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 70);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 80);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 90);
 
 const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint8_t group)
 {
-    const WtApplication_CommandType *b = NULL, *e = NULL;
+    const WtApplication_CommandType *b = NULL, *e = NULL, *r = NULL;
     if (group == 1)
     {
         b = &mApp_Command_10_NULL;
@@ -80,11 +99,11 @@ const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint
     {
         if (strcmp(b->Name, name) == 0)
         {
-            e = b;
+            r = b;
             break;
         }
     }
-    return e;
+    return r;
 }
 
 bool WtApplication_Invoke(const WtActionType action)
