@@ -8,7 +8,8 @@
  */
 #ifndef __WT_BUFFER_H_
 #define __WT_BUFFER_H_
-#include <WtApplication.h>
+#include <stdint.h>
+#include <stdbool.h>
 
 /// @brief »º³åÇø¿ØÖÆ¿é¡£
 typedef struct

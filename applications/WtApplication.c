@@ -17,19 +17,21 @@ static void ExecuteEntry(int32_t type)
     }
 }
 
-void WtApplication_Sleep(void)
+__attribute__((weak)) void CPU_Sleep(void)
 {
-    ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_SLEEP);
 }
 
-void WtApplication_Wakeup(void)
+static void Sleep(void)
 {
+    ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_SLEEP);
+    CPU_Sleep();
     ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_WAKEUP);
 }
 
 int main(void)
 {
     rt_mb_init(&mInvoker, "invoker", mPool, sizeof(mPool), RT_IPC_FLAG_FIFO);
+    rt_thread_idle_sethook(Sleep);
     ExecuteEntry(WT_APPLICATION_ENTRY_TYPE_INITIALIZE);
     while (1)
     {
@@ -42,8 +44,8 @@ int main(void)
 }
 
 /*APPLICATION COMMAND*/
-WT_APPLICATION_REGISTER_COMMAND(NULL, "a", 10);
-WT_APPLICATION_REGISTER_COMMAND(NULL, "a", 20);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 10);
+WT_APPLICATION_REGISTER_COMMAND(NULL, "", 20);
 WT_APPLICATION_REGISTER_COMMAND(NULL, "", 30);
 WT_APPLICATION_REGISTER_COMMAND(NULL, "", 40);
 WT_APPLICATION_REGISTER_COMMAND(NULL, "", 50);
@@ -52,9 +54,10 @@ WT_APPLICATION_REGISTER_COMMAND(NULL, "", 70);
 WT_APPLICATION_REGISTER_COMMAND(NULL, "", 80);
 WT_APPLICATION_REGISTER_COMMAND(NULL, "", 90);
 
-const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint8_t group)
+int WtApplication_Execute(const char *name, uint8_t group, uint32_t sender, void *parameter)
 {
-    const WtApplication_CommandType *b = NULL, *e = NULL, *r = NULL;
+    const WtApplication_CommandType *b = NULL, *e = NULL;
+    int r = -1;
     if (group == 1)
     {
         b = &mApp_Command_10_NULL;
@@ -99,7 +102,7 @@ const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint
     {
         if (strcmp(b->Name, name) == 0)
         {
-            r = b;
+            r = b->Command(sender, parameter);
             break;
         }
     }

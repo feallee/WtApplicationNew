@@ -1,13 +1,13 @@
 #include "WtBuffer.h"
 
-void WtBuffer_Initialize(WtBuffer_Type* buffer, char* pool, uint16_t capacity)
+void WtBuffer_Initialize(WtBuffer_Type *buffer, char *pool, uint16_t capacity)
 {
-	buffer->Capacity = (capacity  > 32768 || capacity==0) ? 8 : capacity;
+	buffer->Capacity = (capacity > 32768 || capacity == 0) ? 8 : capacity;
 	buffer->Pool = pool;
 	buffer->ReadMirror = buffer->ReadIndex = buffer->WriteMirror = buffer->WriteIndex = 0;
 }
 
-bool WtBuffer_PutChar(WtBuffer_Type* buffer, char value)
+bool WtBuffer_PutChar(WtBuffer_Type *buffer, char value)
 {
 	if (buffer->WriteIndex == buffer->ReadIndex && buffer->WriteMirror != buffer->ReadMirror)
 	{
@@ -29,7 +29,7 @@ bool WtBuffer_PutChar(WtBuffer_Type* buffer, char value)
 	}
 }
 
-bool WtBuffer_GetChar(WtBuffer_Type* buffer, char* value)
+bool WtBuffer_GetChar(WtBuffer_Type *buffer, char *value)
 {
 	if (buffer->WriteIndex == buffer->ReadIndex && buffer->WriteMirror == buffer->ReadMirror)
 	{

@@ -3,31 +3,14 @@
 static void ready(void)
 {
     printf("ready!");
-    const WtApplication_CommandType *cmd;
-    cmd = WtApplication_GetCommand("CMD1", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD2", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD3", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD4", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD5", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD6", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD7", 1);
-    if (cmd)
-        cmd->Command(0, 0);
-    cmd = WtApplication_GetCommand("CMD8", 1);
-    if (cmd)
-        cmd->Command(0, 0);
+    WtApplication_Execute("CMD1", 1, 0, 0);
+    WtApplication_Execute("CMD2", 1, 0, 0);
+    WtApplication_Execute("CMD3", 1, 0, 0);
+    WtApplication_Execute("CMD4", 1, 0, 0);
+    WtApplication_Execute("CMD5", 1, 0, 0);
+    WtApplication_Execute("CMD6", 1, 0, 0);
+    WtApplication_Execute("CMD7", 1, 0, 0);
+    WtApplication_Execute("CMD8", 1, 0, 0);
 }
 static void entry1(void)
 {
@@ -64,36 +47,36 @@ WT_APPLICATION_REGISTER_ENTRY6(entry6, WT_APPLICATION_ENTRY_TYPE_INITIALIZE);
 WT_APPLICATION_REGISTER_ENTRY7(entry7, WT_APPLICATION_ENTRY_TYPE_INITIALIZE);
 WT_APPLICATION_REGISTER_ENTRY8(entry8, WT_APPLICATION_ENTRY_TYPE_INITIALIZE);
 
-static int cmd1(int sender, void *parameter)
+static int cmd1(uint32_t sender, void *parameter)
 {
     printf(WT_VERSION_TINY);
     return 0;
 }
-static int cmd2(int sender, void *parameter)
+static int cmd2(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd3(int sender, void *parameter)
+static int cmd3(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd4(int sender, void *parameter)
+static int cmd4(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd5(int sender, void *parameter)
+static int cmd5(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd6(int sender, void *parameter)
+static int cmd6(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd7(int sender, void *parameter)
+static int cmd7(uint32_t sender, void *parameter)
 {
     return 0;
 }
-static int cmd8(int sender, void *parameter)
+static int cmd8(uint32_t sender, void *parameter)
 {
     return 0;
 }
@@ -105,3 +88,7 @@ WT_APPLICATION_REGISTER_COMMAND1(cmd5, "CMD5");
 WT_APPLICATION_REGISTER_COMMAND1(cmd6, "CMD6");
 WT_APPLICATION_REGISTER_COMMAND1(cmd7, "CMD7");
 WT_APPLICATION_REGISTER_COMMAND1(cmd8, "CMD8");
+
+void CPU_Sleep(void)
+{
+}

@@ -4,21 +4,30 @@
  * @section 修订日志
  * 日期         作者                内容
  * -------------------------------------------------------------------------
- * 2024/03/29   feallee@hotmail.com 增加入口函数类别，增加 Sleep 和 Wakeup 接口。
+ * 2024/03/29   feallee@hotmail.com 增加入口函数类别：Initialize，Wakeup 和 Sleep。
  * 2023/11/30   feallee@hotmail.com 初版。
  */
 
 #ifndef __WT_APPLICATION_H_
 #define __WT_APPLICATION_H_
 #include <WtDefine.h>
-/*APP ENTRY*/
+
+/*应用程序入口相关*/
+/*注意：用户必须实现 MCU 休眠接口: void CPU_Sleep(void)。*/
+/// @brief 初始化入口类别，在应用程序初始化时调用。
+#define WT_APPLICATION_ENTRY_TYPE_INITIALIZE 0x00000001U
+/// @brief 唤醒入口类别，在应用程序唤醒后调用。
+#define WT_APPLICATION_ENTRY_TYPE_WAKEUP 0x00000002U
+/// @brief 休眠入口类别，在应用程序休眠前调用。
+#define WT_APPLICATION_ENTRY_TYPE_SLEEP 0x00000004U
+
 /// @brief 应用程序入口控制块类型。
 typedef struct
 {
     /// @brief 入口函数。
     const WtActionType Entry;
     /// @brief 入口类别。
-    int32_t Type;
+    uint32_t Type;
 } WtApplication_EntryType;
 /// @brief 向应用程序注册自动执行入口函数。
 /// @param entry 入口函数。不允许为 NULL。
@@ -48,10 +57,6 @@ typedef struct
 /// @brief 向应用程序注册优先级别为 8 的自动执行入口函数。
 /// @param entry 入口函数。不允许为 NULL。
 #define WT_APPLICATION_REGISTER_ENTRY8(entry, type) WT_APPLICATION_REGISTER_ENTRY(entry, type, 8)
-/// @brief 休眠应用程序。
-void WtApplication_Sleep(void);
-/// @brief 唤醒应用程序。
-void WtApplication_Wakeup(void);
 
 /*APP COMMAND*/
 /// @brief 应用程序命令控制块类型。
@@ -99,15 +104,15 @@ typedef struct
 /// @param name 命令名称。不允许为 NULL且不允许重复。
 /// @param command 命令函数。不允许为 NULL。
 #define WT_APPLICATION_REGISTER_COMMAND8(command, name) WT_APPLICATION_REGISTER_COMMAND(command, name, 81)
-/// @brief 获取应用程序命令。
+/// @brief 执行应用程序命令。
 /// @param group 分组。
 /// @param name 命令名称。不允许为 NULL。
-/// @return 返回应用程序命令。如果没有匹配返回 NULL。
-const WtApplication_CommandType *WtApplication_GetCommand(const char *name, uint8_t group);
+/// @return 如果命令执行结果。没有匹配的命令返回 -1。
+extern int WtApplication_Execute(const char *name, uint8_t group, uint32_t sender, void *parameter);
 
 /*APP INVOKER*/
 /// @brief 向应用程序委托执行器队列添加动作函数。在当前线程(含中断)不适合处理繁重任务时使用。
 /// @param action 动作函数。
 /// @return 返回是否成功加入队列。
-bool WtApplication_Invoke(const WtActionType action);
+extern bool WtApplication_Invoke(const WtActionType action);
 #endif
