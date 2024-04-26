@@ -14,27 +14,12 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdarg.h>
-#include <rtthread.h>
 #include <WtConfig.h>
 #include <WtVersion.h>
+#include <WtVersion.h>
+#include <WtCommand.h>
+#include <WtEntry.h>
 // TODO Register header files here.
-
-/// @brief 无参数且无返回值函数指针类型。
-typedef void (*WtActionType)(void);
-
-/*命令相关*/
-/// @brief 命令函数指针类型。
-/// @param sender 命令源。
-/// @param parameter 命令关联参数。
-/// @return 返回执行命令结果。
-typedef int (*WtCommandType)(uint32_t sender, void *parameter);
-/// @brief 命令源为控制台。
-#define WT_COMMAND_SENDER_CONSOLE 1U
-/// @brief 命令源为网络。
-#define WT_COMMAND_SENDER_NET 2U
-/// @brief 命令源为短信。
-#define WT_COMMAND_SENDER_SMS 3U
-// TODO Define other command senders(range:0-4294967295) here.
 
 /*数据包相关*/
 /// @brief 数据包(256B)类型。

@@ -39,8 +39,9 @@ SECTIONS
         __rt_init_start = .;
         KEEP(*(SORT(.rti_fn*)))
         __rt_init_end = .;
-        KEEP(*(SORT(.app_entry.*)))
-        KEEP(*(SORT(.app_command.*)))
+        . = ALIGN(4);
+        KEEP(*(SORT(.WtEntry.*)))
+        KEEP(*(SORT(.WtCommand.*)))
     } =0
     __text_end = .;
 
