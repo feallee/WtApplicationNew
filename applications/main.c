@@ -92,5 +92,5 @@ int main(void)
     WtCommand_Execute7("cmd7", WT_COMMAND_SOURCE_CON, 0);
     WtCommand_Execute8("cmd8", WT_COMMAND_SOURCE_CON, 0);
 
-    printf(WT_VERSION_FULL);
+    printf("%u,%s,%s\n", WT_VERSION_NUMBER, WT_VERSION_TINY, WT_VERSION_FULL);
 }

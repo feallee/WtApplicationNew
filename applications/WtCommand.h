@@ -81,56 +81,56 @@ typedef struct
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute1(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组2)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute2(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组3)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute3(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组4)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute4(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组5)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute5(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组6)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute6(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组7)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute7(const char *name, WtEntry_SourceType sender, void *parameter);
 
 /// @brief 执行应用程序命令(分组8)。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称时返回0。
+/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回0。
 int WtCommand_Execute8(const char *name, WtEntry_SourceType sender, void *parameter);
 
 #endif

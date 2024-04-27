@@ -77,6 +77,6 @@ typedef struct
 /// @brief 执行应用程序入口。
 /// @param group 入口组别。
 /// @param parameter 入口参数。
-/// @return 返回执行指定组别的应用程序入口数量。如果没有找到入口，则返回0，否则返回入口数量。
+/// @return 返回执行指定组别的应用程序入口数量。如果没有找到入口返回0。
 int WtEntry_Execute(WtEntry_GroupType group, void *parameter);
 #endif
