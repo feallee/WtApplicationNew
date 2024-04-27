@@ -40,42 +40,42 @@ void Startup8(void *parameter)
 }
 WT_ENTRY_REGISTER8(Startup8, WT_ENTRY_GROUP_STARTUP);
 
-void Command1(int sender, void *parameter)
+void Command1(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER1(Command1, "cmd1");
 
-void Command2(int sender, void *parameter)
+void Command2(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER2(Command2, "cmd2");
 
-void Command3(int sender, void *parameter)
+void Command3(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER3(Command3, "cmd3");
 
-void Command4(int sender, void *parameter)
+void Command4(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER4(Command4, "cmd4");
 
-void Command5(int sender, void *parameter)
+void Command5(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER5(Command5, "cmd5");
 
-void Command6(int sender, void *parameter)
+void Command6(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER6(Command6, "cmd6");
 
-void Command7(int sender, void *parameter)
+void Command7(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER7(Command7, "cmd7");
 
-void Command8(int sender, void *parameter)
+void Command8(WtEntry_SourceType sender, void *parameter)
 {
 }
 WT_COMMAND_REGISTER8(Command8, "cmd8");

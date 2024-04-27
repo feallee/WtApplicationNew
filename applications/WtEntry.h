@@ -22,7 +22,7 @@ typedef enum
     WT_ENTRY_GROUP_EXIT,
     /// @brief 异常组。
     WT_ENTRY_GROUP_EXCEPTION,
-    /// TODO 在这里定义其它入口组别。前面的组别也可以删除，但最少保留一个。
+    /// TODO 在这里定义其它入口组别。前面的组别也可以删除。
 } WtEntry_GroupType;
 
 /// @brief 应用程序入口控制块类型
