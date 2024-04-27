@@ -16,7 +16,6 @@
 #include <stdarg.h>
 #include <WtConfig.h>
 #include <WtVersion.h>
-#include <WtVersion.h>
 #include <WtCommand.h>
 #include <WtEntry.h>
 // TODO Register header files here.

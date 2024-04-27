@@ -4,7 +4,8 @@
         "typeinfo": "cpp",
         "wtdefine.h": "c",
         "wtversion.h": "c",
-        "wtconfig.h": "c"
+        "wtconfig.h": "c",
+        "stdio.h": "c"
     },
     "RTT_Studio.Build.Parallel_Jobs": "6",
     "RTT_Studio.Env_Location": "C:/RT-ThreadStudio/platform/env_released/env",
