@@ -1,110 +1,110 @@
 /**
- * @brief Ó¦ÓÃ³ÌĞòÃüÁî¹ÜÀíÄ£¿é¡£
+ * @brief åº”ç”¨ç¨‹åºå‘½ä»¤ç®¡ç†æ¨¡å—ã€‚
  * @copyright Copyright(C) 2023 We As Top team. All rights reserved.
- * @section ĞŞ¶©ÈÕÖ¾
- * ÈÕÆÚ         ×÷Õß                ÄÚÈİ
+ * @section ä¿®è®¢æ—¥å¿—
+ * æ—¥æœŸ         ä½œè€…                å†…å®¹
  * -------------------------------------------------------------------------
- * 2024/4/26   feallee@hotmail.com ³õ°æ¡£
+ * 2024/4/26   feallee@hotmail.com åˆç‰ˆã€‚
  */
 
 #ifndef __WT_COMMAND_H_
 #define __WT_COMMAND_H_
 
-/// @brief Ó¦ÓÃ³ÌĞòÃüÁîÔ´ÀàĞÍ¡£
+/// @brief åº”ç”¨ç¨‹åºå‘½ä»¤æºç±»å‹ã€‚
 typedef enum
 {
-     /// @brief ÃüÁîÀ´×Ô¿ØÖÆÌ¨¡£
+     /// @brief å‘½ä»¤æ¥è‡ªæ§åˆ¶å°ã€‚
      WT_COMMAND_SOURCE_CON,
-     /// @brief ÃüÁîÀ´×ÔÍøÂç¡£
+     /// @brief å‘½ä»¤æ¥è‡ªç½‘ç»œã€‚
      WT_COMMAND_SOURCE_GSM,
-     /// @brief ÃüÁîÀ´×ÔÀ¶ÑÀ¡£
+     /// @brief å‘½ä»¤æ¥è‡ªè“ç‰™ã€‚
      WT_COMMAND_SOURCE_BT,
-     /// @brief ÃüÁîÀ´×ÔWIFI¡£
+     /// @brief å‘½ä»¤æ¥è‡ªWIFIã€‚
      WT_COMMAND_SOURCE_WIFI,
-     /// @brief ÃüÁîÀ´×ÔNFC¡£
+     /// @brief å‘½ä»¤æ¥è‡ªNFCã€‚
      WT_COMMAND_SOURCE_NFC,
-     /// @brief ÃüÁîÀ´×Ô¼üÅÌ¡£
+     /// @brief å‘½ä»¤æ¥è‡ªé”®ç›˜ã€‚
      WT_COMMAND_SOURCE_KB,
-     /// TODO ÔÚÕâÀï¶¨ÒåÆäËüÃüÁîÔ´¡£Ç°ÃæµÄÃüÁîÔ´Ò²¿ÉÒÔÉ¾³ı¡£
+     /// TODO åœ¨è¿™é‡Œå®šä¹‰å…¶å®ƒå‘½ä»¤æºã€‚å‰é¢çš„å‘½ä»¤æºä¹Ÿå¯ä»¥åˆ é™¤ã€‚
 } WtEntry_SourceType;
 
-/// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×éÀàĞÍ¡£
+/// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ç±»å‹ã€‚
 typedef enum
 {
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 1¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 1ã€‚
      WT_COMMAND_GROUP_1 = 1,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 2¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 2ã€‚
      WT_COMMAND_GROUP_2,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 3¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 3ã€‚
      WT_COMMAND_GROUP_3,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 4¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 4ã€‚
      WT_COMMAND_GROUP_4,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 5¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 5ã€‚
      WT_COMMAND_GROUP_5,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 6¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 6ã€‚
      WT_COMMAND_GROUP_6,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 7¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 7ã€‚
      WT_COMMAND_GROUP_7,
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî·Ö×é 8¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åˆ†ç»„ 8ã€‚
      WT_COMMAND_GROUP_8,
 } WtCommand_GroupType;
 
-/// @brief Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷ÀàĞÍ¡£
-/// @brief Ó¦ÓÃ³ÌĞòÃüÁî¿ØÖÆ¿éÀàĞÍ¡£
+/// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œç±»å‹ã€‚
+/// @brief åº”ç”¨ç¨‹åºå‘½ä»¤æ§åˆ¶å—ç±»å‹ã€‚
 typedef struct
 {
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
      void (*Action)(WtEntry_SourceType sender, void *parameter);
-     /// @brief Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+     /// @brief åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
      char *Name;
 } WtCommand_Type;
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 1)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 1)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER1(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.11"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 2)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 2)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER2(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.21"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 3)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 3)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER3(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.31"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 4)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 4)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER4(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.41"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 5)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 5)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER5(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.51"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 6)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 6)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER6(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.61"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 7)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 7)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER7(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.71"))) = {action, name}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÃüÁî(·Ö×é 8)¡£
-/// @param action Ó¦ÓÃ³ÌĞòÃüÁî¶¯×÷¡£
-/// @param name Ó¦ÓÃ³ÌĞòÃüÁîÃû³Æ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå‘½ä»¤(åˆ†ç»„ 8)ã€‚
+/// @param action åº”ç”¨ç¨‹åºå‘½ä»¤åŠ¨ä½œã€‚
+/// @param name åº”ç”¨ç¨‹åºå‘½ä»¤åç§°ã€‚
 #define WT_COMMAND_REGISTER8(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.81"))) = {action, name}
 
-/// @brief Ö´ĞĞÖ¸¶¨ÃüÁî·Ö×éºÍÃüÁîÃû³ÆµÄÓ¦ÓÃ³ÌĞòÃüÁî¡£Èç¹ûÃüÁîÃû³ÆÏàÍ¬£¬ÔòÖ´ĞĞÈ«²¿Æ¥ÅäµÄÃüÁî¡£
-/// @param group ÃüÁî·Ö×é¡£
-/// @param name ÃüÁîÃû³Æ¡£
-/// @param sender ÃüÁîÔ´¡£
-/// @param parameter  ÃüÁî²ÎÊı¡£
-/// @return ·µ»ØÖ´ĞĞÓ¦ÓÃ³ÌĞòÃüÁîµÄÊıÁ¿¡£Ã»ÓĞÆ¥ÅäÃüÁîÃû³Æ·µ»Ø 0¡£
+/// @brief æ‰§è¡ŒæŒ‡å®šå‘½ä»¤åˆ†ç»„å’Œå‘½ä»¤åç§°çš„åº”ç”¨ç¨‹åºå‘½ä»¤ã€‚å¦‚æœå‘½ä»¤åç§°ç›¸åŒï¼Œåˆ™æ‰§è¡Œå…¨éƒ¨åŒ¹é…çš„å‘½ä»¤ã€‚
+/// @param group å‘½ä»¤åˆ†ç»„ã€‚
+/// @param name å‘½ä»¤åç§°ã€‚
+/// @param sender å‘½ä»¤æºã€‚
+/// @param parameter  å‘½ä»¤å‚æ•°ã€‚
+/// @return è¿”å›æ‰§è¡Œåº”ç”¨ç¨‹åºå‘½ä»¤çš„æ•°é‡ã€‚æ²¡æœ‰åŒ¹é…å‘½ä»¤åç§°è¿”å› 0ã€‚
 extern int WtCommand_Execute(WtCommand_GroupType group, const char *name, WtEntry_SourceType sender, void *parameter);
 
 #endif

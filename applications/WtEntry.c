@@ -1,4 +1,4 @@
-#include <WtEntry.h>
+#include "WtEntry.h"
 
 const static WtEntry_Type mWtEntry0 __attribute__((used, __section__(".WtEntry.0")));
 const static WtEntry_Type mWtEntry9 __attribute__((used, __section__(".WtEntry.9")));

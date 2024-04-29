@@ -1,5 +1,7 @@
-#include <WtDefine.h>
-
+#include <stdio.h>
+#include "wtentry.h"
+#include "wtcommand.h"
+#include "wtversion.h"
 void Startup1(void *parameter)
 {
 }
@@ -59,8 +61,7 @@ WT_COMMAND_REGISTER1("cmd1", Command1);
 void Command11(WtEntry_SourceType sender, void *parameter)
 {
 }
-WT_COMMAND_REGISTER1("cmd1", Command11);//演示同一组中有相同名称的命令。
-
+WT_COMMAND_REGISTER1("cmd1", Command11);
 void Command2(WtEntry_SourceType sender, void *parameter)
 {
 }

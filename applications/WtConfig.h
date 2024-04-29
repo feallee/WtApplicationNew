@@ -1,15 +1,15 @@
 /**
- * @brief Ó¦ÓÃ³ÌĞòÅäÖÃ¹ÜÀí¡£
+ * @brief åº”ç”¨ç¨‹åºé…ç½®ç®¡ç†ã€‚
  * @copyright Copyright(C) 2023 We as Top team. All rights reserved.
- * @section ĞŞ¶©ÈÕÖ¾
- * ÈÕÆÚ         ×÷Õß                ÄÚÈİ
+ * @section ä¿®è®¢æ—¥å¿—
+ * æ—¥æœŸ         ä½œè€…                å†…å®¹
  * -------------------------------------------------------------------------
- * 2024/4/26   feallee@hotmail.com ³õ°æ¡£
+ * 2024/4/26   feallee@hotmail.com åˆç‰ˆã€‚
  */
 #ifndef __WT_CONFIG_H_
 #define __WT_CONFIG_H_
 
-/*Ó¦ÓÃ³ÌĞòÅäÖÃÏà¹Ø*/
-/// @brief Ó¦ÓÃ³ÌĞòµ÷ÊÔÄ£Ê½¡£
+/*åº”ç”¨ç¨‹åºé…ç½®ç›¸å…³*/
+/// @brief åº”ç”¨ç¨‹åºè°ƒè¯•æ¨¡å¼ã€‚
 #define WT_APPLICATION_DEBUG
 #endif

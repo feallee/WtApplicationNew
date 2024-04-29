@@ -1,72 +1,13 @@
 /**
- * @brief Ó¦ÓÃ³ÌĞòÏà¹Ø¶¨Òå¡£
+ * @brief åº”ç”¨ç¨‹åºç›¸å…³å®šä¹‰ã€‚
  * @copyright Copyright(C) 2023 We as Top team. All rights reserved.
- * @section ĞŞ¶©ÈÕÖ¾
- * ÈÕÆÚ         ×÷Õß                ÄÚÈİ
+ * @section ä¿®è®¢æ—¥å¿—
+ * æ—¥æœŸ         ä½œè€…                å†…å®¹
  * -------------------------------------------------------------------------
- * 2023/11/30   feallee@hotmail.com ³õ°æ¡£
+ * 2023/11/30   feallee@hotmail.com åˆç‰ˆã€‚
  */
 #ifndef __WT_DEFINE_H_
 #define __WT_DEFINE_H_
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdarg.h>
-#include <WtConfig.h>
-#include <WtVersion.h>
-#include <WtCommand.h>
-#include <WtEntry.h>
-// TODO Register header files here.
-
-/*Êı¾İ°üÏà¹Ø*/
-/// @brief Êı¾İ°ü(256B)ÀàĞÍ¡£
-typedef struct
-{
-    /// @brief »ñÈ¡»òÉèÖÃÊı¾İ°üµÄ¹Ø¼ü×Ö¡£
-    uint16_t Key : 7;
-    /// @brief »ñÈ¡»òÉèÖÃÊı¾İ°üµÄ³¤¶È¡£
-    uint16_t Length : 9;
-    /// @brief »ñÈ¡»òÉèÖÃÊı¾İ°üµÄÖµ¡£
-    char Value[256];
-} DataPacket256Type;
-typedef struct
-{
-    uint16_t Key : 5;
-    uint16_t Length : 11;
-    char Value[1024];
-} DataPacket1024Type;
-typedef struct
-{
-    uint16_t Key : 6;
-    uint16_t Length : 10;
-    char Value[512];
-} DataPacket512Type;
-typedef struct
-{
-    uint16_t Key : 8;
-    uint16_t Length : 8;
-    char Value[128];
-} DataPacket128Type;
-typedef struct
-{
-    uint16_t Key : 9;
-    uint16_t Length : 7;
-    char Value[64];
-} DataPacket64Type;
-typedef struct
-{
-    uint16_t Key : 10;
-    uint16_t Length : 6;
-    char Value[32];
-} DataPacket32Type;
-typedef struct
-{
-    uint16_t Key : 11;
-    uint16_t Length : 5;
-    char Value[16];
-} DataPacket16Type;
 
 // TODO Define global types here.
 

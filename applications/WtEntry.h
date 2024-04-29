@@ -1,82 +1,82 @@
 /**
- * @brief Ó¦ÓÃ³ÌĞòÈë¿Ú¹ÜÀíÄ£¿é¡£Ö´ĞĞÓÅÏÈ¼¶Îª: 1->2->3->4->5->6->7->8¡£
+ * @brief åº”ç”¨ç¨‹åºå…¥å£ç®¡ç†æ¨¡å—ã€‚æ‰§è¡Œä¼˜å…ˆçº§ä¸º: 1->2->3->4->5->6->7->8ã€‚
  * @copyright Copyright(C) 2023 We As Top team. All rights reserved.
- * @section ĞŞ¶©ÈÕÖ¾
- * ÈÕÆÚ         ×÷Õß                ÄÚÈİ
+ * @section ä¿®è®¢æ—¥å¿—
+ * æ—¥æœŸ         ä½œè€…                å†…å®¹
  * -------------------------------------------------------------------------
- * 2024/4/26   feallee@hotmail.com ³õ°æ¡£
+ * 2024/4/26   feallee@hotmail.com åˆç‰ˆã€‚
  */
 #ifndef __WT_ENTRY_H_
 #define __WT_ENTRY_H_
 
-/// @brief Ó¦ÓÃ³ÌĞòÈë¿Ú×é±ğÀàĞÍ¡£
+/// @brief åº”ç”¨ç¨‹åºå…¥å£ç»„åˆ«ç±»å‹ã€‚
 typedef enum
 {
-    /// @brief Æô¶¯×é¡£
+    /// @brief å¯åŠ¨ç»„ã€‚
     WT_ENTRY_GROUP_STARTUP,
-    /// @brief ĞİÃß×é¡£
+    /// @brief ä¼‘çœ ç»„ã€‚
     WT_ENTRY_GROUP_SLEEP,
-    /// @brief »½ĞÑ×é¡£
+    /// @brief å”¤é†’ç»„ã€‚
     WT_ENTRY_GROUP_WAKEUP,
-    /// @brief ÍË³ö×é¡£
+    /// @brief é€€å‡ºç»„ã€‚
     WT_ENTRY_GROUP_EXIT,
-    /// @brief Òì³£×é¡£
+    /// @brief å¼‚å¸¸ç»„ã€‚
     WT_ENTRY_GROUP_EXCEPTION,
-    /// TODO ÔÚÕâÀï¶¨ÒåÆäËüÈë¿Ú×é±ğ¡£Ç°ÃæµÄ×é±ğÒ²¿ÉÒÔÉ¾³ı¡£
+    /// TODO åœ¨è¿™é‡Œå®šä¹‰å…¶å®ƒå…¥å£ç»„åˆ«ã€‚å‰é¢çš„ç»„åˆ«ä¹Ÿå¯ä»¥åˆ é™¤ã€‚
 } WtEntry_GroupType;
 
-/// @brief Ó¦ÓÃ³ÌĞòÈë¿Ú¿ØÖÆ¿éÀàĞÍ
+/// @brief åº”ç”¨ç¨‹åºå…¥å£æ§åˆ¶å—ç±»å‹
 typedef struct
 {
-    /// @brief Èë¿Ú¶¯×÷¡£
+    /// @brief å…¥å£åŠ¨ä½œã€‚
     void (*Action)(void *parameter);
-    /// @brief Èë¿Ú×é±ğ¡£
+    /// @brief å…¥å£ç»„åˆ«ã€‚
     WtEntry_GroupType Group;
 } WtEntry_Type;
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 1)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 1)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER1(group, action) const static WtEntry_Type mWtEntry1_##action __attribute__((used, __section__(".WtEntry.1"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 2)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 2)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER2(group, action) const static WtEntry_Type mWtEntry2_##action __attribute__((used, __section__(".WtEntry.2"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 3)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 3)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER3(group, action) const static WtEntry_Type mWtEntry3_##action __attribute__((used, __section__(".WtEntry.3"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 4)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 4)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER4(group, action) const static WtEntry_Type mWtEntry4_##action __attribute__((used, __section__(".WtEntry.4"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 5)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 5)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER5(group, action) const static WtEntry_Type mWtEntry5_##action __attribute__((used, __section__(".WtEntry.5"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 6)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 6)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER6(group, action) const static WtEntry_Type mWtEntry6_##action __attribute__((used, __section__(".WtEntry.6"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 7)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 7)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER7(group, action) const static WtEntry_Type mWtEntry7_##action __attribute__((used, __section__(".WtEntry.7"))) = {action, group}
 
-/// @brief ×¢²áÓ¦ÓÃ³ÌĞòÈë¿Ú(ÓÅÏÈ¼¶ 8)¡£
-/// @param action Èë¿Ú¶¯×÷¡£
-/// @param group Èë¿Ú×é±ğ¡£
+/// @brief æ³¨å†Œåº”ç”¨ç¨‹åºå…¥å£(ä¼˜å…ˆçº§ 8)ã€‚
+/// @param action å…¥å£åŠ¨ä½œã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
 #define WT_ENTRY_REGISTER8(group, action) const static WtEntry_Type mWtEntry8_##action __attribute__((used, __section__(".WtEntry.8"))) = {action, group}
 
-/// @brief Ö´ĞĞÓ¦ÓÃ³ÌĞòÈë¿Ú¡£
-/// @param group Èë¿Ú×é±ğ¡£
-/// @param parameter Èë¿Ú²ÎÊı¡£
-/// @return ·µ»ØÖ´ĞĞÖ¸¶¨×é±ğµÄÓ¦ÓÃ³ÌĞòÈë¿ÚÊıÁ¿¡£Èç¹ûÃ»ÓĞÕÒµ½Èë¿Ú·µ»Ø 0¡£
+/// @brief æ‰§è¡Œåº”ç”¨ç¨‹åºå…¥å£ã€‚
+/// @param group å…¥å£ç»„åˆ«ã€‚
+/// @param parameter å…¥å£å‚æ•°ã€‚
+/// @return è¿”å›æ‰§è¡ŒæŒ‡å®šç»„åˆ«çš„åº”ç”¨ç¨‹åºå…¥å£æ•°é‡ã€‚å¦‚æœæ²¡æœ‰æ‰¾åˆ°å…¥å£è¿”å› 0ã€‚
 extern int WtEntry_Execute(WtEntry_GroupType group, void *parameter);
 #endif
