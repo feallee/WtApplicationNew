@@ -1,5 +1,5 @@
 #include <string.h>
-#include <WtCommand.h>
+#include "WtCommand.h"
 
 const static WtCommand_Type mWtCommand1 __attribute__((used, __section__(".WtCommand.10")));
 const static WtCommand_Type mWtCommand2 __attribute__((used, __section__(".WtCommand.20")));

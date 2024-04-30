@@ -99,12 +99,12 @@ typedef struct
 /// @param name 应用程序命令名称。
 #define WT_COMMAND_REGISTER8(name, action) const static WtCommand_Type mWtCommand_##action __attribute__((used, __section__(".WtCommand.81"))) = {action, name}
 
-/// @brief 执行指定命令分组和命令名称的应用程序命令。如果命令名称相同，则执行全部匹配的命令。
+/// @brief 执行匹配命令分组和命令名称的应用程序命令。
 /// @param group 命令分组。
 /// @param name 命令名称。
 /// @param sender 命令源。
 /// @param parameter  命令参数。
-/// @return 返回执行应用程序命令的数量。没有匹配命令名称返回 0。
+/// @return 返回执行应用程序命令的数量。没有匹配的命令时返回 0。
 extern int WtCommand_Execute(WtCommand_GroupType group, const char *name, WtEntry_SourceType sender, void *parameter);
 
 #endif

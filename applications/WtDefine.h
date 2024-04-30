@@ -9,6 +9,13 @@
 #ifndef __WT_DEFINE_H_
 #define __WT_DEFINE_H_
 
-// TODO Define global types here.
+#include <stdint.h>
 
+typedef struct
+{
+    uint16_t Key : 7;
+    uint16_t Length : 9;
+    char Value[256];
+} WtMessage256_Type;
+// TODO Define global types here.
 #endif

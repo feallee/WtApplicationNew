@@ -5,7 +5,9 @@
         "wtdefine.h": "c",
         "wtversion.h": "c",
         "wtconfig.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "wtcommand.h": "c",
+        "random": "c"
     },
     "RTT_Studio.Build.Parallel_Jobs": "6",
     "RTT_Studio.Env_Location": "C:/RT-ThreadStudio/platform/env_released/env",

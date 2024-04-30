@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include "wtentry.h"
-#include "wtcommand.h"
-#include "wtversion.h"
+#include "WtEntry.h"
+#include "WtCommand.h"
+#include "WtVersion.h"
+#include "Application.h"
 void Startup1(void *parameter)
 {
 }
