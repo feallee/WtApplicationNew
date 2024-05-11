@@ -9,7 +9,25 @@
 #ifndef __WT_VERSION_H_
 #define __WT_VERSION_H_
 #include "WtBuild.h"
-#include "WtConfig.h"
+
+/// @brief 产品名称。
+#define WT_VERSION_PRODUCT_NAME "LGL" // TODO: 产品名称
+/// @brief 网络制式。
+#define WT_VERSION_PRODUCT_NETWORK "4G" // TODO: 网络制式，如 2G/3G/4G/5G/6G/NB/CAT1/CAT4/...
+/// @brief 客户标识。
+#define WT_VERSION_PRODUCT_CUSTOMER "MOBI" // TODO: 客户标识，如 QTK/ELC/MOBI/...
+/// @brief 功能特性。
+#define WT_VERSION_PRODUCT_FUNCTION "General" // TODO: 功能特性，如 General/Alarm/Security/...
+/// @brief 通信协议。
+#define WT_VERSION_PRODUCT_PROTOCOL "PT" // TODO: 通信协议，如 PT/JT808/...
+
+/// @brief 主要版本号。
+#define WT_VERSION_MAJOR 1 // TODO: 0 to 4293
+/// @brief 次要版本号。
+#define WT_VERSION_MINOR 0 // TODO: 0 to 999
+/// @brief 修订版本号。
+#define WT_VERSION_REVISION 1 // TODO: 0 to 999
+
 #define WT_VERSION_TO_TEXT(v) #v
 #define WT_VERSION_TO_TEXT3(a, b, c) WT_VERSION_TO_TEXT(a.b.c)
 #define WT_VERSION_TO_TEXT1(a) WT_VERSION_TO_TEXT(a)

@@ -65,23 +65,41 @@ int WtCommand_Execute(WtCommand_GroupType group, const char *name, WtEntry_Sourc
         b = &mWtCommand8 + 1;
         e = &mWtCommand9;
     }
-    break;    
+    break;
     default:
     {
         b = e = NULL;
     }
     break;
     }
-    for (; b < e; b++)
+    while (b < e)
     {
-        if (strcmp(name, b->Name) == 0)
+        if (name)
         {
-            cnt++;
-            if (b->Action)
+            if (b->Name)
             {
-                b->Action(sender, parameter);
+                if (strcmp(name, b->Name) == 0)
+                {
+                    if (b->Action)
+                    {
+                        b->Action(sender, parameter);
+                        cnt++;
+                    }
+                }
             }
         }
+        else
+        {
+            if (b->Name == NULL)
+            {
+                if (b->Action)
+                {
+                    b->Action(sender, parameter);
+                    cnt++;
+                }
+            }
+        }
+        b++;
     }
     return cnt;
 }
